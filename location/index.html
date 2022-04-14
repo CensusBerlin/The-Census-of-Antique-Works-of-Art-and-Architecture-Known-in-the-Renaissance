@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="canonical" href="https://takinsolutions.github.io/censusdocumentation/location/">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Location - Census Data Model Documentation</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Location Names and Classifications", url: "#_top", children: [
+              {title: "- Location Names and Classifications Ontology Graph", url: "#-location-names-and-classifications-ontology-graph" },
+              {title: "- Location Names and Classifications RDF", url: "#-location-names-and-classifications-rdf" },
+              {title: "- Location Names and Classifications JSON-LD", url: "#-location-names-and-classifications-json-ld" },
+          ]},
+          {title: "Location Parthood", url: "#location-parthood", children: [
+              {title: "- Location Parthood Ontology Graph", url: "#-location-parthood-ontology-graph" },
+              {title: "- Location Parthood RDF", url: "#-location-parthood-rdf" },
+              {title: "- Location Parthood JSON-LD", url: "#-location-parthood-json-ld" },
+          ]},
+          {title: "Location Location", url: "#location-location", children: [
+              {title: "- Location Location Ontology Graph", url: "#-location-location-ontology-graph" },
+              {title: "- Location Location RDF", url: "#-location-location-rdf" },
+              {title: "- Location Location JSON-LD", url: "#-location-location-json-ld" },
+          ]},
+          {title: "Location Description", url: "#location-description", children: [
+              {title: "- Location Description Ontology Graph", url: "#-location-description-ontology-graph" },
+              {title: "- Location Description RDF", url: "#-location-description-rdf" },
+              {title: "- Location Description JSON-LD", url: "#-location-description-json-ld" },
+          ]},
+          {title: "Location Documentaion", url: "#location-documentaion", children: [
+              {title: "- Location Documentation Ontology Graph", url: "#-location-documentation-ontology-graph" },
+              {title: "- Location Documentation RDF", url: "#-location-documentation-rdf" },
+              {title: "- Location Documentation JSON-LD", url: "#-location-documentation-json-ld" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../period/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../period/" class="btn btn-xs btn-link">
+        Period
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../bibliography/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../bibliography/" class="btn btn-xs btn-link">
+        Bibliographic Entity
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><strong>Location</strong></p>
+<p><strong>Author:</strong> Denitsa Nenova, George Bruseker</p>
+<p><strong>Version:</strong> 1.0</p>
+<p>The <em>Location</em> model is intended to enable the representation and sharing of data relevant to geographic places used to identify the locations of items and events over time. Typical instances of <em>Location</em>  are cities, states and countries, but also buildings, rooms, shelves, etc. The <em>Location</em> model is intended solely for the documentation of real, geometrically definable places. In the context of the CSDM, it is used primarily as a reference model.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+<th>URI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root Ontology Node</td>
+<td>E53 Place</td>
+<td>https://cidoc-crm.org/Entity/E53-Place/version-7.1.1</td>
+</tr>
+<tr>
+<td>Type Differentiator</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p>The location model allows the documentation of the following kinds of information:</p>
+<table>
+<thead>
+<tr>
+<th>Information Category</th>
+<th>Information Collections</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Names and Classifications</td>
+<td>Names/Alternative Names/Identifiers/Type</td>
+<td>The researcher can document various names and classification regarding the <em>Location</em> of a thing.</td>
+</tr>
+<tr>
+<td>Parthood</td>
+<td>Group Membership</td>
+<td>The researcher can document the membership of the <em>Location</em> to another place.</td>
+</tr>
+<tr>
+<td>Location</td>
+<td>Location Coordinates</td>
+<td>The researcher can document a set of geographic coordinates which have been attributed the documented place enabling its localization in a reference space.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Description</td>
+<td>The researcher can document various free text descriptions of the <em>Location</em> .</td>
+</tr>
+<tr>
+<td>Documentation</td>
+<td>Citation/Image/External URI</td>
+<td>The researcher can document citations relative to the person, link to images of the <em>Location</em>  and document external URIs of documentation for the same <em>Location</em> .</td>
+</tr>
+</tbody>
+</table>
+<h2 id="location-names-and-classifications">Location <strong>Names and Classifications</strong></h2>
+<p>The attribution of names and types to a place, as with other entities, is a basic human activity. A chief factor in disambiguating places lies in understanding the various names and identifiers that have been given to them at different moments in their individual histories. Historical places often receive different names according to the groups naming it, as well as receiving different kinds of names according to contexts and during different historical moments. Likewise, additional classifiers of a place, such as how it has been formally classified, give it important distinguishing characteristics. Because the type of a place is a socially-related factor, dependent on how the place is appropriated/used.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_1</td>
+<td>Location Identifier</td>
+<td>This field is used to record an identifier attributed to the documented <em>Location</em> .</td>
+<td>String</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P190 --&gt; rdfs:Literal</td>
+</tr>
+<tr>
+<td>fie_2</td>
+<td>Location Type Type</td>
+<td>This field is used to record the type of the identifier attributed to the documented <em>Location</em> .</td>
+<td>Concept</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P2 --&gt; E55[2_1]</td>
+</tr>
+<tr>
+<td>fie_3</td>
+<td>Location Type Provider</td>
+<td>This field is used to record the institution, group or individual responsible for providing the documented <em>Location</em>'s identifier.</td>
+<td>Reference Model  [Person/Group]</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P37i --&gt; E15[3_1] --&gt; P14 --&gt; E39[3_2]</td>
+</tr>
+<tr>
+<td>fie_5</td>
+<td>Location Name</td>
+<td>This field is used to record the main name attributed to the documented <em>Location</em>.</td>
+<td>String</td>
+<td>--&gt; P1 --&gt; E33_E41[5_1] --&gt; P190 --&gt; rdfs:Literal<br><br> --&gt; P1 --&gt; E33_E41[5_1] --&gt; P2 --&gt; E55[5_2]{'preferred terms'}</td>
+</tr>
+<tr>
+<td>fie_10</td>
+<td>Location Alias</td>
+<td>This field is used to record an alternative  name under which the documented <em>Location</em> is known.</td>
+<td>String</td>
+<td>--&gt; P1 --&gt; E33_E41[10_1]  --&gt; P190 --&gt; rdfs:Literal</td>
+</tr>
+<tr>
+<td>fie_11</td>
+<td>Location Alias Type</td>
+<td>This field is used to record the type of the alternative name that has been attributed to the documented <em>Location</em>.</td>
+<td>Concept</td>
+<td>--&gt; P1 --&gt; E33_E41[10_1] --&gt; P2 --&gt; E55[11_1]</td>
+</tr>
+<tr>
+<td>fie_16</td>
+<td>Location Alias Source</td>
+<td>This field is used to record the source on the basis of which the organization attributing the alternative name use based their attribution.</td>
+<td>Reference Model [Bibliographic Item/Image]</td>
+<td>--&gt; P1 --&gt; E33_E41[10_1] --&gt; P141i --&gt; E13[15_1] --&gt; P16 --&gt; E73[16_1]</td>
+</tr>
+<tr>
+<td>fie_17</td>
+<td>Location Type</td>
+<td>This field is used to record the formal type of the documented <em>Location</em>.</td>
+<td>Concept</td>
+<td>--&gt; P2 --&gt; E55[17_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-location-names-and-classifications-ontology-graph">- Location Names and Classifications <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/nc_loc.png" /></p>
+<h3 id="-location-names-and-classifications-rdf">- Location Names and Classifications <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://census.de/example/place/E53&gt; a crm:E53_Place ;
+    crm:P1_is_identified_by &lt;https://example.org/name/fie_10_1&gt;,
+        &lt;https://example.org/name/fie_1_1&gt;,
+        &lt;https://example.org/name/fie_5_1&gt; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_17_1&gt; .
+
+&lt;http://vocab.getty.edu/aat/300404670&gt; a crm:E55_Type ;
+    rdfs:label &quot;preferred terms&quot; .
+
+&lt;https://example.org/actor/fie_3_2&gt; a crm:E39_Actor .
+
+&lt;https://example.org/conceptual_object/fie_16_1&gt; a crm:E73_Information_Object .
+
+&lt;https://example.org/event/fie_15_1&gt; a crm:E13_Attribute_Assignment ;
+    crm:P16_used_specific_object &lt;https://example.org/conceptual_object/fie_16_1&gt; .
+
+&lt;https://example.org/event/fie_3_1&gt; a crm:E15_Identifier_Assignment ;
+    crm:P14_carried_out_by &lt;https://example.org/actor/fie_3_2&gt; .
+
+&lt;https://example.org/name/fie_10_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P141i_was_assigned_by &lt;https://example.org/event/fie_15_1&gt; ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_11_1&gt; .
+
+&lt;https://example.org/name/fie_1_1&gt; a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_2_1&gt; ;
+    crm:P37i_was_assigned_by &lt;https://example.org/event/fie_3_1&gt; .
+
+&lt;https://example.org/name/fie_5_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/aat/300404670&gt; .
+
+&lt;https://example.org/type/fie_11_1&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/fie_17_1&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/fie_2_1&gt; a crm:E55_Type .
+
+
+
+
+</code></pre>
+<h3 id="-location-names-and-classifications-json-ld">- Location Names and Classifications <strong>JSON-LD</strong></h3>
+<pre><code>  {
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/aat/300404670&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_5_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_2_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_1_1&quot;,
+      &quot;identifier_assigned_by&quot;: [
+        &quot;https://example.org/event/fie_3_1&quot;
+      ],
+      &quot;type&quot;: &quot;Identifier&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/actor/fie_3_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;assigned_by&quot;: [
+        &quot;https://example.org/event/fie_15_1&quot;
+      ],
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_11_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_10_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;preferred terms&quot;,
+      &quot;id&quot;: &quot;http://vocab.getty.edu/aat/300404670&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_17_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://census.de/example/place/E53&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://example.org/name/fie_10_1&quot;,
+        &quot;https://example.org/name/fie_5_1&quot;,
+        &quot;https://example.org/name/fie_1_1&quot;
+      ],
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://example.org/actor/fie_3_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/fie_3_1&quot;,
+      &quot;type&quot;: &quot;IdentifierAssignment&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_16_1&quot;,
+      &quot;type&quot;: &quot;InformationObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_11_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_2_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_17_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/event/fie_15_1&quot;,
+      &quot;type&quot;: &quot;AttributeAssignment&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://example.org/conceptual_object/fie_16_1&quot;
+      ]
+    }
+  ]
+}
+
+
+</code></pre>
+<h2 id="location-parthood">Location <strong>Parthood</strong></h2>
+<p>The mereo-topological breakdown of places is crucial to understanding the relative relations between places. This information category gathers together the basic descriptors typically deployed to this end. In the study and documentation of place, this is a highly researched topic with extremely fine grained analysis available. In this base model, we represent the relation of one place falling within another. This representation allows both for documentation of contemporaneous containment relations but also the expression of a place falling within another place or containing one at a particular historical time.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_35</td>
+<td>Location Parts</td>
+<td>This field is used to record individually documented places which form part of the documented <em>Location</em>.</td>
+<td>Reference Model [Location]</td>
+<td>--&gt; P89i --&gt; E53[35_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-location-parthood-ontology-graph">- Location Parthood <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/part_loc.png" /></p>
+<h3 id="-location-parthood-rdf">- Location Parthood <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://census.de/example/place/E53&gt; a crm:E53_Place ;
+    crm:P89i_contains &lt;https://example.org/place/fie_35_1&gt; .
+
+&lt;https://example.org/place/fie_35_1&gt; a crm:E53_Place .
+
+
+
+</code></pre>
+<h3 id="-location-parthood-json-ld">- Location Parthood <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;crm:P89i_contains&quot;: {
+        &quot;id&quot;: &quot;https://example.org/place/fie_35_1&quot;
+      },
+      &quot;id&quot;: &quot;https://census.de/example/place/E53&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/place/fie_35_1&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="location-location">Location <strong>Location</strong></h2>
+<p>This category documents the spatial expresion of the location's coordinates.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_92</td>
+<td>Location Coordinates</td>
+<td>This field is used to record a set of geographic coordinates which have been attributed the documented <em>Location</em> enabling its localization in a reference space.</td>
+<td>GeoJson</td>
+<td>--&gt; P168 --&gt; geo:wkt</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-location-location-ontology-graph">- Location Location <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/loc_location.png" /></p>
+<h3 id="-location-location-rdf">- Location Location <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix geo: &lt;http://www.opengis.net/ont/geosparql/&gt; .
+
+&lt;https://census.de/example/place/E53&gt; a crm:E53_Place ;
+    crm:P168_place_is_defined_by &quot;&quot;^^geo:wkt .
+
+
+
+</code></pre>
+<h3 id="-location-location-json-ld">- Location Location <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;defined_by&quot;: {
+    &quot;@value&quot;: &quot;&quot;,
+    &quot;type&quot;: &quot;http://www.opengis.net/ont/geosparql/wkt&quot;
+  },
+  &quot;id&quot;: &quot;https://census.de/example/place/E53&quot;,
+  &quot;type&quot;: &quot;Place&quot;
+}
+
+</code></pre>
+<h2 id="location-description">Location <strong>Description</strong></h2>
+<p>Places are the subjects of innumerable descriptions that provide a wide range of information with regards to the meaning and use of a place. Such descriptions are of use in a scholarly understanding of a place just in case we are able to track the provenance of such elocutions in a systematic fashion. Such an aim drives the need for the tracking of description information as a separate category. The descriptors necessary to this task are documented in the table below.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_188</td>
+<td>Location Description</td>
+<td>This field is used to record a description in free text of the documented <em>Location</em>.</td>
+<td>String</td>
+<td>--&gt; P129i --&gt; E33[188_1] --&gt; P190 --&gt; rdfs:Literal</td>
+</tr>
+<tr>
+<td>fie_190</td>
+<td>Location Description Type</td>
+<td>This field is used to record the type of description given of the documented <em>Location</em>.</td>
+<td>Concept</td>
+<td>--&gt; P129i --&gt; E33[188_1] --&gt; P2 --&gt; E55[190_1]</td>
+</tr>
+<tr>
+<td>fie_191</td>
+<td>Location Description Author</td>
+<td>This field is used to record the author of the description given of the documented <em>Location</em>.</td>
+<td>Reference Model  [Person/Group]</td>
+<td>--&gt; P129i --&gt; E33[188_1] --&gt; P94i --&gt; E65[191_1]&gt;-P14 --&gt; E39[191_2]</td>
+</tr>
+<tr>
+<td>fie_192</td>
+<td>Location Description Earliest Date</td>
+<td>This field is used to record the earliest possible date for the creation of the description of the documented <em>Location</em>.</td>
+<td>Date</td>
+<td>--&gt; P129i --&gt; E33[188_1] --&gt; P94i --&gt; E65[191_1] --&gt; P4 --&gt; E52[191_2] --&gt; P82a --&gt; xsd:dateTime</td>
+</tr>
+<tr>
+<td>fie_193</td>
+<td>Location Description Latest Date</td>
+<td>This field is used to record the latest possible date for the creation of the description of the documented <em>Location</em>.</td>
+<td>Date</td>
+<td>--&gt; P129i --&gt; E33[188_1] --&gt; P94i --&gt; E65[191_1] --&gt; P4 --&gt; E52[191_2] --&gt; P82b —&gt; xsd:dateTime</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-location-description-ontology-graph">- Location Description <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/desc_location.png" /></p>
+<h3 id="-location-description-rdf">- Location Description <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://census.de/example/place/E53&gt; a crm:E53_Place ;
+    crm:P129i_is_subject_of &lt;https://example.org/conceptual_object/fie_188_1&gt; .
+
+&lt;https://example.org/actor/fie_191_2&gt; a crm:E39_Actor .
+
+&lt;https://example.org/conceptual_object/fie_188_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_190_1&gt; ;
+    crm:P94i_was_created_by &lt;https://example.org/event/fie_191_1&gt; .
+
+&lt;https://example.org/event/fie_191_1&gt; a crm:E65_Creation ;
+    crm:P14_carried_out_by &lt;https://example.org/actor/fie_191_2&gt; ;
+    crm:P4_has_time-span &lt;https://example.org/time_span/fie_192_1&gt; .
+
+&lt;https://example.org/time_span/fie_192_1&gt; a crm:E52_Time-span ;
+    crm:P81a_begin_of_the_begin &quot;content&quot; ;
+    crm:P81b_end_of_the_end &quot;content&quot; .
+
+&lt;https://example.org/type/fie_190_1&gt; a crm:E55_Type .
+
+
+</code></pre>
+<h3 id="-location-description-json-ld">- Location Description <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://example.org/actor/fie_191_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/fie_191_1&quot;,
+      &quot;timespan&quot;: &quot;https://example.org/time_span/fie_192_1&quot;,
+      &quot;type&quot;: &quot;Creation&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://census.de/example/place/E53&quot;,
+      &quot;subject_of&quot;: [
+        &quot;https://example.org/conceptual_object/fie_188_1&quot;
+      ],
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/actor/fie_191_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_190_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_190_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;created_by&quot;: &quot;https://example.org/event/fie_191_1&quot;,
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_188_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;crm:P81a_begin_of_the_begin&quot;: &quot;content&quot;,
+      &quot;crm:P81b_end_of_the_end&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/time_span/fie_192_1&quot;,
+      &quot;type&quot;: &quot;crm:E52_Time-span&quot;
+    }
+  ]
+}
+</code></pre>
+<h2 id="location-documentaion">Location <strong>Documentaion</strong></h2>
+<p>This information category unites referential information about the documented <em>Location</em>, providing contextual data about it.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_204</td>
+<td>Location External URL</td>
+<td>The field is used to record the sameness between the <em>Location</em> described and an external authority.</td>
+<td>uri</td>
+<td>--&gt; L54 --&gt; E1[204_1]</td>
+</tr>
+<tr>
+<td>fie_195</td>
+<td>Location Image</td>
+<td>This field is used to record a digital image which is representative of the documented <em>Location</em>.</td>
+<td>Reference Model [Image]</td>
+<td>--&gt; P138i --&gt; E36/D9[195_1]</td>
+</tr>
+<tr>
+<td>fie_196</td>
+<td>Location Citation</td>
+<td>This field is used to record a citation to reference documentation for the documented <em>Location</em>.</td>
+<td>String</td>
+<td>--&gt; P129i --&gt; E33[196_1] --&gt; rdf:value --&gt; rdfs:Literal<br><br>--&gt; P129i --&gt; E33[196_1] --&gt; P2 --&gt; E55 "Citation"</td>
+</tr>
+<tr>
+<td>fie_197</td>
+<td>Location Citation Source</td>
+<td>This field is used to record the source used for generating the citation for the documented <em>Location</em>.</td>
+<td>Reference Model [Bibliographic Entity]</td>
+<td>--&gt; P129i --&gt; E33[196_1] --&gt; P106i --&gt; E33[197_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-location-documentation-ontology-graph">- Location Documentation <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/doc_location.png" /></p>
+<h3 id="-location-documentation-rdf">- Location Documentation <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://census.de/example/place/E53&gt; a crm:E53_Place ;
+    crm:L54_is_same-as &lt;https://example.org/entity/fie_204_1&gt; ;
+    crm:P129i_is_subject_of &lt;https://example.org/conceptual_object/fie_196_1&gt; ;
+    crm:P138i_has_representation &lt;https://example.org/conceptual_object/fie_195_1&gt; .
+
+&lt;https://example.org/conceptual_object/fie_195_1&gt; a crm:D9_Data_Object,
+        crm:E36_Visual_Item .
+
+&lt;https://example.org/conceptual_object/fie_196_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P106i_forms_part_of &lt;https://example.org/conceptual_object/fie_197_1&gt; ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_196_1&gt; .
+
+&lt;https://example.org/conceptual_object/fie_197_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://example.org/entity/fie_204_1&gt; a crm:E1_CRM_Entity .
+
+&lt;https://example.org/type/fie_196_1&gt; a crm:E55_Type ;
+    rdfs:label &quot;Citation&quot; .
+
+</code></pre>
+<h3 id="-location-documentation-json-ld">- Location Documentation <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_197_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_195_1&quot;,
+      &quot;type&quot;: [
+        &quot;crm:D9_Data_Object&quot;,
+        &quot;VisualItem&quot;
+      ]
+    },
+    {
+      &quot;crm:L54_is_same-as&quot;: {
+        &quot;id&quot;: &quot;https://example.org/entity/fie_204_1&quot;
+      },
+      &quot;id&quot;: &quot;https://census.de/example/place/E53&quot;,
+      &quot;representation&quot;: [
+        &quot;https://example.org/conceptual_object/fie_195_1&quot;
+      ],
+      &quot;subject_of&quot;: [
+        &quot;https://example.org/conceptual_object/fie_196_1&quot;
+      ],
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;Citation&quot;,
+      &quot;id&quot;: &quot;https://example.org/type/fie_196_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/entity/fie_204_1&quot;,
+      &quot;type&quot;: &quot;CRMEntity&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_196_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;crm:P106i_forms_part_of&quot;: {
+        &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_197_1&quot;
+      },
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_196_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    }
+  ]
+}
+
+</code></pre>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../period/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../period/" class="btn btn-xs btn-link">
+        Period
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../bibliography/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../bibliography/" class="btn btn-xs btn-link">
+        Bibliographic Entity
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="canonical" href="https://takinsolutions.github.io/censusdocumentation/collections/">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Collections - Census Data Model Documentation</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Collection Statement", url: "#_top", children: [
+              {title: "- Statement Graph", url: "#-statement-graph" },
+              {title: "- Statement RDF", url: "#-statement-rdf" },
+              {title: "- Statement JSNO-LD", url: "#-statement-jsno-ld" },
+          ]},
+          {title: "Collection Timespan", url: "#collection-timespan", children: [
+              {title: "- Timespan Graph", url: "#-timespan-graph" },
+              {title: "- Timespan RDF", url: "#-timespan-rdf" },
+              {title: "- Timespan JSNO-LD", url: "#-timespan-jsno-ld" },
+          ]},
+          {title: "Collection Uncertainty", url: "#collection-uncertainty", children: [
+              {title: "- Uncertainty Graph", url: "#-uncertainty-graph" },
+              {title: "- Uncertainty RDF", url: "#-uncertainty-rdf" },
+              {title: "- Uncertainty JSNO-LD", url: "#-uncertainty-jsno-ld" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav">
+      <a href="../image/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../image/" class="btn btn-xs btn-link">
+        Image
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><strong>Collections</strong></p>
+<p><strong>Author:</strong> Denitsa Nenova, George Bruseker</p>
+<p><strong>Version:</strong> 1.0</p>
+<p><em>Collections</em> are fixed sets of fields representing associated types of information that appear multiple times through a dataset. <em>Collections</em> are created for simplicity and clear data representation as well as documentation. Such collections are <em>Statement</em>, <em>Timespan</em>, and <em>Uncertainty</em>. <em>Collection</em> is listed as a data type in the model documentation above and the relevant collection is listed in square brackets after the data type.</p>
+<h2 id="collection-statement"><strong>Collection Statement</strong></h2>
+<p>The <em>Statement</em> collection is used to combine fields assoicted with free-text information and any additional metadata associated with it such as:</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_cen_36</td>
+<td>Statement Content</td>
+<td>This field is used to record the textual content of a statement about the documented entity.</td>
+<td>String</td>
+<td>--&gt; P67i --&gt; E33[C36_1] --&gt; P190 --&gt; rdfs:literal</td>
+</tr>
+<tr>
+<td>fie_cen_37</td>
+<td>Statement Type</td>
+<td>This field is used to record the foram type of the statement made about the documented entity.</td>
+<td>Concept</td>
+<td>--&gt; P67i --&gt; E33[C36_1] --&gt; P2 --&gt; E55[37_1]</td>
+</tr>
+<tr>
+<td>fie_cen_38</td>
+<td>Statement Created By</td>
+<td>This field is used to record the actor authored the statement made about the documented entity.</td>
+<td>Reference Model [Person/Group]</td>
+<td>--&gt; P67i --&gt; E33[C36_1] --&gt; P94i --&gt; E65[C38_1] --&gt; P14 --&gt; E39[C38_2]</td>
+</tr>
+<tr>
+<td>fie_cen_39</td>
+<td>Statement Earliest Date</td>
+<td>This field is used to record the earliest date associated with the creation of a statement made about the documented entity.</td>
+<td>Date</td>
+<td>--&gt; P67i --&gt; E33[C36_1] --&gt; P94i --&gt; E65[C38_1] --&gt; P4 --&gt; E52[C39_1] --&gt; P82a --&gt; xsd:dateTime</td>
+</tr>
+<tr>
+<td>fie_cen_40</td>
+<td>Statement Latest Date</td>
+<td>This field is used to record the latest date associated with the creation of a statement made about the documented entity.</td>
+<td>Date</td>
+<td>--&gt; P67i --&gt; E33[C36_1] --&gt; P94i --&gt; E65[C38_1] --&gt; P4 --&gt; E52[C39_1] --&gt; P82b --&gt; xsd:dateTime</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-statement-graph">- <strong>Statement Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/statement.png" /></p>
+<h3 id="-statement-rdf">- Statement <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+&lt;https://census.de/example/object/E1&gt; a crm:E1_CRM_Entity ;
+    crm:P67i_is_referred_to_by &lt;https://example.org/conceptual_object/C36_1&gt; .
+
+&lt;https://example.org/actor/C38_2&gt; a crm:E39_Actor .
+
+&lt;https://example.org/conceptual_object/C36_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P190_has_symbolic_content &quot;statement content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/37_1&gt; ;
+    crm:P94i_was_created_by &lt;https://example.org/event/C38_1&gt; .
+
+&lt;https://example.org/event/C38_1&gt; a crm:E65_Creation ;
+    crm:P14_carried_out_by &lt;https://example.org/actor/C38_2&gt; ;
+    crm:P4_has_time-span &lt;https://example.org/time_span/C39_1&gt; .
+
+&lt;https://example.org/time_span/C39_1&gt; a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin &quot;&quot;^^xsd:dateTime ;
+    crm:P82b_end_of_the_end &quot;&quot;^^xsd:dateTime .
+
+&lt;https://example.org/type/37_1&gt; a crm:E55_Type .
+
+
+
+</code></pre>
+<h3 id="-statement-jsno-ld">- Statement <strong>JSNO-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/37_1&quot;
+      ],
+      &quot;content&quot;: &quot;statement content&quot;,
+      &quot;created_by&quot;: &quot;https://example.org/event/C38_1&quot;,
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/C36_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://census.de/example/object/E1&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://example.org/conceptual_object/C36_1&quot;
+      ],
+      &quot;type&quot;: &quot;CRMEntity&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/actor/C38_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;begin_of_the_begin&quot;: &quot;&quot;,
+      &quot;end_of_the_end&quot;: &quot;&quot;,
+      &quot;id&quot;: &quot;https://example.org/time_span/C39_1&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    },
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://example.org/actor/C38_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/C38_1&quot;,
+      &quot;timespan&quot;: &quot;https://example.org/time_span/C39_1&quot;,
+      &quot;type&quot;: &quot;Creation&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/37_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="collection-timespan"><strong>Collection Timespan</strong></h2>
+<p>The <em>Timespan</em> collection is used to combine fields assoicted with the duration of an event and any additional metadata associated with it such as:</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_cen_1</td>
+<td>Timespan Statement</td>
+<td>This field is used to record a textual content of a statement made about the timespan of the documented event.</td>
+<td>String</td>
+<td>--&gt; P4 --&gt; E52[C1_1] --&gt; P67i --&gt; E33_E41 [C1_2] --&gt; P190 --&gt; rdfs:literal</td>
+</tr>
+<tr>
+<td>fie_cen_3</td>
+<td>Timespan Attribution Type</td>
+<td>This field is used to record the type of attribution assigning the timespan of the documented event.</td>
+<td>Concept</td>
+<td>--&gt; P4 --&gt; E52[C1_1] --&gt; P141i --&gt; E13[C3_1] --&gt; p2 --&gt; E55[C3_2]</td>
+</tr>
+<tr>
+<td>fie_cen_4</td>
+<td>Timespan Earliest Date</td>
+<td>This field is used to record the earliest date of the timespan of the documented event.</td>
+<td>Date</td>
+<td>--&gt; P4 --&gt; E52[C1_1] --&gt; P82a --&gt; xsd:dateTime</td>
+</tr>
+<tr>
+<td>fie_cen_5</td>
+<td>Timespan Latest Date</td>
+<td>This field is used to record the latest date of the timespan of the documented event.</td>
+<td>     Date</td>
+<td>--&gt; P4 --&gt; E52[C1_1] --&gt; P82b --&gt; xsd:dateTime</td>
+</tr>
+<tr>
+<td>fie_cen_6</td>
+<td>Timespan Document Source</td>
+<td>This field is used to related the human-made object carrying a linguistic source of the type of attribution assigning the timespan of the documented event with the documented event.</td>
+<td>Reference Model [Document]</td>
+<td>--&gt; P4 --&gt; E52[C1_1] --&gt; P141i --&gt; E13[C3_1] --&gt; P16 --&gt; E33[C6_1] --&gt; P128i --&gt;E22[C6_2]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-timespan-graph">- <strong>Timespan Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/timespan.png" /></p>
+<h3 id="-timespan-rdf">- Timespan <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+&lt;https://census.de/example/event/E5&gt; a crm:E5_Event ;
+    crm:P4_has_time-span &lt;https://example.org/time_span/C1_1&gt; .
+
+&lt;https://example.org/appellation/C1_2&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content &quot;timespan statement&quot; .
+
+&lt;https://example.org/conceptual_object/C6_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P128i_carried_by &lt;https://example.org/physical_object/C6_2&gt; .
+
+&lt;https://example.org/event/C3_1&gt; a crm:E13_Attribute_Assignment ;
+    crm:P16_used_specific_object &lt;https://example.org/conceptual_object/C6_1&gt; ;
+    crm:P2_has_type &lt;https://example.org/type/C3_2&gt; .
+
+&lt;https://example.org/physical_object/C6_2&gt; a crm:E22_Human-Made_Object .
+
+&lt;https://example.org/time_span/C1_1&gt; a crm:E52_Time-Span ;
+    crm:P141i_was_assigned_by &lt;https://example.org/event/C3_1&gt; ;
+    crm:P67_is_referred_to_by &lt;https://example.org/appellation/C1_2&gt; ;
+    crm:P82a_begin_of_the_begin &quot;&quot;^^xsd:dateTime ;
+    crm:P82b_begin_of_the_begin &quot;&quot;^^xsd:dateTime .
+
+&lt;https://example.org/type/C3_2&gt; a crm:E55_Type .
+
+
+
+</code></pre>
+<h3 id="-timespan-jsno-ld">- Timespan <strong>JSNO-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://example.org/physical_object/C6_2&quot;,
+      &quot;type&quot;: &quot;HumanMadeObject&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/C3_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/C3_1&quot;,
+      &quot;type&quot;: &quot;AttributeAssignment&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://example.org/conceptual_object/C6_1&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;https://census.de/example/event/E5&quot;,
+      &quot;timespan&quot;: &quot;https://example.org/time_span/C1_1&quot;,
+      &quot;type&quot;: &quot;Event&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/C3_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;assigned_by&quot;: [
+        &quot;https://example.org/event/C3_1&quot;
+      ],
+      &quot;begin_of_the_begin&quot;: &quot;&quot;,
+      &quot;crm:P67_is_referred_to_by&quot;: {
+        &quot;id&quot;: &quot;https://example.org/appellation/C1_2&quot;
+      },
+      &quot;crm:P82b_begin_of_the_begin&quot;: {
+        &quot;@value&quot;: &quot;&quot;,
+        &quot;type&quot;: &quot;xsd:dateTime&quot;
+      },
+      &quot;id&quot;: &quot;https://example.org/time_span/C1_1&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    },
+    {
+      &quot;content&quot;: &quot;timespan statement&quot;,
+      &quot;id&quot;: &quot;https://example.org/appellation/C1_2&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;crm:P128i_carried_by&quot;: {
+        &quot;id&quot;: &quot;https://example.org/physical_object/C6_2&quot;
+      },
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/C6_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="collection-uncertainty"><strong>Collection Uncertainty</strong></h2>
+<p>The <em>Uncertainty</em> collection is used to combine fields defining the level of confidence when assigning a specific type to an entity and any additional metadata associated with it such as:</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_cen_77</td>
+<td>Uncertainty Type</td>
+<td>This field is used to record the concept of uncertainty as a type defining specific attribution to the documented entity.</td>
+<td>Concept</td>
+<td>--&gt; P141i --&gt; E13[C77_1] --&gt; P140 --&gt; E55[C77_2]</td>
+</tr>
+<tr>
+<td>fie_cen_78</td>
+<td>Uncertainty Type Note</td>
+<td>This field is used to record a statement about the concept of uncertainty defining specific attribution to the documented entity.</td>
+<td>String</td>
+<td>--&gt; P141i --&gt; E13[C77_1] --&gt; P140 --&gt; E55[C77_2] --&gt; P67i --&gt; E33[C78_1] --&gt; P190 --&gt; rdfs:literal</td>
+</tr>
+<tr>
+<td>fie_cen_79</td>
+<td>Uncertainty Type Attributed By</td>
+<td>This field is used to record the actor who assigned the concept of uncertainty as a type defining specific attribution to the documented entity.</td>
+<td>Reference Model [Person/Group]</td>
+<td>--&gt; P141i --&gt; E13[C77_1] --&gt; P140 --&gt; E55[C77_2] --&gt; P141i --&gt; E13[C79_1] --&gt; P14 --&gt; E39[C79_2]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-uncertainty-graph">- <strong>Uncertainty Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/statement.png" /></p>
+<h3 id="-uncertainty-rdf">- Uncertainty <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://census.de/example/type/E55&gt; a crm:E55_Type ;
+    crm:P141i_was_assigned_by &lt;https://example.org/event/C77_1&gt; .
+
+&lt;https://example.org/actor/C79_2&gt; a crm:E39_Actor .
+
+&lt;https://example.org/conceptual_object/C78_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P190_has_symbolic_content &quot;uncertainty note&quot; .
+
+&lt;https://example.org/event/C77_1&gt; a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to &lt;https://example.org/type/C77_2&gt; .
+
+&lt;https://example.org/event/C79_1&gt; a crm:E13_Attribute_Assignment ;
+    crm:P14_carried_out_by &lt;https://example.org/actor/C79_2&gt; .
+
+&lt;https://example.org/type/C77_2&gt; a crm:E55_Type ;
+    crm:P141i_was_assigned_by &lt;https://example.org/event/C79_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://example.org/conceptual_object/C78_1&gt; .
+
+
+
+</code></pre>
+<h3 id="-uncertainty-jsno-ld">- Uncertainty <strong>JSNO-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;assigned_to&quot;: &quot;https://example.org/type/C77_2&quot;,
+      &quot;id&quot;: &quot;https://example.org/event/C77_1&quot;,
+      &quot;type&quot;: &quot;AttributeAssignment&quot;
+    },
+    {
+      &quot;content&quot;: &quot;uncertainty note&quot;,
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/C78_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://example.org/actor/C79_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/C79_1&quot;,
+      &quot;type&quot;: &quot;AttributeAssignment&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/actor/C79_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;assigned_by&quot;: [
+        &quot;https://example.org/event/C79_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/type/C77_2&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://example.org/conceptual_object/C78_1&quot;
+      ],
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;assigned_by&quot;: [
+        &quot;https://example.org/event/C77_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://census.de/example/type/E55&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    }
+  ]
+}
+
+</code></pre>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav">
+      <a href="../image/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../image/" class="btn btn-xs btn-link">
+        Image
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

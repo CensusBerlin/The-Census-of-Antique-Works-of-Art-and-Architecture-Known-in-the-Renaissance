@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="canonical" href="https://takinsolutions.github.io/censusdocumentation/period/">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Period - Census Data Model Documentation</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Period Names and Classifications", url: "#_top", children: [
+              {title: "- Period Names and Classifications Ontology Graph", url: "#-period-names-and-classifications-ontology-graph" },
+              {title: "- Period Names and Classifications RDF", url: "#-period-names-and-classifications-rdf" },
+              {title: "- Period Names and Classifications JSON-LD", url: "#-period-names-and-classifications-json-ld" },
+          ]},
+          {title: "Period Existence", url: "#period-existence", children: [
+              {title: "- Period Existence Ontology Graph", url: "#-period-existence-ontology-graph" },
+              {title: "- Period Existence RDF", url: "#-period-existence-rdf" },
+              {title: "- Period Existence JSON-LD", url: "#-period-existence-json-ld" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../image/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../image/" class="btn btn-xs btn-link">
+        Image
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../location/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../location/" class="btn btn-xs btn-link">
+        Location
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><strong>Period</strong></p>
+<p><strong>Author:</strong> Denitsa Nenova, George Bruseker</p>
+<p><strong>Version:</strong> 1.0</p>
+<p>The <em>Period</em> model is intended to enable the documentation and correct referencing of historical periods for use in datation. Typical instances of <em>Period</em> include period divisions of major epochs including well-known historical periods. <em>Period</em> is used primarily as a reference model.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+<th>URI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root Ontology Node</td>
+<td>E4 Period</td>
+<td>https://cidoc-crm.org/Entity/E4-Period/version-7.1.1</td>
+</tr>
+<tr>
+<td>Type Differentiator</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Information Category</th>
+<th>Information Collections</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Names and Classifications</td>
+<td>Names/Alternative Names/Identifiers/Type</td>
+<td>The researcher can document various names and classification regarding the <em>Period</em>.</td>
+</tr>
+<tr>
+<td>Existence</td>
+<td>Existence</td>
+<td>The researcher can document various free text descriptions of the <em>Period</em>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="period-names-and-classifications">Period <strong>Names and Classifications</strong></h2>
+<p>The attribution of names and types to a historical period. </p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_1</td>
+<td>Period Identifier</td>
+<td>This field is used to record an identifier attributed to the documented <em>Period</em>.</td>
+<td>String</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P190 --&gt; rdfs:Literal</td>
+</tr>
+<tr>
+<td>fie_2</td>
+<td>Period Identifier Type</td>
+<td>This field is used to record the type of the identifier attributed to the documented <em>Period</em>.</td>
+<td>Concept</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P2 --&gt; E55[2_1]</td>
+</tr>
+<tr>
+<td>fie_3</td>
+<td>Period Identifier Provider</td>
+<td>This field is used to record the institution, group or individual responsible for providing the documented <em>Period</em>'s identifier.</td>
+<td>Reference Model [Person/Group]</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P37i --&gt; E15[3_1] --&gt; P14 --&gt; E39[3_2]</td>
+</tr>
+<tr>
+<td>fie_5</td>
+<td>Period Name</td>
+<td>This field is used to record the main name attributed to the documented <em>Period</em>.</td>
+<td>String</td>
+<td>--&gt; P1 --&gt; E33_E41[5_1] --&gt; P190 --&gt; rdfs:Literal<br><br> --&gt; P1 --&gt; E33_E41[5_1] --&gt; P2 --&gt; E55[5_2]{'preferred terms'}</td>
+</tr>
+<tr>
+<td>fie_10</td>
+<td>Period Alias</td>
+<td>This field is used to record an alternative  name under which the documented <em>Period</em> is known.</td>
+<td>String</td>
+<td>--&gt; P1 --&gt; E33_E41[10_1]  --&gt; P190 --&gt; rdfs:Literal</td>
+</tr>
+<tr>
+<td>fie_11</td>
+<td>Period Alias Type</td>
+<td>This field is used to record the type of the alternative name that has been attributed to the documented <em>Period</em>.</td>
+<td>Concept</td>
+<td>--&gt; P1 --&gt; E33_E41[10_1] --&gt; P2 --&gt; E55[11_1]</td>
+</tr>
+<tr>
+<td>fie_17</td>
+<td>Period Type</td>
+<td>This field is used to record the formal type of the documented <em>Period</em>.</td>
+<td>Concept</td>
+<td>--&gt; P2 --&gt; E55[17_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-period-names-and-classifications-ontology-graph">- Period Names and Classifications <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/nc_period.png" /></p>
+<h3 id="-period-names-and-classifications-rdf">- Period Names and Classifications <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://census.de/example/event/E4&gt; a crm:E4_Period ;
+    crm:P1_is_identified_by &lt;https://example.org/name/fie_10_1&gt;,
+        &lt;https://example.org/name/fie_1_1&gt;,
+        &lt;https://example.org/name/fie_5_1&gt; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_17_1&gt; .
+
+&lt;http://vocab.getty.edu/aat/300404670&gt; a crm:E55_Type ;
+    rdfs:label &quot;preferred terms&quot; .
+
+&lt;https://example.org/actor/fie_3_2&gt; a crm:E39_Actor .
+
+&lt;https://example.org/event/fie_3_1&gt; a crm:E15_Identifier_Assignment ;
+    crm:P14_carried_out_by &lt;https://example.org/actor/fie_3_2&gt; .
+
+&lt;https://example.org/name/fie_10_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_11_1&gt; .
+
+&lt;https://example.org/name/fie_1_1&gt; a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_2_1&gt; ;
+    crm:P37i_was_assigned_by &lt;https://example.org/event/fie_3_1&gt; .
+
+&lt;https://example.org/name/fie_5_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/aat/300404670&gt; .
+
+&lt;https://example.org/type/fie_11_1&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/fie_17_1&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/fie_2_1&gt; a crm:E55_Type .
+
+
+
+</code></pre>
+<h3 id="-period-names-and-classifications-json-ld">- Period Names and Classifications <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_17_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://census.de/example/event/E4&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://example.org/name/fie_10_1&quot;,
+        &quot;https://example.org/name/fie_5_1&quot;,
+        &quot;https://example.org/name/fie_1_1&quot;
+      ],
+      &quot;type&quot;: &quot;Period&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_2_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_1_1&quot;,
+      &quot;identifier_assigned_by&quot;: [
+        &quot;https://example.org/event/fie_3_1&quot;
+      ],
+      &quot;type&quot;: &quot;Identifier&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_17_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/aat/300404670&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_5_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_2_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_11_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;preferred terms&quot;,
+      &quot;id&quot;: &quot;http://vocab.getty.edu/aat/300404670&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_11_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_10_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/actor/fie_3_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://example.org/actor/fie_3_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/fie_3_1&quot;,
+      &quot;type&quot;: &quot;IdentifierAssignment&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="period-existence">Period <strong>Existence</strong></h2>
+<p>The assigned timespan of a historical period.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_50</td>
+<td>Period Earliest Possible Date</td>
+<td>This field is used to record the earliest possible end date for the documented <em>Period</em>.</td>
+<td>Date</td>
+<td>--&gt; P4 --&gt; E52[48_1] --&gt; P81b --&gt; xsd:dateTime</td>
+</tr>
+<tr>
+<td>fie_51</td>
+<td>Period Latest Possible Date</td>
+<td>This field is used to record the latest possible end date for the documented <em>Period</em>.</td>
+<td>Date</td>
+<td>--&gt; P4 --&gt; E52[48_1] --&gt; P82b --&gt; xsd:dateTime</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-period-existence-ontology-graph">- Period Existence <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/ex_period.png" /></p>
+<h3 id="-period-existence-rdf">- Period Existence <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+&lt;https://census.de/example/event/E4&gt; a crm:E4_Period ;
+    crm:P4_has_time-span &lt;https://example.org/time_span/fie_48_1&gt; .
+
+&lt;https://example.org/time_span/fie_48_1&gt; a crm:E52_Time-Span ;
+    crm:P81b_begin_of_the_end &quot;&quot;^^xsd:dateTime ;
+    crm:P82b_end_of_the_end &quot;&quot;^^xsd:dateTime .
+
+
+
+</code></pre>
+<h3 id="-period-existence-json-ld">- Period Existence <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://census.de/example/event/E4&quot;,
+      &quot;timespan&quot;: &quot;https://example.org/time_span/fie_48_1&quot;,
+      &quot;type&quot;: &quot;Period&quot;
+    },
+    {
+      &quot;begin_of_the_end&quot;: &quot;&quot;,
+      &quot;end_of_the_end&quot;: &quot;&quot;,
+      &quot;id&quot;: &quot;https://example.org/time_span/fie_48_1&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    }
+  ]
+}
+
+</code></pre>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../image/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../image/" class="btn btn-xs btn-link">
+        Image
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../location/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../location/" class="btn btn-xs btn-link">
+        Location
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

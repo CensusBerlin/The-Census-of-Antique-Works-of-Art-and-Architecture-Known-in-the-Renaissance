@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="canonical" href="https://takinsolutions.github.io/censusdocumentation/group/">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Group - Census Data Model Documentation</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Group Names and Classifications", url: "#_top", children: [
+              {title: "- Group Names and Classifications Ontology Graph", url: "#-group-names-and-classifications-ontology-graph" },
+              {title: "- Group Names and Classifications RDF", url: "#-group-names-and-classifications-rdf" },
+              {title: "- Group Names and Classifications JSON-LD", url: "#-group-names-and-classifications-json-ld" },
+          ]},
+          {title: "Group Existence", url: "#group-existence", children: [
+              {title: "- Group Existence Ontology Graph", url: "#-group-existence-ontology-graph" },
+              {title: "- Group Existence RDF", url: "#-group-existence-rdf" },
+              {title: "- Group Social Relations JSON-LD", url: "#-group-social-relations-json-ld" },
+          ]},
+          {title: "Group Description", url: "#group-description", children: [
+              {title: "- Group Description Ontology Graph", url: "#-group-description-ontology-graph" },
+              {title: "- Group Description RDF", url: "#-group-description-rdf" },
+              {title: "- Group Description JSON-LD", url: "#-group-description-json-ld" },
+          ]},
+          {title: "Group Documentation", url: "#group-documentation", children: [
+              {title: "- Group Documentation Ontology Graph", url: "#-group-documentation-ontology-graph" },
+              {title: "- Group Documentation RDF", url: "#-group-documentation-rdf" },
+              {title: "- Group Documentation JSON-LD", url: "#-group-documentation-json-ld" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../bibliography/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../bibliography/" class="btn btn-xs btn-link">
+        Bibliographic Entity
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../person/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../person/" class="btn btn-xs btn-link">
+        Person
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><strong>Group</strong></p>
+<p><strong>Author:</strong> Denitsa Nenova, George Bruseker</p>
+<p><strong>Version:</strong> 1.0</p>
+<p>The <em>Group</em> reference data model provides a list of standard descriptors (fields) that are typically present in the description of a <em>Group</em> or institution in cultural heritage data systems. The intention of this reference model is to provide a consolidated, high-level formal structure comprising the most commonly reused descriptors for a <em>Group</em>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+<th>URI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root Ontology Node</td>
+<td>E74 Group</td>
+<td>https://cidoc-crm.org/Entity/E74-Group/version-7.1.1</td>
+</tr>
+<tr>
+<td>Type Differentiator</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Group</em> model allows the documentation of the following kinds of information:</p>
+<table>
+<thead>
+<tr>
+<th>Information Category</th>
+<th>Information Collections</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Names and Classifications</td>
+<td>Names/Alternative Names/Identifiers/Type</td>
+<td>The researcher can document various names and classification regarding the <em>Group</em>.</td>
+</tr>
+<tr>
+<td>Existence</td>
+<td>Birth/Death</td>
+<td>The researcher can document the events related to the birth and death of the <em>Group</em>.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Description</td>
+<td>The researcher can document various free-text descriptions of the <em>Group</em>.</td>
+</tr>
+<tr>
+<td>Documentation</td>
+<td>Citation</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="group-names-and-classifications">Group <strong>Names and Classifications</strong></h2>
+<p>The attribution of names and types to things, including <em>Groups</em>, is a basic human activity. The disambiguation of <em>Group</em> is aided by the understanding of the various names and identifiers that have been given to a <em>Group</em> at different moments in time. Moreover, classifications such as <em>Group</em> type and legal status can help in identifying and studying <em>Groups</em> over time.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_1</td>
+<td>Group Identifier</td>
+<td>This field is used to record an identifier attributed to the documented <em>Group</em>.</td>
+<td>String</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P190 --&gt; rdfs:Literal</td>
+</tr>
+<tr>
+<td>fie_2</td>
+<td>Group Identifier Type</td>
+<td>This field is used to record the type of the identifier attributed to the documented <em>Group</em>.</td>
+<td>Concept</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P2 --&gt; E55[2_1]</td>
+</tr>
+<tr>
+<td>fie_3</td>
+<td>Group Identifier Provider</td>
+<td>This field is used to record the institution, group or individual responsible for providing the documented <em>Group</em>'s identifier.</td>
+<td>Reference Model  [Person/Group]</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P37i --&gt; E15[3_1] --&gt; P14 --&gt; E39[3_2]</td>
+</tr>
+<tr>
+<td>fie_4</td>
+<td>Group Identifier Source</td>
+<td>This field is used to record the source based on which the identifier was attributed to the documented <em>Group</em>.</td>
+<td>Reference Model [Bibliographic Entity/Image]</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P37i --&gt; E15[3_1] --&gt; P16 --&gt; E73[4_1]</td>
+</tr>
+<tr>
+<td>fie_5</td>
+<td>Group Name</td>
+<td>This field is used to record the main name attributed to the documented <em>Group</em>.</td>
+<td>String</td>
+<td>--&gt; P1 --&gt; E33_E41[5_1] --&gt; P190 --&gt; rdfs:Literal<br><br> --&gt; P1 --&gt; E33_E41[5_1] --&gt; P2 --&gt; E55[5_2]{'preferred terms'}</td>
+</tr>
+<tr>
+<td>fie_10</td>
+<td>Group Alias</td>
+<td>This field is used to record an alternative name under which the documented <em>Group</em> is known.</td>
+<td>String</td>
+<td>--&gt; P1 --&gt; E33_E41[10_1]  --&gt; P190 --&gt; rdfs:Literal</td>
+</tr>
+<tr>
+<td>fie_11</td>
+<td>Group Alias Type</td>
+<td>This field is used to record the type of the alternative name that has been attributed to the documented <em>Group</em>.</td>
+<td>Concept</td>
+<td>--&gt; P1 --&gt; E33_E41[10_1] --&gt; P2 --&gt; E55[11_1]</td>
+</tr>
+<tr>
+<td>fie_16</td>
+<td>Group Alias Source</td>
+<td>This field is used to record the source on the basis of which the organization attributing the alternative name use based their attribution.</td>
+<td>Reference Model [Bibliographic Entity/Image]</td>
+<td>--&gt; P1 --&gt; E33_E41[10_1] --&gt; P141i --&gt; E13[15_1] --&gt; P16 --&gt; E73[16_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-group-names-and-classifications-ontology-graph">- Group Names and Classifications <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/nc_group.png" /></p>
+<h3 id="-group-names-and-classifications-rdf">- Group Names and Classifications <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://census.de/example/actor/E74&gt; a crm:E74_Group ;
+    crm:P1_is_identified_by &lt;https://example.org/name/fie_10_1&gt;,
+        &lt;https://example.org/name/fie_1_1&gt;,
+        &lt;https://example.org/name/fie_5_1&gt; .
+
+&lt;http://vocab.getty.edu/aat/300404670&gt; a crm:E55_Type ;
+    rdfs:label &quot;preferred terms&quot; .
+
+&lt;https://example.org/actor/fie_3_2&gt; a crm:E39_Actor .
+
+&lt;https://example.org/conceptual_object/fie_16_1&gt; a crm:E73_Information_Object .
+
+&lt;https://example.org/conceptual_object/fie_4_1&gt; a crm:E73_Information_Object .
+
+&lt;https://example.org/event/fie_15_1&gt; a crm:E13_Attribute_Assignment ;
+    crm:P16_used_specific_object &lt;https://example.org/conceptual_object/fie_16_1&gt; .
+
+&lt;https://example.org/event/fie_3_1&gt; a crm:E15_Identifier_Assignment ;
+    crm:P14_carried_out_by &lt;https://example.org/actor/fie_3_2&gt; ;
+    crm:P16_used_specific_object &lt;https://example.org/conceptual_object/fie_4_1&gt; .
+
+&lt;https://example.org/name/fie_10_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P141i_was_assigned_by &lt;https://example.org/event/fie_15_1&gt; ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_11_1&gt; .
+
+&lt;https://example.org/name/fie_1_1&gt; a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_2_1&gt; ;
+    crm:P37i_was_assigned_by &lt;https://example.org/event/fie_3_1&gt; .
+
+&lt;https://example.org/name/fie_5_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/aat/300404670&gt; .
+
+&lt;https://example.org/type/fie_11_1&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/fie_2_1&gt; a crm:E55_Type .
+
+
+</code></pre>
+<h3 id="-group-names-and-classifications-json-ld">- Group Names and Classifications <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_2_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_1_1&quot;,
+      &quot;identifier_assigned_by&quot;: [
+        &quot;https://example.org/event/fie_3_1&quot;
+      ],
+      &quot;type&quot;: &quot;Identifier&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_16_1&quot;,
+      &quot;type&quot;: &quot;InformationObject&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/aat/300404670&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_5_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_4_1&quot;,
+      &quot;type&quot;: &quot;InformationObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_2_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_11_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;preferred terms&quot;,
+      &quot;id&quot;: &quot;http://vocab.getty.edu/aat/300404670&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;assigned_by&quot;: [
+        &quot;https://example.org/event/fie_15_1&quot;
+      ],
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_11_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_10_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://census.de/example/actor/E74&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://example.org/name/fie_10_1&quot;,
+        &quot;https://example.org/name/fie_1_1&quot;,
+        &quot;https://example.org/name/fie_5_1&quot;
+      ],
+      &quot;type&quot;: &quot;Group&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/event/fie_15_1&quot;,
+      &quot;type&quot;: &quot;AttributeAssignment&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://example.org/conceptual_object/fie_16_1&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/actor/fie_3_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://example.org/actor/fie_3_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/fie_3_1&quot;,
+      &quot;type&quot;: &quot;IdentifierAssignment&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://example.org/conceptual_object/fie_4_1&quot;
+      ]
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="group-existence">Group <strong>Existence</strong></h2>
+<p>Of essential importance in identifying and tracking <em>Groups</em> is to know when they came into existence and if they have gone out of existence. For this reason, we have clustered descriptors relevant to such information into a common ‘existence’ category. These are described in the table below.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_79</td>
+<td>Group Earliest Formation Date</td>
+<td>This field is used to record the earliest possible date for the formation of the documented <em>Group</em> or institution.</td>
+<td>Date</td>
+<td>--&gt; P95i --&gt; E66[79_1] --&gt; P4 --&gt; E52[79_2] --&gt; P82a --&gt; xsd:dateTime</td>
+</tr>
+<tr>
+<td>fie_80</td>
+<td>Group Latest Formation Date</td>
+<td>This field is used to record the latest possible date for the formation of the documented <em>Group</em> or institution.</td>
+<td>Date</td>
+<td>--&gt; P95i --&gt; E66[79_1] --&gt; P4 --&gt; E52[79_2] --&gt; P82b --&gt; xsd:dateTime</td>
+</tr>
+<tr>
+<td>fie_81</td>
+<td>Group Formation Location</td>
+<td>This field is used to record the place of formation of the documented <em>Group</em> or institution.</td>
+<td>Reference Model [Location]</td>
+<td>--&gt; P95i --&gt; E66[79_1] --&gt; P7 --&gt; E53[81_1]</td>
+</tr>
+<tr>
+<td>fie_83</td>
+<td>Group Earliest Dissolution Date</td>
+<td>This field is used to record the earliest possible date for the dissolution of the documented <em>Group</em> or institution.</td>
+<td>Date</td>
+<td>--&gt; P99i --&gt; E68[83_1] --&gt; P4 --&gt; E52[83_2] --&gt; P82a --&gt; xsd:dateTime</td>
+</tr>
+<tr>
+<td>fie_84</td>
+<td>Group Latest Dissolution Date</td>
+<td>This field is used to record the latest possible date for the dissolution of the documented <em>Group</em> or institution.</td>
+<td>Date</td>
+<td>--&gt; P99i --&gt; E68[83_1] --&gt; P4 --&gt; E52[83_2] --&gt; P82b --&gt; xsd:dateTime</td>
+</tr>
+<tr>
+<td>fie_85</td>
+<td>Group Dissolution Location</td>
+<td>This field is used to record the place at which the dissolution of the documented <em>Group</em> occurred.</td>
+<td>Reference Model [Location]</td>
+<td>--&gt; P99i --&gt; E68[83_1] --&gt; P7 --&gt; E53[85_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-group-existence-ontology-graph">- Group Existence <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/ex_group.png" /></p>
+<h3 id="-group-existence-rdf">- Group Existence <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+&lt;https://census.de/example/actor/E74&gt; a crm:E74_Group ;
+    crm:P95i_was_formed_by &lt;https://example.org/event/fie_79_1&gt; ;
+    crm:P99i_was_dissolved_by &lt;https://example.org/event/fie_83_1&gt; .
+
+&lt;https://example.org/event/fie_79_1&gt; a crm:E66_Formation ;
+    crm:P4_has_time-span &lt;https://example.org/time_span/fie_79_2&gt; ;
+    crm:P7_took_place_at &lt;https://example.org/place/fie_81_1&gt; .
+
+&lt;https://example.org/event/fie_83_1&gt; a crm:E68_Dissolution ;
+    crm:P4_has_time-span &lt;https://example.org/time_span/fie_83_2&gt; ;
+    crm:P7_took_place_at &lt;https://example.org/place/fie_85_1&gt; .
+
+&lt;https://example.org/place/fie_81_1&gt; a crm:E53_Place .
+
+&lt;https://example.org/place/fie_85_1&gt; a crm:E53_Place .
+
+&lt;https://example.org/time_span/fie_79_2&gt; a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin &quot;&quot;^^xsd:dateTime ;
+    crm:P82b_end_of_the_end &quot;&quot;^^xsd:dateTime .
+
+&lt;https://example.org/time_span/fie_83_2&gt; a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin &quot;&quot;^^xsd:dateTime ;
+    crm:P82b_end_of_the_end &quot;&quot;^^xsd:dateTime .
+
+
+
+</code></pre>
+<h3 id="-group-social-relations-json-ld">- Group Social Relations <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;begin_of_the_begin&quot;: &quot;&quot;,
+      &quot;end_of_the_end&quot;: &quot;&quot;,
+      &quot;id&quot;: &quot;https://example.org/time_span/fie_83_2&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/place/fie_81_1&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/place/fie_85_1&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/event/fie_83_1&quot;,
+      &quot;timespan&quot;: &quot;https://example.org/time_span/fie_83_2&quot;,
+      &quot;took_place_at&quot;: [
+        &quot;https://example.org/place/fie_85_1&quot;
+      ],
+      &quot;type&quot;: &quot;Dissolution&quot;
+    },
+    {
+      &quot;dissolved_by&quot;: &quot;https://example.org/event/fie_83_1&quot;,
+      &quot;formed_by&quot;: &quot;https://example.org/event/fie_79_1&quot;,
+      &quot;id&quot;: &quot;https://census.de/example/actor/E74&quot;,
+      &quot;type&quot;: &quot;Group&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/event/fie_79_1&quot;,
+      &quot;timespan&quot;: &quot;https://example.org/time_span/fie_79_2&quot;,
+      &quot;took_place_at&quot;: [
+        &quot;https://example.org/place/fie_81_1&quot;
+      ],
+      &quot;type&quot;: &quot;Formation&quot;
+    },
+    {
+      &quot;begin_of_the_begin&quot;: &quot;&quot;,
+      &quot;end_of_the_end&quot;: &quot;&quot;,
+      &quot;id&quot;: &quot;https://example.org/time_span/fie_79_2&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="group-description">Group <strong>Description</strong></h2>
+<p>This category brings together the diverse field which describe the documented <em>Group</em>. It is meant to cover information concerning the type, language content of the description as well as temporal information about the description itself.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_188</td>
+<td>Group Description</td>
+<td>This field is used to record a description in free text of the documented <em>Group</em>.</td>
+<td>String</td>
+<td>--&gt; P129i --&gt; E33[188_1] --&gt; P190 --&gt; rdfs:Literal</td>
+</tr>
+<tr>
+<td>fie_190</td>
+<td>Group Description Type</td>
+<td>This field is used to record the type of description given of the documented <em>Group</em>.</td>
+<td>Concept</td>
+<td>--&gt; P129i --&gt; E33[188_1] --&gt; P2 --&gt; E55[190_1]</td>
+</tr>
+<tr>
+<td>fie_191</td>
+<td>Group Description Author</td>
+<td>This field is used to record the author of the description given of the documented <em>Group</em>.</td>
+<td>Reference Model [Person/Group]</td>
+<td>--&gt; P129i --&gt; E33[188_1] --&gt; P94i --&gt; E65[191_1]&gt;-P14 --&gt; E39[191_2]</td>
+</tr>
+<tr>
+<td>fie_192</td>
+<td>Group Description Earliest Date</td>
+<td>This field is used to record the earliest possible date for the creation of the description of the documented <em>Group</em>.</td>
+<td>Date</td>
+<td>--&gt; P129i --&gt; E33[188_1] --&gt; P94i --&gt; E65[191_1] --&gt; P4 --&gt; E52[191_2] --&gt; P82a --&gt; xsd:dateTime</td>
+</tr>
+<tr>
+<td>fie_193</td>
+<td>Group Description Latest Date</td>
+<td>This field is used to record the latest possible date for the creation of the description of the documented <em>Group</em>.</td>
+<td>Date</td>
+<td>--&gt; P129i --&gt; E33[188_1] --&gt; P94i --&gt; E65[191_1] --&gt; P4 --&gt; E52[191_2] --&gt; P82b —&gt; xsd:dateTime</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-group-description-ontology-graph">- Group Description <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/desc_group.png" /></p>
+<h3 id="-group-description-rdf">- Group Description <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://census.de/example/actor/E74&gt; a crm:E74_Group ;
+    crm:P129i_is_subject_of &lt;https://example.org/conceptual_object/fie_188_1&gt; .
+
+&lt;https://example.org/actor/fie_191_2&gt; a crm:E39_Actor .
+
+&lt;https://example.org/conceptual_object/fie_188_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_190_1&gt; ;
+    crm:P94i_was_created_by &lt;https://example.org/event/fie_191_1&gt; .
+
+&lt;https://example.org/event/fie_191_1&gt; a crm:E65_Creation ;
+    crm:P14_carried_out_by &lt;https://example.org/actor/fie_191_2&gt; ;
+    crm:P4_has_time-span &lt;https://example.org/time_span/fie_192_1&gt; .
+
+&lt;https://example.org/time_span/fie_192_1&gt; a crm:E52_Time-span ;
+    crm:P81a_begin_of_the_begin &quot;content&quot; ;
+    crm:P81b_end_of_the_end &quot;content&quot; .
+
+&lt;https://example.org/type/fie_190_1&gt; a crm:E55_Type .
+
+
+
+
+</code></pre>
+<h3 id="-group-description-json-ld">- Group Description <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://example.org/actor/fie_191_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/fie_191_1&quot;,
+      &quot;timespan&quot;: &quot;https://example.org/time_span/fie_192_1&quot;,
+      &quot;type&quot;: &quot;Creation&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/actor/fie_191_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_190_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_190_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;created_by&quot;: &quot;https://example.org/event/fie_191_1&quot;,
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_188_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://census.de/example/actor/E74&quot;,
+      &quot;subject_of&quot;: [
+        &quot;https://example.org/conceptual_object/fie_188_1&quot;
+      ],
+      &quot;type&quot;: &quot;Group&quot;
+    },
+    {
+      &quot;crm:P81a_begin_of_the_begin&quot;: &quot;content&quot;,
+      &quot;crm:P81b_end_of_the_end&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/time_span/fie_192_1&quot;,
+      &quot;type&quot;: &quot;crm:E52_Time-span&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="group-documentation">Group <strong>Documentation</strong></h2>
+<p>This information category unites referential information about the documented <em>Group</em>.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_204</td>
+<td>Group Description External URL</td>
+<td>The field is used to record the sameness between the <em>Group</em> described and an external authority.</td>
+<td>uri</td>
+<td>--&gt; L54 --&gt; E1[204_1]</td>
+</tr>
+<tr>
+<td>fie_195</td>
+<td>Group Image</td>
+<td>This field is used to record a digital image which is representative of the documented <em>Group</em>.</td>
+<td>Reference Model [Image]</td>
+<td>--&gt; P138i --&gt; E36/D9[195_1]</td>
+</tr>
+<tr>
+<td>fie_196</td>
+<td>Group Citation</td>
+<td>This field is used to record a citation to reference documentation for the documented <em>Group</em>.</td>
+<td>String</td>
+<td>--&gt; P129i --&gt; E33[196_1] --&gt; rdf:value --&gt; rdfs:Literal<br><br>--&gt; P129i --&gt; E33[196_1] --&gt; P2 --&gt; E55 "Citation"</td>
+</tr>
+<tr>
+<td>fie_197</td>
+<td>Group Citation Source</td>
+<td>This field is used to record the source used for generating the citation for the documented <em>Group</em>.</td>
+<td>Reference Model  [Bibliographic Entity]</td>
+<td>--&gt; P129i --&gt; E33[196_1] --&gt; P106i --&gt; E33[197_1]</td>
+</tr>
+<tr>
+<td>fie_cen_24</td>
+<td>Group Document Reference</td>
+<td>This field is used to relate a document carrying a textual reference about the documented group and the documented <em>Group</em> itself.</td>
+<td>Reference Model</td>
+<td>[Document]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-group-documentation-ontology-graph">- Group Documentation <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/doc_group.png" /></p>
+<h3 id="-group-documentation-rdf">- Group Documentation <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://census.de/example/actor/E74&gt; a crm:E74_Group ;
+    crm:L54_is_same-as &lt;https://example.org/entity/fie_204_1&gt; ;
+    crm:P129i_is_subject_of &lt;https://example.org/conceptual_object/fie_196_1&gt; ;
+    crm:P138i_has_representation &lt;https://example.org/conceptual_object/fie_195_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://example.org/conceptual_object/C24_1&gt; .
+
+&lt;https://example.org/conceptual_object/C24_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P128i_is_carried_by &lt;https://example.org/physical_object/C24_2&gt; .
+
+&lt;https://example.org/conceptual_object/fie_195_1&gt; a crm:D9_Data_Object,
+        crm:E36_Visual_Item .
+
+&lt;https://example.org/conceptual_object/fie_196_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P106i_forms_part_of &lt;https://example.org/conceptual_object/fie_197_1&gt; ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_196_1&gt; .
+
+&lt;https://example.org/conceptual_object/fie_197_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://example.org/entity/fie_204_1&gt; a crm:E1_CRM_Entity .
+
+&lt;https://example.org/physical_object/C24_2&gt; a crm:E22_Human-Made_Object .
+
+&lt;https://example.org/type/fie_196_1&gt; a crm:E55_Type ;
+    rdfs:label &quot;Citation&quot; .
+
+</code></pre>
+<h3 id="-group-documentation-json-ld">- Group Documentation <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_197_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_195_1&quot;,
+      &quot;type&quot;: [
+        &quot;VisualItem&quot;,
+        &quot;crm:D9_Data_Object&quot;
+      ]
+    },
+    {
+      &quot;_label&quot;: &quot;Citation&quot;,
+      &quot;id&quot;: &quot;https://example.org/type/fie_196_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;carried_by&quot;: [
+        &quot;https://example.org/physical_object/C24_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/C24_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/physical_object/C24_2&quot;,
+      &quot;type&quot;: &quot;HumanMadeObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/entity/fie_204_1&quot;,
+      &quot;type&quot;: &quot;CRMEntity&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_196_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;crm:P106i_forms_part_of&quot;: {
+        &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_197_1&quot;
+      },
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_196_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;crm:L54_is_same-as&quot;: {
+        &quot;id&quot;: &quot;https://example.org/entity/fie_204_1&quot;
+      },
+      &quot;id&quot;: &quot;https://census.de/example/actor/E74&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://example.org/conceptual_object/C24_1&quot;
+      ],
+      &quot;representation&quot;: [
+        &quot;https://example.org/conceptual_object/fie_195_1&quot;
+      ],
+      &quot;subject_of&quot;: [
+        &quot;https://example.org/conceptual_object/fie_196_1&quot;
+      ],
+      &quot;type&quot;: &quot;Group&quot;
+    }
+  ]
+}
+
+</code></pre>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../bibliography/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../bibliography/" class="btn btn-xs btn-link">
+        Bibliographic Entity
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../person/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../person/" class="btn btn-xs btn-link">
+        Person
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="canonical" href="https://takinsolutions.github.io/censusdocumentation/person/">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Person - Census Data Model Documentation</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Person Names and Classifications", url: "#_top", children: [
+              {title: "- Person Names and Classifications Ontology Graph", url: "#-person-names-and-classifications-ontology-graph" },
+              {title: "- Person Names and Classifications RDF", url: "#-person-names-and-classifications-rdf" },
+              {title: "- Person Names and Classifications JSON-LD", url: "#-person-names-and-classifications-json-ld" },
+          ]},
+          {title: "Person Social Relations", url: "#person-social-relations", children: [
+              {title: "- Person Social Relations Ontology Graph", url: "#-person-social-relations-ontology-graph" },
+              {title: "- Person Social Relations RDF", url: "#-person-social-relations-rdf" },
+              {title: "- Person Social Relations JSON-LD", url: "#-person-social-relations-json-ld" },
+          ]},
+          {title: "Person Existence", url: "#person-existence", children: [
+              {title: "- Person Existence Ontology Graph", url: "#-person-existence-ontology-graph" },
+              {title: "- Person Existence RDF", url: "#-person-existence-rdf" },
+              {title: "- Person Social Relations JSON-LD", url: "#-person-social-relations-json-ld_1" },
+          ]},
+          {title: "Person Description", url: "#person-description", children: [
+              {title: "- Person Description Ontology Graph", url: "#-person-description-ontology-graph" },
+              {title: "- Person Description RDF", url: "#-person-description-rdf" },
+              {title: "- Person Description JSON-LD", url: "#-person-description-json-ld" },
+          ]},
+          {title: "Person Documentation", url: "#person-documentation", children: [
+              {title: "- Person Documentation Ontology Graph", url: "#-person-documentation-ontology-graph" },
+              {title: "- Person Documentation RDF", url: "#-person-documentation-rdf" },
+              {title: "- Person Documentation JSON-LD", url: "#-person-documentation-json-ld" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../group/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../group/" class="btn btn-xs btn-link">
+        Group
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../document/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../document/" class="btn btn-xs btn-link">
+        Document
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><strong>Person</strong></p>
+<p><strong>Author:</strong> Denitsa Nenova, George Bruseker</p>
+<p><strong>Version:</strong> 1.0</p>
+<p>The <em>Person</em> model is intended to enable the representation and sharing of data relevant to real-world, physical persons. Typical instances of <em>Person</em> are historical personages involved in the initial creation of <em>Monuments</em>, or in the witnessing of, response to, or interaction with <em>Monuments</em> as authors of <em>Documents</em>. The <em>Person</em> model, however, covers all real persons, and therefore also includes instances of researchers involved in the contemporary study of <em>Monuments</em> or <em>Documents</em>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+<th>URI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root Ontology Node</td>
+<td>E21 Person</td>
+<td>https://cidoc-crm.org/Entity/E21-Person/version-7.1.1</td>
+</tr>
+<tr>
+<td>Type Differentiator</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p>The person model allows the documentation of the following kinds of information:</p>
+<table>
+<thead>
+<tr>
+<th>Information Category</th>
+<th>Information Collections</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Names and Classifications</td>
+<td>Names/Alternative Names/Identifiers/Type</td>
+<td>The researcher can document various names and classification regarding the <em>Person</em>.</td>
+</tr>
+<tr>
+<td>Existence</td>
+<td>Birth/Death</td>
+<td>The researcher can document the events related to the birth and death of the <em>Person</em>.</td>
+</tr>
+<tr>
+<td>Parthood</td>
+<td>Group Membership</td>
+<td>The researcher can document the membership of the <em>Person</em> in a group.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Description</td>
+<td>The researcher can document various free-text descriptions of the <em>Person</em>.</td>
+</tr>
+<tr>
+<td>Documentation</td>
+<td>Citation/Image/External URI</td>
+<td>The researcher can document citations relative to the <em>Person</em>, link to images of the <em>Person</em> and document external URIs of documentation for the same <em>Person</em>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="person-names-and-classifications">Person <strong>Names and Classifications</strong></h2>
+<p>The attribution of names and types to <em>Persons</em> is a basic human activity. A chief factor in disambiguating which <em>Person</em> is referred to in historical texts is understanding the various names and identifiers that have been given to an individual at different moments. Likewise, additional classifiers of the individual (such as gender) help in the disambiguation, in an information system, of the reference to one real-world individual from another.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_1</td>
+<td>Person Identifier</td>
+<td>This field is used to record an identifier attributed to the documented <em>Person</em>.</td>
+<td>String</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P190 --&gt; rdfs:Literal</td>
+</tr>
+<tr>
+<td>fie_2</td>
+<td>Person Identifier Type</td>
+<td>This field is used to record the type of the identifier attributed to the documented <em>Person</em>.</td>
+<td>Concept</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P2 --&gt; E55[2_1]</td>
+</tr>
+<tr>
+<td>fie_3</td>
+<td>Person Identifier Provider</td>
+<td>This field is used to record the institution, group or individual responsible for providing the documented <em>Person</em>'s identifier.</td>
+<td>Reference Model [Person/Group]</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P37i --&gt; E15[3_1] --&gt; P14 --&gt; E39[3_2]</td>
+</tr>
+<tr>
+<td>fie_4</td>
+<td>Person Identifier Source</td>
+<td>This field is used to record the source based on which the identifier was attributed to the documented <em>Person</em>.</td>
+<td>Reference Model [Bibliographic Entity/Image]</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P37i --&gt; E15[3_1] --&gt; P16 --&gt; E73[4_1]</td>
+</tr>
+<tr>
+<td>fie_5</td>
+<td>Person Name</td>
+<td>This field is used to record the main name attributed to the documented <em>Person</em>.</td>
+<td>String</td>
+<td>--&gt; P1 --&gt; E33_E41[5_1] --&gt; P190 --&gt; rdfs:Literal<br><br> --&gt; P1 --&gt; E33_E41[5_1] --&gt; P2 --&gt; E55[5_2]{'preferred terms'}</td>
+</tr>
+<tr>
+<td>fie_10</td>
+<td>Person Alias</td>
+<td>This field is used to record an alternative  name under which the documented <em>Person</em> is known.</td>
+<td>String</td>
+<td>--&gt; P1 --&gt; E33_E41[10_1]  --&gt; P190 --&gt; rdfs:Literal</td>
+</tr>
+<tr>
+<td>fie_11</td>
+<td>Person Alias Type</td>
+<td>This field is used to record the type of the alternative name that has been attributed to the documented <em>Person</em>.</td>
+<td>Concept</td>
+<td>--&gt; P1 --&gt; E33_E41[10_1] --&gt; P2 --&gt; E55[11_1]</td>
+</tr>
+<tr>
+<td>fie_16</td>
+<td>Person Alias Source</td>
+<td>This field is used to record the source on the basis of which the organization attributing the alternative name use based their attribution.</td>
+<td>Reference Model [Bibliographic Entity/Image]</td>
+<td>--&gt; P1 --&gt; E33_E41[10_1] --&gt; P141i --&gt; E13[15_1] --&gt; P16 --&gt; E73[16_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-person-names-and-classifications-ontology-graph">- Person Names and Classifications <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/nc_person.png" /></p>
+<h3 id="-person-names-and-classifications-rdf">- Person Names and Classifications <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://census.de/example/actor/E21&gt; a crm:E21_Person ;
+    crm:P1_is_identified_by &lt;https://example.org/name/fie_10_1&gt;,
+        &lt;https://example.org/name/fie_1_1&gt;,
+        &lt;https://example.org/name/fie_5_1&gt; .
+
+&lt;http://vocab.getty.edu/aat/300404670&gt; a crm:E55_Type ;
+    rdfs:label &quot;preferred terms&quot; .
+
+&lt;https://example.org/actor/fie_3_2&gt; a crm:E39_Actor .
+
+&lt;https://example.org/conceptual_object/fie_16_1&gt; a crm:E73_Information_Object .
+
+&lt;https://example.org/conceptual_object/fie_4_1&gt; a crm:E73_Information_Object .
+
+&lt;https://example.org/event/fie_15_1&gt; a crm:E13_Attribute_Assignment ;
+    crm:P16_used_specific_object &lt;https://example.org/conceptual_object/fie_16_1&gt; .
+
+&lt;https://example.org/event/fie_3_1&gt; a crm:E15_Identifier_Assignment ;
+    crm:P14_carried_out_by &lt;https://example.org/actor/fie_3_2&gt; ;
+    crm:P16_used_specific_object &lt;https://example.org/conceptual_object/fie_4_1&gt; .
+
+&lt;https://example.org/name/fie_10_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P141i_was_assigned_by &lt;https://example.org/event/fie_15_1&gt; ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_11_1&gt; .
+
+&lt;https://example.org/name/fie_1_1&gt; a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_2_1&gt; ;
+    crm:P37i_was_assigned_by &lt;https://example.org/event/fie_3_1&gt; .
+
+&lt;https://example.org/name/fie_5_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/aat/300404670&gt; .
+
+&lt;https://example.org/type/fie_11_1&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/fie_2_1&gt; a crm:E55_Type .
+
+</code></pre>
+<h3 id="-person-names-and-classifications-json-ld">- Person Names and Classifications <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/aat/300404670&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_5_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_2_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_1_1&quot;,
+      &quot;identifier_assigned_by&quot;: [
+        &quot;https://example.org/event/fie_3_1&quot;
+      ],
+      &quot;type&quot;: &quot;Identifier&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_4_1&quot;,
+      &quot;type&quot;: &quot;InformationObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/actor/fie_3_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;assigned_by&quot;: [
+        &quot;https://example.org/event/fie_15_1&quot;
+      ],
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_11_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_10_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;preferred terms&quot;,
+      &quot;id&quot;: &quot;http://vocab.getty.edu/aat/300404670&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://example.org/actor/fie_3_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/fie_3_1&quot;,
+      &quot;type&quot;: &quot;IdentifierAssignment&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://example.org/conceptual_object/fie_4_1&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;https://census.de/example/actor/E21&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://example.org/name/fie_10_1&quot;,
+        &quot;https://example.org/name/fie_1_1&quot;,
+        &quot;https://example.org/name/fie_5_1&quot;
+      ],
+      &quot;type&quot;: &quot;Person&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_16_1&quot;,
+      &quot;type&quot;: &quot;InformationObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_11_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_2_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/event/fie_15_1&quot;,
+      &quot;type&quot;: &quot;AttributeAssignment&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://example.org/conceptual_object/fie_16_1&quot;
+      ]
+    }
+  ]
+}
+</code></pre>
+<h2 id="person-social-relations">Person <strong>Social Relations</strong></h2>
+<p>A large area of documentation and potential disambiguation around the person relates to social relations, whether they are familial, interpersonal or institutional. The social relations information category brings together descriptors for these relations into a larger group, covering relations starting from the maternal, moving to the most general membership in national and cultural blocks and different interpersonal connections.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_34</td>
+<td>Person Group Membership</td>
+<td>This field is used to record the institution or group to which the documented individual belonged as member.</td>
+<td>Reference Model [Bibliographic Entity/Image]</td>
+<td>--&gt; P107i --&gt; E74[34_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-person-social-relations-ontology-graph">- Person Social Relations <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/part_person.png" /></p>
+<h3 id="-person-social-relations-rdf">- Person Social Relations <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://census.de/example/actor/E21&gt; a crm:E21_Person ;
+    crm:P107i_is_current_or_former_member_of &lt;https://example.org/actor/fie_34_1&gt; .
+
+&lt;https://example.org/actor/fie_34_1&gt; a crm:E74_Group .
+
+</code></pre>
+<h3 id="-person-social-relations-json-ld">- Person Social Relations <strong>JSON-LD</strong></h3>
+<pre><code>
+{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;crm:P107i_is_current_or_former_member_of&quot;: {
+        &quot;id&quot;: &quot;https://example.org/actor/fie_34_1&quot;
+      },
+      &quot;id&quot;: &quot;https://census.de/example/actor/E21&quot;,
+      &quot;type&quot;: &quot;Person&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/actor/fie_34_1&quot;,
+      &quot;type&quot;: &quot;Group&quot;
+    }
+  ]
+}
+</code></pre>
+<h2 id="person-existence">Person <strong>Existence</strong></h2>
+<p>Of essential importance in identifying and tracking individuals is also their biographical information, such as their birth and death. For this reason, we have clustered descriptors relevant to such information into a common ‘existence’ category. These are described in the table below.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_73</td>
+<td>Person Earliest Birth Date</td>
+<td>This field is used to record the earliest possible date for the birth of the documented <em>Person</em>.</td>
+<td>Date</td>
+<td>--&gt; P98i --&gt; E67[73_1] --&gt; P4 --&gt; E52[73_2] --&gt; P82a --&gt; xsd:dateTime</td>
+</tr>
+<tr>
+<td>fie_74</td>
+<td>Person Latest Birth Date</td>
+<td>This field is used to record the latest possible date for the birth of the documented <em>Person</em>.</td>
+<td>Date</td>
+<td>--&gt; P98i --&gt; E67[73_1] --&gt; P4 --&gt; E52[73_2] --&gt; P82b --&gt; xsd:dateTime</td>
+</tr>
+<tr>
+<td>fie_cen_63</td>
+<td>Person Birth Period</td>
+<td>This field is used to record the period during which the birth of the documented <em>Person</em> occured.</td>
+<td>Reference Model [Period]</td>
+<td>--&gt; P98i --&gt; E67[73_1] --&gt; P4 --&gt; E52[73_2] --&gt; P10 --&gt; E4[C63_1]</td>
+</tr>
+<tr>
+<td>fie_75</td>
+<td>Person Birth Place</td>
+<td>This field is used to record the place of birth of the documented <em>Person</em>.</td>
+<td>Reference Model [Location]</td>
+<td>--&gt; P98i --&gt; E67[73_1] --&gt; P7 --&gt; E53[75_1]</td>
+</tr>
+<tr>
+<td>fie_cen_64</td>
+<td>Person Birth Timespan Statement</td>
+<td>This field is used to record a general statement about the timespan when the birth of the documented <em>Person</em> occured.</td>
+<td>String</td>
+<td>--&gt; P98i --&gt; E67[73_1] --&gt; P4 --&gt; E52[73_2] --&gt; P67i --&gt; E33[C64_1] --&gt; P190 --&gt; rdfs:literal</td>
+</tr>
+<tr>
+<td>fie_155</td>
+<td>Person's Mother</td>
+<td>This field is used to record the biological mother of the documented <em>Person</em>.</td>
+<td>Reference Model  [Person]</td>
+<td>--&gt; P98i --&gt; E67[73_1] --&gt; P96 --&gt; E21[155_1]</td>
+</tr>
+<tr>
+<td>fie_76</td>
+<td>Person Earliest Death Date</td>
+<td>This field is used to record the earliest possible date for the death of the documented <em>Person</em>.</td>
+<td>Date</td>
+<td>--&gt; P100i --&gt; E69[76_1] --&gt; P4 --&gt; E52[76_2] --&gt; P82a --&gt; xsd:dateTime</td>
+</tr>
+<tr>
+<td>fie_154</td>
+<td>Person's Father</td>
+<td>This field is used to record the biological father of the documented <em>Person</em>.</td>
+<td>Reference Model [Person]</td>
+<td>--&gt; P98i --&gt; E67[11] --&gt; P97 --&gt; E21</td>
+</tr>
+<tr>
+<td>fie_77</td>
+<td>Person Latest Birth Date</td>
+<td>This field is used to record the latest possible date for the death of the documented <em>Person</em>.</td>
+<td>Date</td>
+<td>--&gt; P100i --&gt; E69[76_1] --&gt; P4 --&gt; E52[76_2] --&gt; P82b --&gt; xsd:dateTime</td>
+</tr>
+<tr>
+<td>fie_cen_65</td>
+<td>Person Death Period</td>
+<td>This field is used to record the period during which the death of the documented <em>Person</em> occured.</td>
+<td>Reference Model [Period]</td>
+<td>--&gt; P100i --&gt; E69[76_1] --&gt; P4 --&gt; E52[76_2] --&gt; P10 --&gt; E4[C65_1]</td>
+</tr>
+<tr>
+<td>fie_78</td>
+<td>Person Death Place</td>
+<td>This field is used to record the place of death of the documented <em>Person</em>.</td>
+<td>Reference Model [Location]</td>
+<td>--&gt; P100i --&gt; E69[76_1] --&gt; P7 --&gt; E53[78_1]</td>
+</tr>
+<tr>
+<td>fie_cen_67</td>
+<td>Actor involved in Person's Death</td>
+<td>This field is used to record an actor related to the death event of a <em>Person</em>.</td>
+<td>Reference Model [Person/Group]</td>
+<td>--&gt; P100i --&gt; E69_E7[76_1]  --&gt; P14 --&gt; E39[C67_1]</td>
+</tr>
+<tr>
+<td>fie_cen_93</td>
+<td>Role of Actor involved in <em>Person</em>'s Death</td>
+<td>This field is used to record the specific role an actor played in the death event of another <em>Person</em>.</td>
+<td>Concept</td>
+<td>--&gt; P100i --&gt; E69_E7[76_1]  --&gt; P14 --&gt; E39[C67_1] --&gt; P01 --&gt; PC14[C93_1] --&gt; P14.1 --&gt; E55[C93_2]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-person-existence-ontology-graph">- Person Existence <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/ex_person.png" /></p>
+<h3 id="-person-existence-rdf">- Person Existence <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+&lt;https://census.de/example/actor/E21&gt; a crm:E21_Person ;
+    crm:P100i_died_in &lt;https://example.org/event/fie_76_1&gt; ;
+    crm:P98i_was_born &lt;https://example.org/event/fie_73_1&gt; .
+
+&lt;https://example.org/actor/C67_1&gt; a crm:E39_Actor ;
+    crm:P01i_is_domain_of &lt;https://example.org/property/C93_1&gt; .
+
+&lt;https://example.org/actor/fie_154_1&gt; a crm:E21_Person .
+
+&lt;https://example.org/actor/fie_155_1&gt; a crm:E21_Person .
+
+&lt;https://example.org/conceptual_object/C64_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P190_has_symbolic_content &quot;birth timespan verbatim&quot; .
+
+&lt;https://example.org/event/fie_73_1&gt; a crm:E67_Birth ;
+    crm:P4_has_time-span &lt;https://example.org/time_span/fie_73_2&gt; ;
+    crm:P7_took_place_at &lt;https://example.org/place/fie_75_1&gt; ;
+    crm:P97_by_motherr &lt;https://example.org/actor/fie_155_1&gt; ;
+    crm:P97_from_father &lt;https://example.org/actor/fie_154_1&gt; .
+
+&lt;https://example.org/event/fie_76_1&gt; a crm:E69_Death,
+        crm:E7_Activity ;
+    crm:P14_carried_out_by &lt;https://example.org/actor/C67_1&gt; ;
+    crm:P4_has_time-span &lt;https://example.org/time_span/fie_76_2&gt; ;
+    crm:P7_took_place_at &lt;https://example.org/place/fie_78_1&gt; .
+
+&lt;https://example.org/period/C63_1&gt; a crm:E4_Period .
+
+&lt;https://example.org/period/C65_1&gt; a crm:E4_Period .
+
+&lt;https://example.org/place/fie_75_1&gt; a crm:E53_Place .
+
+&lt;https://example.org/place/fie_78_1&gt; a crm:E53_Place .
+
+&lt;https://example.org/property/C93_1&gt; a crm:PC14_carried_out_by ;
+    crm:P14.1_in_the_role_of &lt;https://example.org/type/C93_2&gt; .
+
+&lt;https://example.org/time_span/fie_73_2&gt; a crm:E52_Time-Span ;
+    crm:P10_falls_within &lt;https://example.org/period/C63_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://example.org/conceptual_object/C64_1&gt; ;
+    crm:P82a_begin_of_the_begin &quot;&quot;^^xsd:dateTime ;
+    crm:P82b_end_of_the_end &quot;&quot;^^xsd:dateTime .
+
+&lt;https://example.org/time_span/fie_76_2&gt; a crm:E52_Time-Span ;
+    crm:P10_falls_within &lt;https://example.org/period/C65_1&gt; ;
+    crm:P82a_begin_of_the_begin &quot;&quot;^^xsd:dateTime ;
+    crm:P82b_end_of_the_end &quot;&quot;^^xsd:dateTime .
+
+&lt;https://example.org/type/C93_2&gt; a crm:E55_Type .
+
+
+
+
+</code></pre>
+<h3 id="-person-social-relations-json-ld_1">- Person Social Relations <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;crm:P01i_is_domain_of&quot;: {
+        &quot;id&quot;: &quot;https://example.org/property/C93_1&quot;
+      },
+      &quot;id&quot;: &quot;https://example.org/actor/C67_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;begin_of_the_begin&quot;: &quot;&quot;,
+      &quot;end_of_the_end&quot;: &quot;&quot;,
+      &quot;falls_within&quot;: [
+        &quot;https://example.org/period/C65_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/time_span/fie_76_2&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    },
+    {
+      &quot;content&quot;: &quot;birth timespan verbatim&quot;,
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/C64_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/C93_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;crm:P97_by_motherr&quot;: {
+        &quot;id&quot;: &quot;https://example.org/actor/fie_155_1&quot;
+      },
+      &quot;from_father&quot;: [
+        &quot;https://example.org/actor/fie_154_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/fie_73_1&quot;,
+      &quot;timespan&quot;: &quot;https://example.org/time_span/fie_73_2&quot;,
+      &quot;took_place_at&quot;: [
+        &quot;https://example.org/place/fie_75_1&quot;
+      ],
+      &quot;type&quot;: &quot;Birth&quot;
+    },
+    {
+      &quot;crm:P14.1_in_the_role_of&quot;: {
+        &quot;id&quot;: &quot;https://example.org/type/C93_2&quot;
+      },
+      &quot;id&quot;: &quot;https://example.org/property/C93_1&quot;,
+      &quot;type&quot;: &quot;crm:PC14_carried_out_by&quot;
+    },
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://example.org/actor/C67_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/fie_76_1&quot;,
+      &quot;timespan&quot;: &quot;https://example.org/time_span/fie_76_2&quot;,
+      &quot;took_place_at&quot;: [
+        &quot;https://example.org/place/fie_78_1&quot;
+      ],
+      &quot;type&quot;: [
+        &quot;Activity&quot;,
+        &quot;Death&quot;
+      ]
+    },
+    {
+      &quot;born&quot;: &quot;https://example.org/event/fie_73_1&quot;,
+      &quot;died&quot;: &quot;https://example.org/event/fie_76_1&quot;,
+      &quot;id&quot;: &quot;https://census.de/example/actor/E21&quot;,
+      &quot;type&quot;: &quot;Person&quot;
+    },
+    {
+      &quot;begin_of_the_begin&quot;: &quot;&quot;,
+      &quot;end_of_the_end&quot;: &quot;&quot;,
+      &quot;falls_within&quot;: [
+        &quot;https://example.org/period/C63_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/time_span/fie_73_2&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://example.org/conceptual_object/C64_1&quot;
+      ],
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/actor/fie_154_1&quot;,
+      &quot;type&quot;: &quot;Person&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/period/C63_1&quot;,
+      &quot;type&quot;: &quot;Period&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/period/C65_1&quot;,
+      &quot;type&quot;: &quot;Period&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/actor/fie_155_1&quot;,
+      &quot;type&quot;: &quot;Person&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/place/fie_75_1&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/place/fie_78_1&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    }
+  ]
+}
+</code></pre>
+<h2 id="person-description">Person <strong>Description</strong></h2>
+<p>This category brings together the diverse field which describe the documented <em>Person</em>. It is meant to cover information concerning the type, language content of the description as well as temporal information about the description itself.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_188</td>
+<td>Person Description</td>
+<td>This field is used to record a description in free text of the documented <em>Person</em>.</td>
+<td>String</td>
+<td>--&gt; P129i --&gt; E33[188_1] --&gt; P190 --&gt; rdfs:Literal</td>
+</tr>
+<tr>
+<td>fie_190</td>
+<td>Person Description Type</td>
+<td>This field is used to record the type of description given of the documented <em>Person</em>.</td>
+<td>Concept</td>
+<td>--&gt; P129i --&gt; E33[188_1] --&gt; P2 --&gt; E55[190_1]</td>
+</tr>
+<tr>
+<td>fie_191</td>
+<td>Person Description Author</td>
+<td>This field is used to record the author of the description given of the documented <em>Person</em>.</td>
+<td>Reference Model [Person/Group]</td>
+<td>--&gt; P129i --&gt; E33[188_1] --&gt; P94i --&gt; E65[191_1]&gt;-P14 --&gt; E39[191_2]</td>
+</tr>
+<tr>
+<td>fie_192</td>
+<td>Person Description Earliest Date</td>
+<td>This field is used to record the earliest possible date for the creation of the description of the documented <em>Person</em>.</td>
+<td>Date</td>
+<td>--&gt; P129i --&gt; E33[188_1] --&gt; P94i --&gt; E65[191_1] --&gt; P4 --&gt; E52[191_2] --&gt; P82a --&gt; xsd:dateTime</td>
+</tr>
+<tr>
+<td>fie_193</td>
+<td>Person Description Latest Date</td>
+<td>This field is used to record the latest possible date for the creation of the description of the documented <em>Person</em>.</td>
+<td>Date</td>
+<td>--&gt; P129i --&gt; E33[188_1] --&gt; P94i --&gt; E65[191_1] --&gt; P4 --&gt; E52[191_2] --&gt; P82b —&gt; xsd:dateTime</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-person-description-ontology-graph">- Person Description <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/desc_person.png" /></p>
+<h3 id="-person-description-rdf">- Person Description <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://census.de/example/actor/E21&gt; a crm:E21_Person ;
+    crm:P129i_is_subject_of &lt;https://example.org/conceptual_object/fie_188_1&gt; .
+
+&lt;https://example.org/actor/fie_191_2&gt; a crm:E39_Actor .
+
+&lt;https://example.org/conceptual_object/fie_188_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_190_1&gt; ;
+    crm:P94i_was_created_by &lt;https://example.org/event/fie_191_1&gt; .
+
+&lt;https://example.org/event/fie_191_1&gt; a crm:E65_Creation ;
+    crm:P14_carried_out_by &lt;https://example.org/actor/fie_191_2&gt; ;
+    crm:P4_has_time-span &lt;https://example.org/time_span/fie_192_1&gt; .
+
+&lt;https://example.org/time_span/fie_192_1&gt; a crm:E52_Time-span ;
+    crm:P81a_begin_of_the_begin &quot;content&quot; ;
+    crm:P81b_end_of_the_end &quot;content&quot; .
+
+&lt;https://example.org/type/fie_190_1&gt; a crm:E55_Type .
+
+
+
+</code></pre>
+<h3 id="-person-description-json-ld">- Person Description <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://example.org/actor/fie_191_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_190_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;created_by&quot;: &quot;https://example.org/event/fie_191_1&quot;,
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_188_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://census.de/example/actor/E21&quot;,
+      &quot;subject_of&quot;: [
+        &quot;https://example.org/conceptual_object/fie_188_1&quot;
+      ],
+      &quot;type&quot;: &quot;Person&quot;
+    },
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://example.org/actor/fie_191_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/fie_191_1&quot;,
+      &quot;timespan&quot;: &quot;https://example.org/time_span/fie_192_1&quot;,
+      &quot;type&quot;: &quot;Creation&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_190_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;crm:P81a_begin_of_the_begin&quot;: &quot;content&quot;,
+      &quot;crm:P81b_end_of_the_end&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/time_span/fie_192_1&quot;,
+      &quot;type&quot;: &quot;crm:E52_Time-span&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="person-documentation">Person <strong>Documentation</strong></h2>
+<p>This information category unites referential information about the documented <em>Person</em>, providing contextual data about him or her.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_204</td>
+<td>Person External URL</td>
+<td>The field is used to record the sameness between the <em>Person</em> described and an external authority.</td>
+<td>uri</td>
+<td>--&gt; L54 --&gt; E1[204_1]</td>
+</tr>
+<tr>
+<td>fie_195</td>
+<td>Person Image</td>
+<td>This field is used to record a digital image which is representative of the documented <em>Person</em>.</td>
+<td>Reference Model [Image]</td>
+<td>--&gt; P138i --&gt; E36/D9[195_1]</td>
+</tr>
+<tr>
+<td>fie_196</td>
+<td>Person Citation</td>
+<td>This field is used to record a citation to reference documentation for the documented <em>Person</em>.</td>
+<td>String</td>
+<td>--&gt; P129i --&gt; E33[196_1] --&gt; rdf:value --&gt; rdfs:Literal<br><br>--&gt; P129i --&gt; E33[196_1] --&gt; P2 --&gt; E55 "Citation"</td>
+</tr>
+<tr>
+<td>fie_197</td>
+<td>Person Citation Reference</td>
+<td>This field is used to record the source used for generating the citation for the documented <em>Person</em>.</td>
+<td>Reference Model [Bibliographic Entity]</td>
+<td>--&gt; P129i --&gt; E33[196_1] --&gt; P106i --&gt; E33[197_1]</td>
+</tr>
+<tr>
+<td>fie_cen_24</td>
+<td>Person Document Reference</td>
+<td>This field is used to relate a document carrying a textual refernce about the documented <em>Person</em> and the documented person itself.</td>
+<td>Reference Model [Document]</td>
+<td>--&gt; P67i --&gt; E33[C24_1] --&gt; P128i --&gt; E22[C24_2]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-person-documentation-ontology-graph">- Person Documentation <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/doc_person.png" /></p>
+<h3 id="-person-documentation-rdf">- Person Documentation <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://census.de/example/actor/E21&gt; a crm:E21_Person ;
+    crm:L54_is_same-as &lt;https://example.org/entity/fie_204_1&gt; ;
+    crm:P129i_is_subject_of &lt;https://example.org/conceptual_object/fie_196_1&gt; ;
+    crm:P138i_has_representation &lt;https://example.org/conceptual_object/fie_195_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://example.org/conceptual_object/C24_1&gt; .
+
+&lt;https://example.org/conceptual_object/C24_1&gt; a crm:E33_Lingusitic_Object ;
+    crm:P128i_is_carried_by &lt;https://example.org/physical_object/C24_2&gt; .
+
+&lt;https://example.org/conceptual_object/fie_195_1&gt; a crm:D9_Data_Object,
+        crm:E36_Visual_Item .
+
+&lt;https://example.org/conceptual_object/fie_196_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P106i_forms_part_of &lt;https://example.org/conceptual_object/fie_197_1&gt; ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_196_1&gt; .
+
+&lt;https://example.org/conceptual_object/fie_197_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://example.org/entity/fie_204_1&gt; a crm:E1_CRM_Entity .
+
+&lt;https://example.org/physical_object/C24_2&gt; a crm:E22_Human-Made_Object .
+
+&lt;https://example.org/type/fie_196_1&gt; a crm:E55_Type ;
+    rdfs:label &quot;Citation&quot; .
+
+
+
+</code></pre>
+<h3 id="-person-documentation-json-ld">- Person Documentation <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://example.org/physical_object/C24_2&quot;,
+      &quot;type&quot;: &quot;HumanMadeObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/entity/fie_204_1&quot;,
+      &quot;type&quot;: &quot;CRMEntity&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_197_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;Citation&quot;,
+      &quot;id&quot;: &quot;https://example.org/type/fie_196_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_195_1&quot;,
+      &quot;type&quot;: [
+        &quot;crm:D9_Data_Object&quot;,
+        &quot;VisualItem&quot;
+      ]
+    },
+    {
+      &quot;crm:L54_is_same-as&quot;: {
+        &quot;id&quot;: &quot;https://example.org/entity/fie_204_1&quot;
+      },
+      &quot;id&quot;: &quot;https://census.de/example/actor/E21&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://example.org/conceptual_object/C24_1&quot;
+      ],
+      &quot;representation&quot;: [
+        &quot;https://example.org/conceptual_object/fie_195_1&quot;
+      ],
+      &quot;subject_of&quot;: [
+        &quot;https://example.org/conceptual_object/fie_196_1&quot;
+      ],
+      &quot;type&quot;: &quot;Person&quot;
+    },
+    {
+      &quot;carried_by&quot;: [
+        &quot;https://example.org/physical_object/C24_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/C24_1&quot;,
+      &quot;type&quot;: &quot;crm:E33_Lingusitic_Object&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_196_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;crm:P106i_forms_part_of&quot;: {
+        &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_197_1&quot;
+      },
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_196_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    }
+  ]
+}
+
+</code></pre>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../group/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../group/" class="btn btn-xs btn-link">
+        Group
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../document/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../document/" class="btn btn-xs btn-link">
+        Document
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

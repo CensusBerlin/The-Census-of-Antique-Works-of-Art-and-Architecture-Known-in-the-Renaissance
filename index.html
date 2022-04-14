@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="None">
+    
+    <link rel="canonical" href="https://takinsolutions.github.io/censusdocumentation/">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Census Data Model Documentation</title>
+    <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="./css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap-3.3.7.min.js"></script>
+    <script src="./js/highlight.pack.js"></script>
+    
+      <script src="./js/elasticlunr.min.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '.';
+      var is_top_frame = (window === window.parent);
+        
+        var pageToc = [
+          {title: "Introduction", url: "#_top", children: [
+              {title: "1) The Census Data Model", url: "#1-the-census-data-model" },
+              {title: "2) The CIDOC CRM", url: "#2-the-cidoc-crm" },
+              {title: "3) The SARI Reference Data Models", url: "#3-the-sari-reference-data-models" },
+          ]},
+          {title: "Methodology", url: "#methodology", children: [
+          ]},
+          {title: "Contents of CSDM", url: "#contents-of-csdm", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="./js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+<nav class="navbar wm-page-top-frame">
+  <div class="container-fluid wm-top-container">
+    
+    <div class="wm-top-tool pull-right wm-vcenter">
+      <form class="dropdown wm-vcentered" id="wm-search-form" action="./search.html">
+        
+        <button id="wm-search-show" class="btn btn-sm btn-default" type="submit"
+          ><i class="fa fa-search" aria-hidden="true"></i></button>
+
+        <div class="input-group input-group-sm wm-top-search">
+          <input type="text" name="q" class="form-control" id="mkdocs-search-query" placeholder="Search" autocomplete="off">
+          <span class="input-group-btn" role="search">
+            
+            <button class="btn btn-default dropdown-toggle collapse" data-toggle="dropdown" type="button"><span class="caret"></span></button>
+            <ul id="mkdocs-search-results" class="dropdown-menu dropdown-menu-right"></ul>
+            <button id="wm-search-go" class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </span>
+        </div>
+      </form>
+    </div>
+
+    
+    <div class="wm-top-tool wm-vcenter pull-right wm-small-left">
+      <button id="wm-toc-button" type="button" class="btn btn-sm btn-default wm-vcentered"><i class="fa fa-th-list" aria-hidden="true"></i></button>
+    </div>
+
+    
+    
+
+    
+    <a href="" class="wm-top-brand wm-top-link wm-vcenter">
+      
+      <div class="wm-top-title">
+        Census Data Model Documentation<br>
+        
+      </div>
+    </a>
+  </div>
+</nav>
+
+  <div id="main-content" class="wm-page-top-frame">
+    
+<nav class="wm-toc-pane">
+  
+  <ul class="wm-toctree">
+        <li class="wm-toc-li wm-toc-lev1 "><a href="" class="wm-article-link wm-toc-text">Data Model</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="monument/" class="wm-article-link wm-toc-text">Monument</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="document/" class="wm-article-link wm-toc-text">Document</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="person/" class="wm-article-link wm-toc-text">Person</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="group/" class="wm-article-link wm-toc-text">Group</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="bibliography/" class="wm-article-link wm-toc-text">Bibliographic Entity</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="location/" class="wm-article-link wm-toc-text">Location</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="period/" class="wm-article-link wm-toc-text">Period</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="image/" class="wm-article-link wm-toc-text">Image</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="collections/" class="wm-article-link wm-toc-text">Collections</a>
+</li>
+  </ul>
+</nav>
+
+    <div class="wm-content-pane">
+      <iframe class="wm-article" name="article"></iframe>
+    </div>
+  </div>
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="monument/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="monument/" class="btn btn-xs btn-link">
+        Monument
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="introduction">Introduction</h1>
+<p>The <a href="http://census.de/csdm">Census Semantic Data Models</a> (CSDM) represent a coherent set of semantically-encoded data models for the use of art historians in the (re-)representation of art historical data related to the history of monuments, the documents that respond to or bear witness to them, the people or places that relate to these objects of study through historical events, and the images and bibliography which reference them. </p>
+<p>The CSDM has been built from three major sources:</p>
+<h2 id="1-the-census-data-model">1) The Census Data Model</h2>
+<p>The immediate scope and representational direction of the CSDM has been guided by the original data and data model of <a href="https://www.census.de">The Census of Antique Works of Art and Architecture Known in the Renaissance</a> (Institut für Kunst- und Bildgeschichte, Humboldt-Universität zu Berlin). The Census project - which began in 1946, developed over decades as a system of index cards and photographs, and was first computerised in the early 1980s - provides a time-tested foundation from which to build a set of semantic data models of use to art historical research. The Census was created in the 1940s with the goal of replacing what was then a vague notion of “classical influence” in the Renaissance with a specific knowledge of which antique monuments were known in the Renaissance, in which setting, and in which condition. Over its more than seventy-five-year history the Census has traced Renaissance artists’ and humanists’ response to antiquities, and has had at its core the documentation of events which connect artists and authors with particular antique monuments. The Census dataset has become a tool useful for archaeologists who are interested, for example, the condition and state of preservation of antiquities in the Renaissance and for historians and art historians concerned with the creative reception of antiquities during the Renaissance period. </p>
+<p>It is a core objective of the CSDM to provide a new representation of the Census data that enables its faithful re-representation in a semantic format, allowing for researchers to query it according to a common logic.</p>
+<h2 id="2-the-cidoc-crm">2) The CIDOC CRM</h2>
+<p>The <a href="http://cidoc-crm.org">CIDOC CRM (CIDOC Conceptual Reference Model)</a> offers itself as an appropriate framework, as a formal ontology which allows for the representation of Cultural Heritage data in general in a common form. The CRM is an event-based model whose form enables the rich representation and connection of data from heterogeneous data models into a common system. The passage to Linked Open Data is richest when this data is represented in a common format that is well documented and openly accessible to a wider community of scholars. The CRM enables precisely this transition. The event-centred modelling strategy of the ontology, furthermore, is highly compatible with the existing abstract data model of the Census, making the choice of this ontology the most appropriate.</p>
+<h2 id="3-the-sari-reference-data-models">3) The SARI Reference Data Models</h2>
+<p>While the CRM provides a general language and framework for the semantic representation of cultural heritage data, it explicitly refrains from specifying how it should be implemented in any particular context, leaving the standard open to adoption and evolution according to new needs and requirements. At the same time, the CRM enables the creation of a common set of well-understood methods for representing data that can be read and adopted both by end users of the data (researchers) and by those who create and support the systems which allow access to the data (developers).</p>
+<p><a href="https://www.sari.uzh.ch/">SARI (Swiss Art Research Infrastructure, Universität Zürich)</a> is an infrastructure which has adopted the CIDOC CRM in order to enable widely-interoperable cultural heritage (CH) data about art history, <em>inter alia</em>. To support this strategy, using the CIDOC CRM they have invested in and developed the <a href="https://docs.swissartresearch.net/">SRDM (Semantic Reference Data Models)</a>, a set of well-documented, fundamental semantic modelling patterns suited to research on the visual arts. They have created the SRDM to represent basic targets of cultural heritage documentation and to provide well-documented patterns that can be adopted in representing entities as well as the typical information collected in relation to them. The CSDM thus takes up the CIDOC CRM though the SRDM modelling, adopting its basic patterns and representation in order to follow existing best practice and to join and add to a growing community of like-minded users wishing to share semantic data.</p>
+<p>The immediate use of CSDM documentation is to act as an explicit documentation and specification of the semantic data structures used to represent the Census data as Linked Open Data. Users of this documentation can refer to this paper as a guide to the overall semantic modelling decisions that were taken during this project, as well as a detailed description of each model that was created and the information that it enables the researcher to encode or query. </p>
+<p>The broader purpose of this documentation is both to empower researchers to query the existing Census data that has been represented semantically and to enable the possibility of integrating this data by using and/or extending the CSDM. The Census data is offered in a semantic format as LOD in order to open Census data to a broader uptake by scholars and, moreover, to expand the data in unforeseen ways that extend beyond the scope of corpus-building projects such as the Census. </p>
+<h1 id="methodology">Methodology</h1>
+<p>Reuse of SRDM, create a subset, any additions documented with their own notation in a compatible format.</p>
+<h1 id="contents-of-csdm">Contents of CSDM</h1>
+<p>The CSDM is, then, a series of semantic data models, which follows the SRDM patterns and enables the documentation of key objects (monuments, documents) and supporting data regarding people, places and bibliography. It enables a rich representation and querying of this data by its use of the CIDOC CRM, which joins the models through a robust documentation of events connecting the various entities.</p>
+<p>The Corpus of CSDM includes:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>CRM Entity</th>
+<th>SARI Equivalent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monument</td>
+<td>This model is intended to enable the representation and sharing of data relevant to artistic, architectural and historical artefacts extant in the past or present. In the Census, <em>Monuments</em> are antique inscriptions, coins, paintings, sculptures, architectural monuments and other ancient artefacts and works of art. In some cases, <em>Monuments</em> can also be works of art and architecture which are not antique, but were believed in the Renaissance to be antique.</td>
+<td>E22 Human Made Object</td>
+<td>Builtwork</td>
+</tr>
+<tr>
+<td>Document</td>
+<td>This model is intended to enable the representation and sharing of data relevant to physical items, which carry content that provides evidence of a historical witnessing of, response to or reference to a particular <em>Monument</em>. In the Census, this category can include drawings, prints, paintings, medals, and statuettes, or written documents such as printed guidebooks, manuscripts, letters and inventories.</td>
+<td>E22 Human Made Object</td>
+<td>Archival Item</td>
+</tr>
+<tr>
+<td>Person</td>
+<td>This model is intended to enable the representation and sharing of data relevant to real-world, physical persons.</td>
+<td>E21 Person</td>
+<td>Person</td>
+</tr>
+<tr>
+<td>Location</td>
+<td>This model is intended to enable the representation and sharing of data relevant to geographic places used to identify the locations of items and events over time.</td>
+<td>E53 Place</td>
+<td>Place</td>
+</tr>
+<tr>
+<td>Bibliography</td>
+<td>This model is intended to enable the representation and sharing of data relevant to bibliographic sources that have been used in the course of researching and documenting.</td>
+<td>E33 Linguistic Object</td>
+<td>Bibliographic Entity</td>
+</tr>
+<tr>
+<td>Image</td>
+<td>This model is intended to enable the representation and sharing of data relevant to images representing objects within the field of research.</td>
+<td>E36 Visual Item</td>
+<td>Image</td>
+</tr>
+<tr>
+<td>Period</td>
+<td>This model is intended to enable the documentation and correct referencing of historical periods for use in datation.</td>
+<td>E4 Period</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p>Each of these models supports a separate unit of documentation adopted in the Census. An instance of such a model stands for one real-world entity that is documented by that instance. The models exist in relation, joining on key relations in order to create a web of supporting interrelations that represent the real-world historical trajectory of objects through time and space, and map specific instances of the reception of antique monuments by post-classical observers. While event-centric modelling is used, the events are recorded within the context of the objects to which they relate (e.g.: birth relative to the individual, production relative to the monument/document). For the purpose of documentation, this allows separate objects to be documented in separate models. Within the context of an open graph network of facts, the event nodes can be used to traverse a complex historical graph of observations of and responses to antique objects through time.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="monument/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="monument/" class="btn btn-xs btn-link">
+        Monument
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
+<!--
+MkDocs version : 1.2.3
+Build Date UTC : 2022-04-13 16:43:24.976726+00:00
+-->

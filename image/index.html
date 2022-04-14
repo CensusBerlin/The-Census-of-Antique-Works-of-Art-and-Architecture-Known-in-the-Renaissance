@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="canonical" href="https://takinsolutions.github.io/censusdocumentation/image/">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Image - Census Data Model Documentation</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Image Names and Classifications", url: "#_top", children: [
+              {title: "- Image Names and Classifications Ontology Graph", url: "#-image-names-and-classifications-ontology-graph" },
+              {title: "- Image Names and Classifications RDF", url: "#-image-names-and-classifications-rdf" },
+              {title: "- Image Names and Classifications JSON-LD", url: "#-image-names-and-classifications-json-ld" },
+          ]},
+          {title: "Image Description", url: "#image-description", children: [
+              {title: "- Image Description Ontology Graph", url: "#-image-description-ontology-graph" },
+              {title: "- Image Description RDF", url: "#-image-description-rdf" },
+              {title: "- Image Description JSON-LD", url: "#-image-description-json-ld" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../collections/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../collections/" class="btn btn-xs btn-link">
+        Collections
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../period/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../period/" class="btn btn-xs btn-link">
+        Period
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><strong>Image</strong></p>
+<p><strong>Author:</strong> Denitsa Nenova, George Bruseker</p>
+<p><strong>Version:</strong> 1.0</p>
+<p>The <em>Image</em> model is intended to enable the representation and sharing of data relevant to images representing objects within the field of research.  Typical instances of the <em>Image</em> model are images representing monuments or documents that are the primary objects of scholarly discourse. <em>Image</em> is used primarily as a reference model.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+<th>URI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root Ontology Node</td>
+<td>E36 Visual Item</td>
+<td>https://cidoc-crm.org/Entity/E36-Visual-Item/version-7.1.1</td>
+</tr>
+<tr>
+<td>Type Differentiator</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Image</em> model allows the documentation of the following kinds of information:</p>
+<table>
+<thead>
+<tr>
+<th>Information Category</th>
+<th>Information Collections</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Names and Classifications</td>
+<td>Names/Alternative Names/Identifiers/Type</td>
+<td>The researcher can document various names and classification regarding the <em>Image</em>.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Description</td>
+<td>The researcher can document various free text descriptions of the <em>Image</em>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="image-names-and-classifications">Image <strong>Names and Classifications</strong></h2>
+<p>The attribution of names and types to an <em>Image</em>, as with other entities, is a basic human activity. A chief factor in disambiguating <em>Images</em> lies in understanding the various names and identifiers that have been given to them at different moments in their individual histories. Likewise, additional classifiers of the <em>Image</em>, such as how it has been formally classified, give important distinguishing characteristics.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_1</td>
+<td>Image Identifier</td>
+<td>This field is used to record an identifier attributed to the documented <em>Image</em>.</td>
+<td>String</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P190 --&gt; rdfs:Literal</td>
+</tr>
+<tr>
+<td>fie_2</td>
+<td>Image Identifier Type</td>
+<td>This field is used to record the type of the identifier attributed to the documented <em>Image</em>.</td>
+<td>Concept</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P2 --&gt; E55[2_1]</td>
+</tr>
+<tr>
+<td>fie_3</td>
+<td>Image Identifier Provider</td>
+<td>This field is used to record the institution, group or individual responsible for providing the documented <em>Image</em>'s identifier.</td>
+<td>Reference Model [Person/Group]</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P37i --&gt; E15[3_1] --&gt; P14 --&gt; E39[3_2]</td>
+</tr>
+<tr>
+<td>fie_5</td>
+<td>Image Name</td>
+<td>This field is used to record the main name attributed to the documented <em>Image</em>.</td>
+<td>String</td>
+<td>--&gt; P1 --&gt; E33_E41[5_1] --&gt; P190 --&gt; rdfs:Literal<br><br> --&gt; P1 --&gt; E33_E41[5_1] --&gt; P2 --&gt; E55[5_2]{'preferred terms'}</td>
+</tr>
+<tr>
+<td>fie_10</td>
+<td>Image Alias</td>
+<td>This field is used to record an alternative name under which the documented <em>Image</em> is known.</td>
+<td>String</td>
+<td>--&gt; P1 --&gt; E33_E41[10_1]  --&gt; P190 --&gt; rdfs:Literal</td>
+</tr>
+<tr>
+<td>fie_11</td>
+<td>Image Alias Type</td>
+<td>This field is used to record the type of the alternative name that has been attributed to the documented <em>Image</em>.</td>
+<td>Concept</td>
+<td>--&gt; P1 --&gt; E33_E41[10_1] --&gt; P2 --&gt; E55[11_1]</td>
+</tr>
+<tr>
+<td>fie_17</td>
+<td>Image Type</td>
+<td>This field is used to record the formal type of the documented <em>Image</em>.</td>
+<td>Concept</td>
+<td>--&gt; P2 --&gt; E55[17_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-image-names-and-classifications-ontology-graph">- Image Names and Classifications <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/nc_image.png" /></p>
+<h3 id="-image-names-and-classifications-rdf">- Image Names and Classifications <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://census.de/example/conceptual_object/E36&gt; a crm:E36_Visual_Item ;
+    crm:P1_is_identified_by &lt;https://example.org/name/fie_10_1&gt;,
+        &lt;https://example.org/name/fie_1_1&gt;,
+        &lt;https://example.org/name/fie_5_1&gt; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_17_1&gt; .
+
+&lt;http://vocab.getty.edu/aat/300404670&gt; a crm:E55_Type ;
+    rdfs:label &quot;preferred terms&quot; .
+
+&lt;https://example.org/actor/fie_3_2&gt; a crm:E39_Actor .
+
+&lt;https://example.org/event/fie_3_1&gt; a crm:E15_Identifier_Assignment ;
+    crm:P14_carried_out_by &lt;https://example.org/actor/fie_3_2&gt; .
+
+&lt;https://example.org/name/fie_10_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_11_1&gt; .
+
+&lt;https://example.org/name/fie_1_1&gt; a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_2_1&gt; ;
+    crm:P37i_was_assigned_by &lt;https://example.org/event/fie_3_1&gt; .
+
+&lt;https://example.org/name/fie_5_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/aat/300404670&gt; .
+
+&lt;https://example.org/type/fie_11_1&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/fie_17_1&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/fie_2_1&gt; a crm:E55_Type .
+
+
+
+</code></pre>
+<h3 id="-image-names-and-classifications-json-ld">- Image Names and Classifications <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_2_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_1_1&quot;,
+      &quot;identifier_assigned_by&quot;: [
+        &quot;https://example.org/event/fie_3_1&quot;
+      ],
+      &quot;type&quot;: &quot;Identifier&quot;
+    },
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://example.org/actor/fie_3_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/fie_3_1&quot;,
+      &quot;type&quot;: &quot;IdentifierAssignment&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/aat/300404670&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_5_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_2_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_11_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;preferred terms&quot;,
+      &quot;id&quot;: &quot;http://vocab.getty.edu/aat/300404670&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_11_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_10_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/actor/fie_3_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_17_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://census.de/example/conceptual_object/E36&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://example.org/name/fie_10_1&quot;,
+        &quot;https://example.org/name/fie_5_1&quot;,
+        &quot;https://example.org/name/fie_1_1&quot;
+      ],
+      &quot;type&quot;: &quot;VisualItem&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_17_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="image-description">Image <strong>Description</strong></h2>
+<p><em>Images</em> are the subjects of innumerable descriptions that provide a wide range of information with regards to the aesthetic and historical importance of the work, inter alia. Such descriptions are of use in a scholarly understanding of an <em>Image</em> only if we are able to track the provenance of such elocutions in a systematic fashion. Such an aim drives the need for the tracking of description information as a separate category. The descriptor necessary to this task are documented in the table below.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_188</td>
+<td>Image Description</td>
+<td>This field is used to record a description in free text of the documented <em>Image</em>.</td>
+<td>String</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="-image-description-ontology-graph">- Image Description <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="../img/desc_image.png" /></p>
+<h3 id="-image-description-rdf">- Image Description <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://census.de/example/conceptual_object/E36&gt; a crm:E36_Visual_Item ;
+    crm:P129i_is_subject_of &lt;https://example.org/conceptual_object/fie_188_1&gt; .
+
+&lt;https://example.org/conceptual_object/fie_188_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P190_has_symbolic_content &quot;content&quot; .
+
+
+</code></pre>
+<h3 id="-image-description-json-ld">- Image Description <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_188_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://census.de/example/conceptual_object/E36&quot;,
+      &quot;subject_of&quot;: [
+        &quot;https://example.org/conceptual_object/fie_188_1&quot;
+      ],
+      &quot;type&quot;: &quot;VisualItem&quot;
+    }
+  ]
+}
+
+</code></pre>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../collections/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../collections/" class="btn btn-xs btn-link">
+        Collections
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../period/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../period/" class="btn btn-xs btn-link">
+        Period
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
