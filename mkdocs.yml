@@ -4,8 +4,8 @@ use_directory_urls: true
 # pagination
 nav:
     - Data Model: index.md
-    - Monument: monument.md
-    - Document: document.md
+    - Antique Monument: monument.md
+    - Postclassical Work: document.md
     - Person: person.md
     - Group: group.md
     - Bibliographic Entity: bibliography.md
