@@ -26,7 +26,7 @@ The *Postclassical Work* model allows the documentation of the following kinds o
 |Description  |  Description |   The researcher can document various free-text descriptions of the *Postclassical Work*.|
 |Documentation  |  Citation/Image/External URI| The researcher can document citations relative to the *Postclassical Work*, link to images of the *Postclassical Work* and document external URIs of documentation for the same *Postclassical Work*.|
 
-## Document **Names and Classifications**
+## Postclassical Work **Names and Classifications**
 
 The attribution of names and types to *Postclassical Work*, as with other entities, is a basic human activity. A chief factor in disambiguating *Postclassical Works* lies in understanding the various names and identifiers that have been given to them at different moments in their individual histories. Likewise, additional classifiers of the *Postclassical Work* give important distinguishing characteristics.
 
@@ -45,10 +45,10 @@ The attribution of names and types to *Postclassical Work*, as with other entiti
 |fie_cen_87 |   Document Representation Method  |  This field is used to record a statement about the representation method of the documented *Postclassical Work*. |   Concept  |  --> P2 --> E55[87_1] --> P2 --> E55[87_2]|
 
 
-### - Document Names and Classifications **Ontology Graph**
+### - Postclassical Work Names and Classifications **Ontology Graph**
 ![Screenshot](img/nc_document.png)
 
-### - Document Names and Classifications **RDF**
+### - Postclassical Work Names and Classifications **RDF**
 
 ```
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
@@ -112,7 +112,7 @@ The attribution of names and types to *Postclassical Work*, as with other entiti
                 
 ```
 
-### - Document Names and Classifications **JOSN-LD**     
+### - Postclassical Work Names and Classifications **JOSN-LD**     
 ```
 {
   "@context": "https://linked.art/ns/v1/linked-art.json",
@@ -236,7 +236,7 @@ The attribution of names and types to *Postclassical Work*, as with other entiti
 
 
 
-## Document **Existence**
+## Postclassical Work **Existence**
 Of essential import in identifying and tracking documents is information pertaining to their existence in time, particularly information regarding the creation and destruction of the document. For this reason, we have clustered descriptors relevant to such information in a common ‘existence’ category. These are described in the table below.
 
 
@@ -264,10 +264,10 @@ Of essential import in identifying and tracking documents is information pertain
 |fie_cen_7  |  Document Destruction Date |   This field is used to record the timespan of the destruction event of the described *Postclassical Work*.  |  Collection [Timespan]|   --> P13i --> E6_E7[62_1]  --> P4 --> E52[62_2]|
 |fie_cen_99   | Document Destruction Period  |  This field is used to record the period during which the destruction event of the documented *Postclassical Work* has happened.  |  Reference Model [Period] |  --> P13i --> E6_E7[62_1] --> P10 --> E4 [C99_1]|
 
-### - Document Existence **Ontology Graph**
+### - Postclassical Work Existence **Ontology Graph**
 ![Screenshot](img/ex_document.png)
 
-### - Document Existence **RDF**
+### - Postclassical Work Existence **RDF**
 
 ```
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
@@ -393,7 +393,7 @@ Of essential import in identifying and tracking documents is information pertain
 
 ```
                 
-### - Document Existence **JSON-LD**
+### - Postclassical Work Existence **JSON-LD**
 ```
 {
   "@context": "https://linked.art/ns/v1/linked-art.json",
@@ -664,7 +664,7 @@ Of essential import in identifying and tracking documents is information pertain
                 
 ```
 
-## Document **Events**
+## Postclassical Work **Events**
 This information category brings together typical events in which a *Postclassical Work* may have been involved through the course of its history. It is meant to cover information concerning the most salient events documented with regards to documents. At present this enables the documentation of provenance of the *Postclassical Work*.
 
 | Filed ID    | Name                          | Description | Data Type | CRM Path |
@@ -681,10 +681,10 @@ This information category brings together typical events in which a *Postclassic
 |fie_cen_76 |   Document Provenance Event Statement |   This field is used to record a general statement about the provenance activity associated with the documented *Postclassical Work*.   | Collection [Statement]|   --> P16i --> E7[268_1] --> P67i --> E33[C76_1]|
 |fie_cen_100 |   Document Provenance Event Period |   This field is used to record the period during which a provenance activity associated with the documented *Postclassical Work* has happened.  |  Reference Model [Period]|   --> P16i --> E7[268_1] --> P10 --> E4 [C100_1]|
 
-### - Document Events **Ontology Graph**
+### - Postclassical Work Events **Ontology Graph**
 ![Screenshot](img/ev_document.png)
 
-### - Document Events **RDF**
+### - Postclassical Work Events **RDF**
 ```
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -759,7 +759,7 @@ This information category brings together typical events in which a *Postclassic
 
 <https://example.org/type/fie_2_1> a crm:E55_Type .
 ```
-### - Document Events **JSON-LD**
+### - Postclassical Work Events **JSON-LD**
 ```
 {
   "@context": "https://linked.art/ns/v1/linked-art.json",
@@ -914,7 +914,7 @@ This information category brings together typical events in which a *Postclassic
 }
 ```
 
-## Document **Substance**
+## Postclassical Work **Substance**
 The analysis and understanding of a *Postclassical Work* depends also on our knowledge of its materiality and physical characteristics. The category of substance brings together descriptors which are relevant to this form of analysis. Particularly, it groups information having to do with the composition and measurable aspects of the *Postclassical Work* as an object, the physical carrier of the content, as well as the documentation of any inscriptions.
                
 | Filed ID    | Name                          | Description | Data Type | CRM Path |
@@ -936,10 +936,10 @@ The analysis and understanding of a *Postclassical Work* depends also on our kno
 |fie_cen_27  |  Document Inscription Transcription|    This field is used to record the transcription of the inscription carried out by the described *Postclassical Work*. |   String   | --> P128 --> E33[C22_1] --> P130 --> E33[C25_1] --> P190 --> rdfs:literal|
 |fie_cen_60    |Document Inscription Comments |   This field is used to record a general statement about the inscription carried out by the described *Postclassical Work*. |   Collection  [Statement]|  --> P128 --> E33[C22_1] --> P130 --> E33[C25_1] --> P67i --> E33[C60_1]|
 
-### - Document Substance **Ontology Graph**
+### - Postclassical Work Substance **Ontology Graph**
 ![Screenshot](img/sub_document.png)
 
-### - Document Substance **RDF**
+### - Postclassical Work Substance **RDF**
 ```
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 
@@ -1005,7 +1005,7 @@ The analysis and understanding of a *Postclassical Work* depends also on our kno
 
                 
 ```
-### - Document Substance **JSON-LD**
+### - Postclassical Work Substance **JSON-LD**
 ```
 {
   "@context": "https://linked.art/ns/v1/linked-art.json",
@@ -1145,7 +1145,7 @@ The analysis and understanding of a *Postclassical Work* depends also on our kno
                 
 ```
 
-## Document **Aboutness**
+## Postclassical Work **Aboutness**
 This information category provides the means to gather information to the representational level of a *Postclassical Work*. 
                
 | Filed ID    | Name                          | Description | Data Type | CRM Path |
@@ -1154,10 +1154,10 @@ This information category provides the means to gather information to the repres
 |fie_cen_22   | Document Medium Written  |  This field is used to record the type of textual content carried out by the described *Postclassical Work*.  |  Concept  |  --> P128 --> E33[C22_1] --> P2 --> E55[C22_2]|
 
 
-### - Document Aboutness **Ontology Graph**
+### - Postclassical Work Aboutness **Ontology Graph**
 ![Screenshot](img/ab_document.png)
 
-### - Document Aboutness **RDF**
+### - Postclassical Work Aboutness **RDF**
 
 ```
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
@@ -1179,7 +1179,7 @@ This information category provides the means to gather information to the repres
 
                 
 ```
-### - Document Aboutness **JSON-LD**
+### - Postclassical Work Aboutness **JSON-LD**
 ```
 {
   "@context": "https://linked.art/ns/v1/linked-art.json",
@@ -1222,7 +1222,7 @@ This information category provides the means to gather information to the repres
 ```
 
 
-## Document **Location**
+## Postclassical Work **Location**
 The documentation of location aids in tracking the present location of individual *Postclassical Works* as well their dispersion geographically. This information category gathers together relevant descriptors for this task.
                
 | Filed ID    | Name                          | Description | Data Type | CRM Path |
@@ -1230,10 +1230,10 @@ The documentation of location aids in tracking the present location of individua
 |fie_177 |  Document Location  |  This field is used to record the address at which the described *Postclassical Work* is located.  |  String  |  --> P53 --> E53[177_1] --> P1 --> E41[177_2]<br><br>P53 --> E53[177_1] --> P1 --> E41[177_2] --> P2 --> E55 "Address"[177_3]|
 
 
-### - Document Location **Ontology Graph**
+### - Postclassical Work Location **Ontology Graph**
 ![Screenshot](img/loc_document.png)
      
-### - Document Location **RDF**
+### - Postclassical Work Location **RDF**
 ```
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -1251,7 +1251,7 @@ The documentation of location aids in tracking the present location of individua
     rdfs:label "Address" .
 ```
 
-### - Document Location **JSON-LD**
+### - Postclassical Work Location **JSON-LD**
 ```
 {
   "@context": "https://linked.art/ns/v1/linked-art.json",
@@ -1287,7 +1287,7 @@ The documentation of location aids in tracking the present location of individua
                 
 ```           
 
-## Document **Description**
+## Postclassical Work **Description**
 Documents are the subjects of innumerable descriptions that provide a wide range of information with regards to the aesthetic and historical importance of the work, inter alia. Such descriptions are of use in a scholarly understanding of a *Postclassical Work* just in case we are able to track the provenance of such elocutions in a systematic fashion. Such an aim drives the need for the tracking of description information as a separate category. The descriptors necessary to this task are documented in the table below.
 
                
@@ -1297,10 +1297,10 @@ Documents are the subjects of innumerable descriptions that provide a wide range
 |fie_cen_31 |   Document Relation |   This field is used to record the type of similarity between the described *Postclassical Work* and another *Postclassical Work*.  |  Reference Model  [Document]|  --> P01i --> PC130[C31_1] --> P02 --> E22[C31_2] |
 |fie_cen_58  |  Document Notes|    This field is used to record a general statement about the described *Postclassical Work*.   | Collection [Statement] |  --> P67i --> E33[C58_1]|
 
-### - Document Description **Ontology Graph**
+### - Postclassical Work Description **Ontology Graph**
 ![Screenshot](img/desc_document.png)
      
-### - Document Description **RDF**
+### - Postclassical Work Description **RDF**
 ```
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 
@@ -1322,7 +1322,7 @@ Documents are the subjects of innumerable descriptions that provide a wide range
                 
 ```
 
-### - Document Description **JSON-LD**
+### - Postclassical Work Description **JSON-LD**
 ```
 {
   "@context": "https://linked.art/ns/v1/linked-art.json",
@@ -1363,7 +1363,7 @@ Documents are the subjects of innumerable descriptions that provide a wide range
 }
                 
 ```
-## Document **Documentation**
+## Postclassical Work **Documentation**
 This information category unites referential information about the documented *Postclassical Work*, providing contextual data about it.
                
 | Filed ID    | Name                          | Description | Data Type | CRM Path |
@@ -1375,10 +1375,10 @@ This information category unites referential information about the documented *P
 |fie_204   | Document URL  |  The field is used to record the sameness between the described *Postclassical Work* and an external authority|    uri  |  --> L54 --> E1[204_1]|
 |fie_cen_57 |   Document URL Title  |  The field is used to record the sameness between the described *Postclassical Work* and an external authority.  |  String  |  --> L54 --> E1[204_1] --> P1 --> E33_E41[C57_1]|
 
-### - Document Documentation **Ontology Graph**
+### - Postclassical Work Documentation **Ontology Graph**
 ![Screenshot](img/doc_document.png)
      
-### - Document Documentation **RDF**
+### - Postclassical Work Documentation **RDF**
 ```
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -1410,7 +1410,7 @@ This information category unites referential information about the documented *P
     rdfs:label "Citation" .
 ```
 
-### - Document Documentation **JSON-LD**
+### - Postclassical Work Documentation **JSON-LD**
 ```
     {
   "@context": "https://linked.art/ns/v1/linked-art.json",
