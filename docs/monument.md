@@ -28,7 +28,7 @@ The *Antique Monument* model allows the documentation of the following kinds of 
 |Description  |  Description   | The researcher can document various free text descriptions of the *Antique Monument*.|
 |Documentation  | Citation/Image/External URI| The researcher can document citations relative to the *Antique Monument*, link to images of the *Antique Monument* and document external URIs of documentation for the same *Antique Monument*.|
 
-## Monument **Names and Classifications**
+## Antique Monument   **Names and Classifications**
 
 The attribution of names and types to *Antique Monument*, as with other entities, is a basic human activity. A chief factor in disambiguating *Antique Monuments* lies in understanding the various names and identifiers that have been given to them at different moments in their individual histories. Likewise, additional classifiers of the *Antique Monument*, such as how it has been classified as an object as such, give important distinguishing characteristics.
 
@@ -51,10 +51,10 @@ The attribution of names and types to *Antique Monument*, as with other entities
 |fie_cen_56 |   Monument Cause of Observation  |  This field is used to record the cause of observation of the documented *Antique Monument*. |    Concept |   --> P2 --> E55[C56_1] --> P2 --> E55[C56_2]|
 |fie_cen_80  |  Monument Cause of Observation Uncertainty  |  This field is used to record the concept of uncertainty defining the cause of observation of the documented *Antique Monument*. |   Collection  [Uncertainty]|  --> P2 --> E55[C56_1] --> P2 --> E55[C56_2] --> P141i --> E13[C80_1]|
 
-### - Monument Names and Classifications **Ontology Graph**
+### - Antique Monument Names and Classifications **Ontology Graph**
 ![Screenshot](img/nc_monument.png)
 
-### - Monument Names and Classifications **RDF**
+### - Antique Monument Names and Classifications **RDF**
 
 ```
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
@@ -134,7 +134,7 @@ The attribution of names and types to *Antique Monument*, as with other entities
                 
 ```
 
-### - Monument Names and Classifications **JOSN-LD**     
+### - Antique Monument Names and Classifications **JOSN-LD**     
 ```
 {
   "@context": "https://linked.art/ns/v1/linked-art.json",
@@ -290,7 +290,7 @@ The attribution of names and types to *Antique Monument*, as with other entities
                 
 ```                           
 
-## Monument **Existence**
+## Antique Monument   **Existence**
 
 Of essential import in identifying and tracking *Antique Monuments* is information pertaining to their existence in time, particularly information regarding the creation and destruction of the monument. For this reason, we have clustered descriptors relevant to such information in a common ‘existence’ category. These are described in the table below.
 
@@ -320,10 +320,10 @@ Of essential import in identifying and tracking *Antique Monuments* is informati
 |fie_cen_103  |  Monument Destruction Location Attribution  |  This field is used to record the attribution type (Renaissance or contemporary) assigning the destruction location of the documented *Antique Monument*. |   Concept |   --> P13i --> E6_E7[62_1] --> P7 --> E53[102_1]--> P141i -->E13[C103_1] --> P2 --> E55[C103_2]|
 |fie_cen_104 |   Monument Destruction Location Attribution Source  |  This field is used to relate a document carrying a textual reference about the attribution (Renaissance or contemporary) assigning the destruction location of the documented *Antique Monument*.  |  Reference Model  [Document]|  --> P13i --> E6_E7[62_1] --> P7 --> E53[102_1] --> P141i -->E13[C103_1]  --> P16 -->E33[C104_1] --> P128i --> E22[C104_2]|
 
-### - Monument Existence **Ontology Graph**
+### - Antique Monument Existence **Ontology Graph**
 ![Screenshot](img/ex_monument.png)
 
-### - Monument Existence **RDF**
+### - Antique Monument Existence **RDF**
 ```
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -426,7 +426,7 @@ Of essential import in identifying and tracking *Antique Monuments* is informati
 ```
 
                 
-### - Monument Existence **JSON-LD**
+### - Antique Monument Existence **JSON-LD**
 ```
 {
   "@context": "https://linked.art/ns/v1/linked-art.json",
@@ -647,7 +647,7 @@ Of essential import in identifying and tracking *Antique Monuments* is informati
                 
 ```                
 
-## Monument **Substance**
+## Antique Monument   **Substance**
 The analysis and understanding of a *Antique Monument* depends also on our knowledge of its materiality and physical characteristics. The category of substance brings together descriptors which are relevant to this form of analysis. Particularly, it groups information having to do with the composition and measurable aspects of the *Antique Monument* as an object. 
 
 | Filed ID    | Name                         | Description | Data Type | CRM Path |
@@ -660,10 +660,10 @@ The analysis and understanding of a *Antique Monument* depends also on our knowl
 |fie_86 |   Monument Dimension Type  |  This field is used to record the type of measurement that the dimension of the documented *Antique Monument* represents.  |  Concept | --> P39i --> E16[86_1] --> P40 --> E54[86_2] --> P2 --> E55[86_3] |   
 |fie_cen_55 |   Monument Dimension Statement |   This field is used to record the textual content of a statement made about the dimensions of the documented *Antique Monument*. |   String |   --> P39i --> E16[86_1] --> P40 --> E54[86_2] --> P67i --> E33_41[C55_1] --> P190 --> rdfs:literal    |
 
-### - Monument Substance **Ontology Graph**
+### - Antique Monument Substance **Ontology Graph**
 ![Screenshot](img/sub_monument.png)
 
-### - Monument Substance **RDF**
+### - Antique Monument Substance **RDF**
 ```
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 
@@ -698,7 +698,7 @@ The analysis and understanding of a *Antique Monument* depends also on our knowl
 
 ```
 
-### - Monument Substance **JSON-LD**                
+### - Antique Monument Substance **JSON-LD**                
 ```
 {
   "@context": "https://linked.art/ns/v1/linked-art.json",
@@ -770,7 +770,7 @@ The analysis and understanding of a *Antique Monument* depends also on our knowl
 }
                 
 ```                
-## Monument **Events**
+## Antique Monument   **Events**
 This information category brings together typical events in which a *Antique Monument* may have been involved through the course of its history. It is meant to cover information concerning the most salient events documented with regards to *Antique Monuments*. At present this enables the documentation of provenance and preservation events.
 
 | Filed ID    | Name                         | Description | Data Type | CRM Path |
@@ -798,10 +798,10 @@ This information category brings together typical events in which a *Antique Mon
 |fie_cen_76 |   Monument Provenance Event Notes |   This field is used to record a general statement about the provenance activity associated with the documented *Antique Monument*. |   Collection  [Statement]|  --> P16i --> E7[268_1] --> P67i --> E33[C76_1]|
 |fie_cen_100 |   Monument Preservation Event Period  |  This field is used to record the period during which a provenance activity associated with the documented *Antique Monument* has happened.  |  Reference Model  [Period]|  --> P16i --> E7[268_1] --> P10 --> E4 [C100_1]|
 
-### - Monument Events **Ontology Graph**
+### - Antique Monument Events **Ontology Graph**
 ![Screenshot](img/ev_monument.png)
 
-### - Monument Events **RDF**
+### - Antique Monument Events **RDF**
 ```
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 
@@ -911,7 +911,7 @@ This information category brings together typical events in which a *Antique Mon
 
 
 ```
-### - Monument Events **JSON-LD**
+### - Antique Monument Events **JSON-LD**
 ```
 {
   "@context": "https://linked.art/ns/v1/linked-art.json",
@@ -1159,7 +1159,7 @@ This information category brings together typical events in which a *Antique Mon
                 
 ```                
 
-## Monument **Designation Status**
+## Antique Monument   **Designation Status**
 Characteristic of information gathered relative to *Antique Monuments* are various kinds of official designations types that are given to these objects by various agencies. Assignment of such designations is related to various protocols in the assigning institutions and are often accompanied by regulations on the kind of activity that can be undertaken relative to the built work in question. Such designations also provide means of identifying a *Antique Monument* across records. This information category gathers together descriptors relative to this information.
 
 | Filed ID    | Name                         | Description | Data Type | CRM Path |
@@ -1173,10 +1173,10 @@ Characteristic of information gathered relative to *Antique Monuments* are vario
 |fie_cen_10 |   Monument Condition Falls Within  |  This field is used to record the period during in which a condition assessment of the documented *Antique Monument* occurred. |  Reference Model [Period] |   --> P44 --> E3[255_1] --> P34i --> E14[256_1] --> P10 --> E4[C10_1]    |
 |fie_cen_12  |  Monument Condition Source |   This field is used to relate the condition assessment of the documented *Antique Monument* and a document carrying a textual reference about reference about the condition assessment of the documented *Antique Monument*. |  Reference Model [Document] |   --> P44 --> E3[255_1] --> P34i --> E14[256_1] --> P141i --> E13[C12_1] --> P16 --> E33[C12_2] --> P128i --> E22[C12_3]  |  
 
-### - Monument Designation Status **Ontology Graph**
+### - Antique Monument Designation Status **Ontology Graph**
 ![Screenshot](img/des_monument.png)
 
-### - Monument Designation Status **RDF**
+### - Antique Monument Designation Status **RDF**
 ```
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -1217,7 +1217,7 @@ Characteristic of information gathered relative to *Antique Monuments* are vario
 
 ```
                 
-### - Monument Designation Status **JSON-LD**
+### - Antique Monument Designation Status **JSON-LD**
 ```
 {
   "@context": "https://linked.art/ns/v1/linked-art.json",
@@ -1300,17 +1300,17 @@ Characteristic of information gathered relative to *Antique Monuments* are vario
 }
                 
 ```                
-## Monument **Location**
+## Antique Monument   **Location**
 The documentation of location aids in tracking the present location of individual *Antique Monuments* as well their dispersion geographically. This information category gathers together relevant descriptors for this task.
 
 | Filed ID    | Name                         | Description | Data Type | CRM Path |
 | ----------- |------------------------------|-------------|-----------|----------|
 |fie_177   | Monument Current Location  |  This field is used to record the address at which the documented instance of *Antique Monument* is located.  |  String |   --> P53 --> E53[177_1] --> P1 --> E41[177_2]<br><br>P53 --> E53[177_1] --> P1 --> E41[177_2] --> P2 --> E55 "Address"[177_3]|
 
-### - Monument Location **Ontology Graph**
+### - Antique Monument Location **Ontology Graph**
 ![Screenshot](img/loc_monument.png)
 
-### - Monument Location **RDF**
+### - Antique Monument Location **RDF**
 ```
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -1328,7 +1328,7 @@ The documentation of location aids in tracking the present location of individua
     rdfs:label "Address" .
 ```
 
- ### - Monument Location **JSON-LD**               
+ ### - Antique Monument Location **JSON-LD**               
 ```
 {
   "@context": "https://linked.art/ns/v1/linked-art.json",
@@ -1362,7 +1362,7 @@ The documentation of location aids in tracking the present location of individua
   ]
 }
 ```                
-## Monument **Description**
+## Antique Monument   **Description**
 *Antique Monuments* are the subjects of innumerable descriptions that provide a wide range of information with regards to the aesthetic and historical importance of the work, inter alia. Such descriptions are of use in a scholarly understanding of a *Antique Monument* just in case we are able to track the provenance of such elocutions in a systematic fashion. Such an aim drives the need for the tracking of description information as a separate category. The descriptors necessary to this task are documented in the table below.
 
 | Filed ID    | Name                         | Description | Data Type | CRM Path |
@@ -1371,10 +1371,10 @@ The documentation of location aids in tracking the present location of individua
 |fie_cen_32 |   Monument Relation Type  |  This field is used to record the type of similarity between the documented *Antique Monument* and another *Antique Monument*. |    Concept  |  --> P01i --> PC130[C31_1] --> P130.1 --> E55[C32_1] |
 |fie_cen_58  |  Monument Notes  |  This field is used to record a general statement made about the documented *Antique Monument*.  |  Collection [Statement] |   --> P67i --> E33[C58_1] |
 
-### - Monument Description **Ontology Graph**
+### - Antique Monument Description **Ontology Graph**
 ![Screenshot](img/desc_monument.png)
 
-### - Monument Description **RDF**
+### - Antique Monument Description **RDF**
 ```
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 
@@ -1392,7 +1392,7 @@ The documentation of location aids in tracking the present location of individua
 
 <https://example.org/type/C32_1> a crm:E55_Type .
 ```
-### - Monument Description **JSON-LD**
+### - Antique Monument Description **JSON-LD**
 ```
 {
   "@context": "https://linked.art/ns/v1/linked-art.json",
@@ -1432,7 +1432,7 @@ The documentation of location aids in tracking the present location of individua
   ]
 }
 ```                
-## Monument **Documentation**
+## Antique Monument   **Documentation**
 This information category unites referential information about the documented *Antique Monument*, providing contextual data about it.
 
 | Filed ID    | Name                         | Description | Data Type | CRM Path |
@@ -1444,10 +1444,10 @@ This information category unites referential information about the documented *A
 |fie_204 |   Monument URL  |  The field is used to record the sameness between the *Antique Monument* described and an external authority. |   uri  |  --> L54 --> E1[204_1]
 |fie_cen_57  |  Monument URL Title  |  This field is used to record a title of an external digital authority related to the documented *Antique Monument*. |    String   | --> L54 --> E1[204_1] --> P1 --> E33_E41[C57_1]|
 
-### - Monument Documentation **Ontology Graph**
+### - Antique Monument Documentation **Ontology Graph**
 ![Screenshot](img/doc_monument.png)
 
-### - Monument Documentation **RDF**
+### - Antique Monument Documentation **RDF**
 ```
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -1481,7 +1481,7 @@ This information category unites referential information about the documented *A
 <https://example.org/type/fie_196_1> a crm:E55_Type ;
     rdfs:label "Citation" .
 ```
-### - Monument Documentation **JSON-LD**
+### - Antique Monument Documentation **JSON-LD**
 ```
 {
   "@context": "https://linked.art/ns/v1/linked-art.json",
