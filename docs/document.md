@@ -1,10 +1,10 @@
-**Document**
+**Postclassical Work**
 
 **Author:** Denitsa Nenova, George Bruseker
 
 **Version:** 1.0
 
-The *Document* model is intended to enable the representation and sharing of data relevant to human-made, physical items – works of art (such as drawings, prints, statuettes, paintings or medals), or texts (such as inventories or guidebooks) – which carry content that provides evidence of a historical witnessing of or reference to a *Monument*. An instance of the *Document* model is typically a primary, physical artwork or text dating to the period of study (typically, the Renaissance as defined as the period between 1400 and 1600) that responds to or bears witness to a *Monument*. *Documents* are recorded as objects in and of themselves and are intended to trace assertions about, sightings of or responses to *Monuments*, allowing researchers to gain an understanding of the whole corpus of Renaissance knowledge of antique works of art and architecture. *Documents* also provide  opinions or perspectives on *Monuments*, not only with regard to the *Monument*’s identification, date, and condition,  but also with regard to the *Monument*’s cultural and symbolic significance, its artistic value, and its identity in a specific Renaissance setting and context.
+The *Postclassical Work* model is intended to enable the representation and sharing of data relevant to human-made, physical items – works of art (such as drawings, prints, statuettes, paintings or medals), or texts (such as inventories or guidebooks) – which carry content that provides evidence of a historical witnessing of or reference to a *Antique Monument*. An instance of the *Postclassical Work* model is typically a primary, physical artwork or text dating to the period of study (typically, the Renaissance as defined as the period between 1400 and 1600) that responds to or bears witness to a *Antique Monument*. *Postclassical Works* are recorded as objects in and of themselves and are intended to trace assertions about, sightings of or responses to *Antique Monuments*, allowing researchers to gain an understanding of the whole corpus of Renaissance knowledge of antique works of art and architecture. *Postclassical Works* also provide  opinions or perspectives on *Antique Monuments*, not only with regard to the *Antique Monument*’s identification, date, and condition,  but also with regard to the *Antique Monument*’s cultural and symbolic significance, its artistic value, and its identity in a specific Renaissance setting and context.
 
 
 
@@ -13,36 +13,36 @@ The *Document* model is intended to enable the representation and sharing of dat
 |Root Ontology Node|E22 Human-Made Object | https://cidoc-crm.org/Entity/E22-Human-Made-Object/version-7.1.1|
 |Type Differentiator |documents | http://vocab.getty.edu/aat/300026030 |
 
-The *Document* model allows the documentation of the following kinds of information:
+The *Postclassical Work* model allows the documentation of the following kinds of information:
 
 |Information Category | Information Collections | Description | 
 |---------------------|-------------------------|-------------|
-| Names and Classifications |   Names/Alternative Names/Identifiers/Type  |  The researcher can document various names and classification regarding the *Document*.|
-|Existence   | Production/Destruction |   The researcher can document the events related to the production and destruction of a *Document*.|
-|Events   | Provenance |   The researcher can document the events related to the provenance of a *Document*.|
-|Substance   | Dimension/Material  | The researcher can document various physical information about the *Document*.|
-|Aboutness   | Visual/Textual | The researcher can document the kind of visual or textual information that the *Document* is a bearer of.|
-|Locations   | Location   | The researcher can document the location of the *Document*.|
-|Description  |  Description |   The researcher can document various free-text descriptions of the *Document*.|
-|Documentation  |  Citation/Image/External URI| The researcher can document citations relative to the *Document*, link to images of the *Document* and document external URIs of documentation for the same *Document*.|
+| Names and Classifications |   Names/Alternative Names/Identifiers/Type  |  The researcher can document various names and classification regarding the *Postclassical Work*.|
+|Existence   | Production/Destruction |   The researcher can document the events related to the production and destruction of a *Postclassical Work*.|
+|Events   | Provenance |   The researcher can document the events related to the provenance of a *Postclassical Work*.|
+|Substance   | Dimension/Material  | The researcher can document various physical information about the *Postclassical Work*.|
+|Aboutness   | Visual/Textual | The researcher can document the kind of visual or textual information that the *Postclassical Work* is a bearer of.|
+|Locations   | Location   | The researcher can document the location of the *Postclassical Work*.|
+|Description  |  Description |   The researcher can document various free-text descriptions of the *Postclassical Work*.|
+|Documentation  |  Citation/Image/External URI| The researcher can document citations relative to the *Postclassical Work*, link to images of the *Postclassical Work* and document external URIs of documentation for the same *Postclassical Work*.|
 
 ## Document **Names and Classifications**
 
-The attribution of names and types to *Document*, as with other entities, is a basic human activity. A chief factor in disambiguating *Documents* lies in understanding the various names and identifiers that have been given to them at different moments in their individual histories. Likewise, additional classifiers of the *Document* give important distinguishing characteristics.
+The attribution of names and types to *Postclassical Work*, as with other entities, is a basic human activity. A chief factor in disambiguating *Postclassical Works* lies in understanding the various names and identifiers that have been given to them at different moments in their individual histories. Likewise, additional classifiers of the *Postclassical Work* give important distinguishing characteristics.
 
 | Filed ID    | Name                          | Description | Data Type | CRM Path |
 | ----------- | ------------------------------|-------------|-----------|----------|
-|fie_5  |  Document Name  |  This field is used to record the main name attributed to the described *Document*.  |  String  |  --> P1 --> E33_E41[5_1] --> P190 --> rdfs:Literal<br><br> --> P1 --> E33_E41[5_1] --> P2 --> E55[5_2]{'preferred terms'}|
-|fie_10  |  Document Alias |   This field is used to record an alternative name under which the described *Document* is known.   |  String  |  --> P1 --> E33_E41[10_1]  --> P190 --> rdfs:Literal|
-|fie_11   | Document Alias Type |   This field is used to record the type of the alternative name that has been attributed to the described *Document*.  |  Concept  |  --> P1 --> E33_E41[10_1] --> P2 --> E55[11_1]|
+|fie_5  |  Document Name  |  This field is used to record the main name attributed to the described *Postclassical Work*.  |  String  |  --> P1 --> E33_E41[5_1] --> P190 --> rdfs:Literal<br><br> --> P1 --> E33_E41[5_1] --> P2 --> E55[5_2]{'preferred terms'}|
+|fie_10  |  Document Alias |   This field is used to record an alternative name under which the described *Postclassical Work* is known.   |  String  |  --> P1 --> E33_E41[10_1]  --> P190 --> rdfs:Literal|
+|fie_11   | Document Alias Type |   This field is used to record the type of the alternative name that has been attributed to the described *Postclassical Work*.  |  Concept  |  --> P1 --> E33_E41[10_1] --> P2 --> E55[11_1]|
 |fie_16  |  Document Alias Source    |This field is used to record the source on the basis of which the organization attributing the alternative name use based their attribution.  |  Reference Model [Bibliographic Entity/Image]|   --> P1 --> E33_E41[10_1] --> P141i --> E13[15_1] --> P16 --> E73[16_1]|
-|fie_1  |  Document Identifier  |  This field is used to record an identifier attributed to the described *Document*. |   String  |  --> P1 --> E42[1_1] --> P190 --> rdfs:Literal|
-|fie_2  |  Document Identifier Type |   This field is used to record the type of the identifier attributed to the described *Document*.  |  Concept |   --> P1 --> E42[1_1] --> P2 --> E55[2_1]|
-|fie_3  |  Document ID Provider |   This field is used to record the institution, group or individual responsible for providing the described *Document*'s identifier.  |  Reference Model [Person/Group]|    --> P1 --> E42[1_1] --> P37i --> E15[3_1] --> P14 --> E39[3_2]|
-|fie_4  |  Document ID Source  |  This field is used to record the institution, group or individual responsible for providing the described *Document*'s identifier.  |  Reference Model [Bibliographic Entity/Image]|   --> P1 --> E42[1_1] --> P37i --> E15[3_1] --> P16 --> E73[4_1]|
-|fie_17 |   Document Type  |  This field is used to record the formal type of the described *Document*.  |  Concept  |  --> P2 --> E55[17_1]|
-|fie_cen_86 |   Document Form  |  This field is used to record the concept of uncertainty defining the form of the described *Document*. |   Concept  |  --> P2 --> E55[86_1] --> P2 --> E55[86_2]|
-|fie_cen_87 |   Document Representation Method  |  This field is used to record a statement about the representation method of the documented *Document*. |   Concept  |  --> P2 --> E55[87_1] --> P2 --> E55[87_2]|
+|fie_1  |  Document Identifier  |  This field is used to record an identifier attributed to the described *Postclassical Work*. |   String  |  --> P1 --> E42[1_1] --> P190 --> rdfs:Literal|
+|fie_2  |  Document Identifier Type |   This field is used to record the type of the identifier attributed to the described *Postclassical Work*.  |  Concept |   --> P1 --> E42[1_1] --> P2 --> E55[2_1]|
+|fie_3  |  Document ID Provider |   This field is used to record the institution, group or individual responsible for providing the described *Postclassical Work*'s identifier.  |  Reference Model [Person/Group]|    --> P1 --> E42[1_1] --> P37i --> E15[3_1] --> P14 --> E39[3_2]|
+|fie_4  |  Document ID Source  |  This field is used to record the institution, group or individual responsible for providing the described *Postclassical Work*'s identifier.  |  Reference Model [Bibliographic Entity/Image]|   --> P1 --> E42[1_1] --> P37i --> E15[3_1] --> P16 --> E73[4_1]|
+|fie_17 |   Document Type  |  This field is used to record the formal type of the described *Postclassical Work*.  |  Concept  |  --> P2 --> E55[17_1]|
+|fie_cen_86 |   Document Form  |  This field is used to record the concept of uncertainty defining the form of the described *Postclassical Work*. |   Concept  |  --> P2 --> E55[86_1] --> P2 --> E55[86_2]|
+|fie_cen_87 |   Document Representation Method  |  This field is used to record a statement about the representation method of the documented *Postclassical Work*. |   Concept  |  --> P2 --> E55[87_1] --> P2 --> E55[87_2]|
 
 
 ### - Document Names and Classifications **Ontology Graph**
@@ -242,27 +242,27 @@ Of essential import in identifying and tracking documents is information pertain
 
 | Filed ID    | Name                          | Description | Data Type | CRM Path |
 | ----------- | ------------------------------|-------------|-----------|----------|
-|fie_299  |  Document Creation Type |   This field is used to indicate the type of production activity used in the production of the described *Document*.   | Concept  |  --> P108i --> E12[58_1] --> P2 --> E55[299_1]|
-|fie_cen_96 |   Document Creator  |  This field is used to record the actor who has created the documented *Document*.  |  Reference Model [Person/Group]|   --> P108i --> E12[58_1] --> P01i --> PC14[C96_1] --> P02 --> E39[C96_2]|
-|fie_cen_97 |   Document Creator Role  |  This field is used to record the specific role of the actor they played in the creation of the documented *Document*.  |  Concept |   --> P108i --> E12[58_1] --> P01 --> PC14[C96_1] --> P14.1 --> E55[C97_1]|
-|fie_cen_42 |   Document Creator Attribution |   This field is used to record the attribution type (renaissance or contemporary) assigning the creator of the described *Document*. |   Concept |   --> P108i --> E12[58_1]  --> P01i --> PC14[C96_1] --> P02 --> E39[C96_2] --> P141i --> E13[C42_1] --> P2 --> E55[C42_2]|
-|fie_cen_43 |   Document Creator Source |   This field is used to relate a *Document* carrying a textual reference about the attribution assigning the creator of the described *Document* and the described *Document* itself. |   Reference Model [Document]|   --> P108i --> E12[58_1]  --> P01--> PC14[C96_1] --> P02 --> E39[C96_2] --> P141i --> E13[C42_1] -- >P16 --> E33[C43_1] --> P128i --> E22[C43_2]|
-|fie_58 |   Document Creation Earliest Date |   This field is used to record the earliest possible date for the production of the described *Document*.   | Date |   --> P108i --> E12[58_1] --> P4 --> E52[58_2] --> P82a --> xsd:dateTime|
-|fie_59 |   Document Creation Latest Date  |  This field is used to record the latest possible date for the production of the described *Document*.   | Date |   --> P108i --> E12[58_1] --> P4 --> E52[58_2] --> P82b --> xsd:dateTime|
-|fie_61 |   Document Creation Period  |  This field is used to record the historical period in which the production of the described *Document* occurred. |   Reference Model [Period]|   --> P108i --> E12[58_1] --> P10 --> E4[61_1]|
-|fie_cen_44  |  Document Creation Date Attribution  |  This field is used to record the attribution type (renaissance or contemporary) assigning the timespan of the production of the described *Document*.   | Concept |   --> P108i --> E12[58_1] --> P4 --> E52[58_2] --> P141i --> E13[C44_1] --> P2 --> E55[C44_2]|
-|fie_cen_45  |  Document Creation Date Source  |  This field is used to relate a document carrying a textual reference about the attribution assigning timespan of the production of the described document and the described *Document* itself. |   Reference Model [Document]|   --> P108i --> E12[58_1] --> P4 --> E52[58_2] --> P141i --> E13[C44_1] --> P16 --> E33[C45_1] --> P128i --> E22[C45_2]|
-|fie_cen_92 |   Document Creation Timespan Verbatim  |  This field is used to record a verbatim describing the timespan of the production event of the described *Document*.  |  String  |  --> P108i --> E12[58_1] --> P4 --> E52[58_2] --> P67i --> E33[C92_1] --> P190 --> rdfs:literal|
-|fie_60  |  Document Creation Location |   This field is used to record the place of the production of the described *Document*.  |  Reference Model  [Place]|  --> P108i --> E12[58_1] --> P7 --> E53[60_1]|
-|fie_cen_46 |   Document Creation Location Attribution  |  This field is used to record the attribution type (renaissance or contemporary) assigning the place of production of the described *Document*. |   Concept |   --> P108i --> E12[58_1] --> P7 --> E53[60_1] --> P141i --> E13[C46_1] --> P2 --> E55[C46_2]|
-|fie_cen_47  |  Document Creation Location Source |   This field is used to relate a *Document* carrying a textual reference about the attribution assigning the place of production of the described *Document* and the described *Document* itself.  |  Reference Model  [Document]|  --> P108i --> E12[58_1] --> P7 --> E53[60_1] --> P141i --> E13[C46_1] --> P16 --> E33[C47_1] --> P128i --> E22[C47_2]|
-|fie_cen_8  |  Document Destruction Type |   This field is used to record the generic type of the destruction event of the described *Document*. |   Concept |   --> P13i --> E6_E7[62_1] --> P2 --> E55[C8_1]|
-|fie_cen_9 |   Document Destruction Actor |   This field is used to record an actor carried out the destruction event of the described *Document*.  |  Reference Model [Person/Group]|   --> P13i --> E6_E7[62_1] --> P01i --> PC14[C16_1] --> P02 --> E39[C9_1]|
-|fie_cen_16 |   Document Destruction Actor Role |   This field is used to record the specific capacity in which an actor carried out the destruction event of the described *Document*. |   Concept  |  --> P13i --> E6_E7[62_1] --> P01 --> PC14[C16_1] --> P14.1 --> E55[C16_2]|
-|fie_cen_17  |  Document Destruction Actor Attribution   | This field is used to record the attribution type (renaissance or contemporary) assigning an actor carried out he destruction event of the described *Document*. |   Concept |   --> P13i --> E6_E7[62_1] --> P01i --> PC14[C16_1] --> P02 --> E39[C9_1] -- P141i --> E13[C17_1] --> P2 --> E55[C17_2]|
-|fie_cen_18 |   Document Destruction Actor Reference |   This field is used to relate a *Document* carrying a textual reference about the attribution (renaissance or contemporary) assigning an actor carried out he destruction event of the described *Document* and the described *Document* itself. |   Reference Model [Document]|   --> P13i --> E6_E7[62_1] --> P01i --> PC14[C16_1] --> P02 --> E39[C9_1] -- P141i --> E13[C17_1] -- >P16 --> E33[C18_1] --> P128i --> E22[C18_2]|
-|fie_cen_7  |  Document Destruction Date |   This field is used to record the timespan of the destruction event of the described *Document*.  |  Collection [Timespan]|   --> P13i --> E6_E7[62_1]  --> P4 --> E52[62_2]|
-|fie_cen_99   | Document Destruction Period  |  This field is used to record the period during which the destruction event of the documented *Document* has happened.  |  Reference Model [Period] |  --> P13i --> E6_E7[62_1] --> P10 --> E4 [C99_1]|
+|fie_299  |  Document Creation Type |   This field is used to indicate the type of production activity used in the production of the described *Postclassical Work*.   | Concept  |  --> P108i --> E12[58_1] --> P2 --> E55[299_1]|
+|fie_cen_96 |   Document Creator  |  This field is used to record the actor who has created the documented *Postclassical Work*.  |  Reference Model [Person/Group]|   --> P108i --> E12[58_1] --> P01i --> PC14[C96_1] --> P02 --> E39[C96_2]|
+|fie_cen_97 |   Document Creator Role  |  This field is used to record the specific role of the actor they played in the creation of the documented *Postclassical Work*.  |  Concept |   --> P108i --> E12[58_1] --> P01 --> PC14[C96_1] --> P14.1 --> E55[C97_1]|
+|fie_cen_42 |   Document Creator Attribution |   This field is used to record the attribution type (renaissance or contemporary) assigning the creator of the described *Postclassical Work*. |   Concept |   --> P108i --> E12[58_1]  --> P01i --> PC14[C96_1] --> P02 --> E39[C96_2] --> P141i --> E13[C42_1] --> P2 --> E55[C42_2]|
+|fie_cen_43 |   Document Creator Source |   This field is used to relate a *Postclassical Work* carrying a textual reference about the attribution assigning the creator of the described *Postclassical Work* and the described *Postclassical Work* itself. |   Reference Model [Document]|   --> P108i --> E12[58_1]  --> P01--> PC14[C96_1] --> P02 --> E39[C96_2] --> P141i --> E13[C42_1] -- >P16 --> E33[C43_1] --> P128i --> E22[C43_2]|
+|fie_58 |   Document Creation Earliest Date |   This field is used to record the earliest possible date for the production of the described *Postclassical Work*.   | Date |   --> P108i --> E12[58_1] --> P4 --> E52[58_2] --> P82a --> xsd:dateTime|
+|fie_59 |   Document Creation Latest Date  |  This field is used to record the latest possible date for the production of the described *Postclassical Work*.   | Date |   --> P108i --> E12[58_1] --> P4 --> E52[58_2] --> P82b --> xsd:dateTime|
+|fie_61 |   Document Creation Period  |  This field is used to record the historical period in which the production of the described *Postclassical Work* occurred. |   Reference Model [Period]|   --> P108i --> E12[58_1] --> P10 --> E4[61_1]|
+|fie_cen_44  |  Document Creation Date Attribution  |  This field is used to record the attribution type (renaissance or contemporary) assigning the timespan of the production of the described *Postclassical Work*.   | Concept |   --> P108i --> E12[58_1] --> P4 --> E52[58_2] --> P141i --> E13[C44_1] --> P2 --> E55[C44_2]|
+|fie_cen_45  |  Document Creation Date Source  |  This field is used to relate a document carrying a textual reference about the attribution assigning timespan of the production of the described document and the described *Postclassical Work* itself. |   Reference Model [Document]|   --> P108i --> E12[58_1] --> P4 --> E52[58_2] --> P141i --> E13[C44_1] --> P16 --> E33[C45_1] --> P128i --> E22[C45_2]|
+|fie_cen_92 |   Document Creation Timespan Verbatim  |  This field is used to record a verbatim describing the timespan of the production event of the described *Postclassical Work*.  |  String  |  --> P108i --> E12[58_1] --> P4 --> E52[58_2] --> P67i --> E33[C92_1] --> P190 --> rdfs:literal|
+|fie_60  |  Document Creation Location |   This field is used to record the place of the production of the described *Postclassical Work*.  |  Reference Model  [Place]|  --> P108i --> E12[58_1] --> P7 --> E53[60_1]|
+|fie_cen_46 |   Document Creation Location Attribution  |  This field is used to record the attribution type (renaissance or contemporary) assigning the place of production of the described *Postclassical Work*. |   Concept |   --> P108i --> E12[58_1] --> P7 --> E53[60_1] --> P141i --> E13[C46_1] --> P2 --> E55[C46_2]|
+|fie_cen_47  |  Document Creation Location Source |   This field is used to relate a *Postclassical Work* carrying a textual reference about the attribution assigning the place of production of the described *Postclassical Work* and the described *Postclassical Work* itself.  |  Reference Model  [Document]|  --> P108i --> E12[58_1] --> P7 --> E53[60_1] --> P141i --> E13[C46_1] --> P16 --> E33[C47_1] --> P128i --> E22[C47_2]|
+|fie_cen_8  |  Document Destruction Type |   This field is used to record the generic type of the destruction event of the described *Postclassical Work*. |   Concept |   --> P13i --> E6_E7[62_1] --> P2 --> E55[C8_1]|
+|fie_cen_9 |   Document Destruction Actor |   This field is used to record an actor carried out the destruction event of the described *Postclassical Work*.  |  Reference Model [Person/Group]|   --> P13i --> E6_E7[62_1] --> P01i --> PC14[C16_1] --> P02 --> E39[C9_1]|
+|fie_cen_16 |   Document Destruction Actor Role |   This field is used to record the specific capacity in which an actor carried out the destruction event of the described *Postclassical Work*. |   Concept  |  --> P13i --> E6_E7[62_1] --> P01 --> PC14[C16_1] --> P14.1 --> E55[C16_2]|
+|fie_cen_17  |  Document Destruction Actor Attribution   | This field is used to record the attribution type (renaissance or contemporary) assigning an actor carried out he destruction event of the described *Postclassical Work*. |   Concept |   --> P13i --> E6_E7[62_1] --> P01i --> PC14[C16_1] --> P02 --> E39[C9_1] -- P141i --> E13[C17_1] --> P2 --> E55[C17_2]|
+|fie_cen_18 |   Document Destruction Actor Reference |   This field is used to relate a *Postclassical Work* carrying a textual reference about the attribution (renaissance or contemporary) assigning an actor carried out he destruction event of the described *Postclassical Work* and the described *Postclassical Work* itself. |   Reference Model [Document]|   --> P13i --> E6_E7[62_1] --> P01i --> PC14[C16_1] --> P02 --> E39[C9_1] -- P141i --> E13[C17_1] -- >P16 --> E33[C18_1] --> P128i --> E22[C18_2]|
+|fie_cen_7  |  Document Destruction Date |   This field is used to record the timespan of the destruction event of the described *Postclassical Work*.  |  Collection [Timespan]|   --> P13i --> E6_E7[62_1]  --> P4 --> E52[62_2]|
+|fie_cen_99   | Document Destruction Period  |  This field is used to record the period during which the destruction event of the documented *Postclassical Work* has happened.  |  Reference Model [Period] |  --> P13i --> E6_E7[62_1] --> P10 --> E4 [C99_1]|
 
 ### - Document Existence **Ontology Graph**
 ![Screenshot](img/ex_document.png)
@@ -665,21 +665,21 @@ Of essential import in identifying and tracking documents is information pertain
 ```
 
 ## Document **Events**
-This information category brings together typical events in which a *Document* may have been involved through the course of its history. It is meant to cover information concerning the most salient events documented with regards to documents. At present this enables the documentation of provenance of the *Document*.
+This information category brings together typical events in which a *Postclassical Work* may have been involved through the course of its history. It is meant to cover information concerning the most salient events documented with regards to documents. At present this enables the documentation of provenance of the *Postclassical Work*.
 
 | Filed ID    | Name                          | Description | Data Type | CRM Path |
 | ----------- | ------------------------------|-------------|-----------|----------|
-|fie_269 |   Document Provenance Event Type  |  This field is used to indicate the type of a provenance activity associated with the documented *Document*.  |  Concept|    --> P16i --> E7[268_1] --> P2 --> E55[269_1]|
-|fie_cen_98 |   Document Provenance Event Actor |   This field is used to record the actor participated in a provenance activity associated with the documented *Document*. |   Reference Model [Person/Group]|   --> P16i --> E7[268_1] --> P01i --> PC14[C70_1] --> P02 --> E39[C98_1]|
-|fie_cen_70  |  Document Provenance Event Actor Role |   This field is used to indicate the specific role of the actor carried out the provenance activity associated with the documented *Document*. |   Concept  |  --> P16i --> E7[268_1] --> P01 --> PC14[C70_1] --> P14.1 --> E55[C70_2]|
-|fie_cen_71  |  Document Provenance Event Actor Attribution  |  This field is used to record the type of attribution (renaissance or contemporary) assigning the actor carried out the provenance activity associated with the documented *Document*.  |  Concept |   --> P16i --> E7[268_1] --> P01 --> PC14[C70_1] --> P02 --> E39[C98_1] --> P141i -->E13[C71_1] --> P2 --> E55[C71_2]|
-|fie_cen_72 |   Monument Provenance Event Actor Source  |  This field is used to record the *Document* carrying a textual reference about the type of attribution (Renaissance or contemporary) assigning the actor carried out the provenance activity associated with the documented *Monument* and the documented *Monument* itself. |   Reference Model [Document]|   --> P16i --> E7[268_1] --> P01 --> PC14[C70_1] --> P02 --> E39[C98_1] --> P141i -->E13[C71_1] --> P16 -->E33[C72_1] --> P128i -->E22[C72_2]|
-|fie_cen_68 |   Document Provenance Event Timespan |   This field is used to record the timespan of a provenance activity associated with the documented *Document*. |   Collection  [Timespan]|  --> P16i --> E7[268_1] --> P4 --> E52[270_1] |
-|fie_cen_73  |  Document Provenance Event Location  |  This field is used to record the location of the provenance activity associated with the documented *Document*. |   Reference Model [Location]|   --> P16i --> E7[268_1] --> P7 --> E53[C73_1]|
-|fie_cen_75  |  Document Provenance Event Location Source |   This field is used to relate the *Document* carrying a textual reference about the type of attribution (Renaissance or contemporary) assigning the location of the provenance activity associated with the documented *Document* and the documented *Document* itself. |   Reference Model [Document]|   --> P16i --> E7[268_1] --> P7 --> E53[C73_1] --> P141i -->E13[C74_1] --> P16 -->E33[C75_1] --> P128i -->E22[C75_2]|
-|fie_cen_74 |   Document Provenance Event Location Attribution |   This field is used to record the type of attribution (Renaissance or contemporary) assigning the location of the provenance activity associated with the documented *Document*.  |  Concept |   --> P16i --> E7[268_1] --> P7 --> E53[C73_1] --> P141i -->E13[C74_1] --> P2 --> E55[C74_2]|
-|fie_cen_76 |   Document Provenance Event Statement |   This field is used to record a general statement about the provenance activity associated with the documented *Document*.   | Collection [Statement]|   --> P16i --> E7[268_1] --> P67i --> E33[C76_1]|
-|fie_cen_100 |   Document Provenance Event Period |   This field is used to record the period during which a provenance activity associated with the documented *Document* has happened.  |  Reference Model [Period]|   --> P16i --> E7[268_1] --> P10 --> E4 [C100_1]|
+|fie_269 |   Document Provenance Event Type  |  This field is used to indicate the type of a provenance activity associated with the documented *Postclassical Work*.  |  Concept|    --> P16i --> E7[268_1] --> P2 --> E55[269_1]|
+|fie_cen_98 |   Document Provenance Event Actor |   This field is used to record the actor participated in a provenance activity associated with the documented *Postclassical Work*. |   Reference Model [Person/Group]|   --> P16i --> E7[268_1] --> P01i --> PC14[C70_1] --> P02 --> E39[C98_1]|
+|fie_cen_70  |  Document Provenance Event Actor Role |   This field is used to indicate the specific role of the actor carried out the provenance activity associated with the documented *Postclassical Work*. |   Concept  |  --> P16i --> E7[268_1] --> P01 --> PC14[C70_1] --> P14.1 --> E55[C70_2]|
+|fie_cen_71  |  Document Provenance Event Actor Attribution  |  This field is used to record the type of attribution (renaissance or contemporary) assigning the actor carried out the provenance activity associated with the documented *Postclassical Work*.  |  Concept |   --> P16i --> E7[268_1] --> P01 --> PC14[C70_1] --> P02 --> E39[C98_1] --> P141i -->E13[C71_1] --> P2 --> E55[C71_2]|
+|fie_cen_72 |   Monument Provenance Event Actor Source  |  This field is used to record the *Postclassical Work* carrying a textual reference about the type of attribution (Renaissance or contemporary) assigning the actor carried out the provenance activity associated with the documented *Antique Monument* and the documented *Antique Monument* itself. |   Reference Model [Document]|   --> P16i --> E7[268_1] --> P01 --> PC14[C70_1] --> P02 --> E39[C98_1] --> P141i -->E13[C71_1] --> P16 -->E33[C72_1] --> P128i -->E22[C72_2]|
+|fie_cen_68 |   Document Provenance Event Timespan |   This field is used to record the timespan of a provenance activity associated with the documented *Postclassical Work*. |   Collection  [Timespan]|  --> P16i --> E7[268_1] --> P4 --> E52[270_1] |
+|fie_cen_73  |  Document Provenance Event Location  |  This field is used to record the location of the provenance activity associated with the documented *Postclassical Work*. |   Reference Model [Location]|   --> P16i --> E7[268_1] --> P7 --> E53[C73_1]|
+|fie_cen_75  |  Document Provenance Event Location Source |   This field is used to relate the *Postclassical Work* carrying a textual reference about the type of attribution (Renaissance or contemporary) assigning the location of the provenance activity associated with the documented *Postclassical Work* and the documented *Postclassical Work* itself. |   Reference Model [Document]|   --> P16i --> E7[268_1] --> P7 --> E53[C73_1] --> P141i -->E13[C74_1] --> P16 -->E33[C75_1] --> P128i -->E22[C75_2]|
+|fie_cen_74 |   Document Provenance Event Location Attribution |   This field is used to record the type of attribution (Renaissance or contemporary) assigning the location of the provenance activity associated with the documented *Postclassical Work*.  |  Concept |   --> P16i --> E7[268_1] --> P7 --> E53[C73_1] --> P141i -->E13[C74_1] --> P2 --> E55[C74_2]|
+|fie_cen_76 |   Document Provenance Event Statement |   This field is used to record a general statement about the provenance activity associated with the documented *Postclassical Work*.   | Collection [Statement]|   --> P16i --> E7[268_1] --> P67i --> E33[C76_1]|
+|fie_cen_100 |   Document Provenance Event Period |   This field is used to record the period during which a provenance activity associated with the documented *Postclassical Work* has happened.  |  Reference Model [Period]|   --> P16i --> E7[268_1] --> P10 --> E4 [C100_1]|
 
 ### - Document Events **Ontology Graph**
 ![Screenshot](img/ev_document.png)
@@ -915,26 +915,26 @@ This information category brings together typical events in which a *Document* m
 ```
 
 ## Document **Substance**
-The analysis and understanding of a *Document* depends also on our knowledge of its materiality and physical characteristics. The category of substance brings together descriptors which are relevant to this form of analysis. Particularly, it groups information having to do with the composition and measurable aspects of the *Document* as an object, the physical carrier of the content, as well as the documentation of any inscriptions.
+The analysis and understanding of a *Postclassical Work* depends also on our knowledge of its materiality and physical characteristics. The category of substance brings together descriptors which are relevant to this form of analysis. Particularly, it groups information having to do with the composition and measurable aspects of the *Postclassical Work* as an object, the physical carrier of the content, as well as the documentation of any inscriptions.
                
 | Filed ID    | Name                          | Description | Data Type | CRM Path |
 | ----------- | ------------------------------|-------------|-----------|----------|
 |fie_90 |   Document Material|    This field is used to record the material of which the described document consists.  |  Concept   | --> P45 --> E57[90_1]|
-|fie_86  |  Document Dimension Type  |  This field is used to record the type of dimension measured on the described *Document*.  |  Concept  |  --> P39i --> E16[86_1] --> P40 --> E54[86_2] --> P2 --> E55[86_3]|
-|fie_cen_91  |  Document Dimension Verbatim |   This field is used to record a verbatim describing the dimensions of the documented described *Document*.  |  String|    --> P39i --> E16[86_1] --> P40 --> E54[86_2] --> P67i --> E33_41[C91_1] --> P190 --> rdfs:literal|
-|fie_87 |   Document Dimension Value|    This field is used to record the value of the measured dimension of the described *Document*.|    Integer |   --> P39i --> E16[86_1] --> P40 --> E54[86_2] --> P90 --> xsd:decimal|
-|fie_88   | Document Dimension Unit  |  This field is used to record the unit of the measured dimension of the described *Document*.   | Concept  |  --> P39i --> E16[86_1] --> P40 --> E54[86_2] --> P91 --> E58[88_1]|
-|fie_89 |   Document Dimension Taker |   This field is used to record the actor who undertook the measurement producing the dimension of the described *Document*.  |  Reference Model [Person/Group]|   --> P39i --> E16[86_1] --> P14 --> E39[89_1]|
-|fie_cen_55 |   Document Dimensions Comment |   This field is used to record the textual content of a statement made about the dimensions of the described *Document*.   | String |   --> P39i --> E16[86_1] --> P40 --> E54[86_2] --> P67i --> E33_41[C55_1] --> P190 --> rdfs:literal|
-|fie_cen_26  |  Document Inscription Type |   This field is used to record the general type of inscription carried out by the *Document*. |   Concept |   --> P128 --> E33[C22_1] --> P130 --> E33[C25_1] --> P2 --> E55[C26_1]|
-|fie_cen_25  |  Document Inscription |   This field is used to record inscription carried out by the described *Document*.   | Reference Model [Bibliographic Entity]|   --> P128 --> E33[C22_1] --> P130 --> E33[C25_1]|
-|fie_cen_28 |   Document Inscription Language |   This field is used to record the language of transcription carried out by the described *Document*. |   Concept |   --> P128 --> E33[C22_1] --> P130 --> E33[C25_1] --> P72 --> E56[C28_1]|
-|fie_cen_29  |  Document Inscription Name |   This field is used to record the formal name of the inscription carried out by the described *Document*. |   String  |  --> P128 --> E33[C22_1] --> P130 --> E33[C25_1] --> P1 --> E33_E41[C29_1]|
-|fie_cen_30 |   Document Inscription Reference |   This field is used to record the bibliographic reference of the inscription carried out by the described *Document*.|   Reference Model [Bibliographic Entity]|   --> P128 --> E33[C22_1] --> P130 --> E33[C25_1] --> P67i --> E33[C30_1]|
-|fie_cen_88  |  Document Inscription URL |   This field is used to record the external link of the linguistic object being in a similar or direct relationship with the linguistic object carried out by the described *Document*. |   URI  |  --> P128 --> E33[C22_1] --> P130 --> E33[C25_1] --> L54 --> E1[88_1] |
-|fie_cen_90  |  Document Inscription Position  |  This field is used to record a statement about the physical position of the linguistic object being in a similar or direct relationship with the linguistic object carried out by the described *Document*.  |  String  |  --> P128 --> E33[C22_1] --> P130 --> E33[C25_1] --> P67i --> E33[C60_1] --> P190 --> rdfs:literal|
-|fie_cen_27  |  Document Inscription Transcription|    This field is used to record the transcription of the inscription carried out by the described *Document*. |   String   | --> P128 --> E33[C22_1] --> P130 --> E33[C25_1] --> P190 --> rdfs:literal|
-|fie_cen_60    |Document Inscription Comments |   This field is used to record a general statement about the inscription carried out by the described *Document*. |   Collection  [Statement]|  --> P128 --> E33[C22_1] --> P130 --> E33[C25_1] --> P67i --> E33[C60_1]|
+|fie_86  |  Document Dimension Type  |  This field is used to record the type of dimension measured on the described *Postclassical Work*.  |  Concept  |  --> P39i --> E16[86_1] --> P40 --> E54[86_2] --> P2 --> E55[86_3]|
+|fie_cen_91  |  Document Dimension Verbatim |   This field is used to record a verbatim describing the dimensions of the documented described *Postclassical Work*.  |  String|    --> P39i --> E16[86_1] --> P40 --> E54[86_2] --> P67i --> E33_41[C91_1] --> P190 --> rdfs:literal|
+|fie_87 |   Document Dimension Value|    This field is used to record the value of the measured dimension of the described *Postclassical Work*.|    Integer |   --> P39i --> E16[86_1] --> P40 --> E54[86_2] --> P90 --> xsd:decimal|
+|fie_88   | Document Dimension Unit  |  This field is used to record the unit of the measured dimension of the described *Postclassical Work*.   | Concept  |  --> P39i --> E16[86_1] --> P40 --> E54[86_2] --> P91 --> E58[88_1]|
+|fie_89 |   Document Dimension Taker |   This field is used to record the actor who undertook the measurement producing the dimension of the described *Postclassical Work*.  |  Reference Model [Person/Group]|   --> P39i --> E16[86_1] --> P14 --> E39[89_1]|
+|fie_cen_55 |   Document Dimensions Comment |   This field is used to record the textual content of a statement made about the dimensions of the described *Postclassical Work*.   | String |   --> P39i --> E16[86_1] --> P40 --> E54[86_2] --> P67i --> E33_41[C55_1] --> P190 --> rdfs:literal|
+|fie_cen_26  |  Document Inscription Type |   This field is used to record the general type of inscription carried out by the *Postclassical Work*. |   Concept |   --> P128 --> E33[C22_1] --> P130 --> E33[C25_1] --> P2 --> E55[C26_1]|
+|fie_cen_25  |  Document Inscription |   This field is used to record inscription carried out by the described *Postclassical Work*.   | Reference Model [Bibliographic Entity]|   --> P128 --> E33[C22_1] --> P130 --> E33[C25_1]|
+|fie_cen_28 |   Document Inscription Language |   This field is used to record the language of transcription carried out by the described *Postclassical Work*. |   Concept |   --> P128 --> E33[C22_1] --> P130 --> E33[C25_1] --> P72 --> E56[C28_1]|
+|fie_cen_29  |  Document Inscription Name |   This field is used to record the formal name of the inscription carried out by the described *Postclassical Work*. |   String  |  --> P128 --> E33[C22_1] --> P130 --> E33[C25_1] --> P1 --> E33_E41[C29_1]|
+|fie_cen_30 |   Document Inscription Reference |   This field is used to record the bibliographic reference of the inscription carried out by the described *Postclassical Work*.|   Reference Model [Bibliographic Entity]|   --> P128 --> E33[C22_1] --> P130 --> E33[C25_1] --> P67i --> E33[C30_1]|
+|fie_cen_88  |  Document Inscription URL |   This field is used to record the external link of the linguistic object being in a similar or direct relationship with the linguistic object carried out by the described *Postclassical Work*. |   URI  |  --> P128 --> E33[C22_1] --> P130 --> E33[C25_1] --> L54 --> E1[88_1] |
+|fie_cen_90  |  Document Inscription Position  |  This field is used to record a statement about the physical position of the linguistic object being in a similar or direct relationship with the linguistic object carried out by the described *Postclassical Work*.  |  String  |  --> P128 --> E33[C22_1] --> P130 --> E33[C25_1] --> P67i --> E33[C60_1] --> P190 --> rdfs:literal|
+|fie_cen_27  |  Document Inscription Transcription|    This field is used to record the transcription of the inscription carried out by the described *Postclassical Work*. |   String   | --> P128 --> E33[C22_1] --> P130 --> E33[C25_1] --> P190 --> rdfs:literal|
+|fie_cen_60    |Document Inscription Comments |   This field is used to record a general statement about the inscription carried out by the described *Postclassical Work*. |   Collection  [Statement]|  --> P128 --> E33[C22_1] --> P130 --> E33[C25_1] --> P67i --> E33[C60_1]|
 
 ### - Document Substance **Ontology Graph**
 ![Screenshot](img/sub_document.png)
@@ -1146,12 +1146,12 @@ The analysis and understanding of a *Document* depends also on our knowledge of 
 ```
 
 ## Document **Aboutness**
-This information category provides the means to gather information to the representational level of a *Document*. 
+This information category provides the means to gather information to the representational level of a *Postclassical Work*. 
                
 | Filed ID    | Name                          | Description | Data Type | CRM Path |
 | ----------- | ------------------------------|-------------|-----------|----------|
-|fie_cen_23|    Document Medium Visual  |  This field is used to record the visual content carried out by the described *Document*.  |  Concept |   --> P65 --> E36[C23_1] --> P2 --> E55[C23_2]|
-|fie_cen_22   | Document Medium Written  |  This field is used to record the type of textual content carried out by the described *Document*.  |  Concept  |  --> P128 --> E33[C22_1] --> P2 --> E55[C22_2]|
+|fie_cen_23|    Document Medium Visual  |  This field is used to record the visual content carried out by the described *Postclassical Work*.  |  Concept |   --> P65 --> E36[C23_1] --> P2 --> E55[C23_2]|
+|fie_cen_22   | Document Medium Written  |  This field is used to record the type of textual content carried out by the described *Postclassical Work*.  |  Concept  |  --> P128 --> E33[C22_1] --> P2 --> E55[C22_2]|
 
 
 ### - Document Aboutness **Ontology Graph**
@@ -1223,11 +1223,11 @@ This information category provides the means to gather information to the repres
 
 
 ## Document **Location**
-The documentation of location aids in tracking the present location of individual *Documents* as well their dispersion geographically. This information category gathers together relevant descriptors for this task.
+The documentation of location aids in tracking the present location of individual *Postclassical Works* as well their dispersion geographically. This information category gathers together relevant descriptors for this task.
                
 | Filed ID    | Name                          | Description | Data Type | CRM Path |
 | ----------- | ------------------------------|-------------|-----------|----------|
-|fie_177 |  Document Location  |  This field is used to record the address at which the described *Document* is located.  |  String  |  --> P53 --> E53[177_1] --> P1 --> E41[177_2]<br><br>P53 --> E53[177_1] --> P1 --> E41[177_2] --> P2 --> E55 "Address"[177_3]|
+|fie_177 |  Document Location  |  This field is used to record the address at which the described *Postclassical Work* is located.  |  String  |  --> P53 --> E53[177_1] --> P1 --> E41[177_2]<br><br>P53 --> E53[177_1] --> P1 --> E41[177_2] --> P2 --> E55 "Address"[177_3]|
 
 
 ### - Document Location **Ontology Graph**
@@ -1288,14 +1288,14 @@ The documentation of location aids in tracking the present location of individua
 ```           
 
 ## Document **Description**
-Documents are the subjects of innumerable descriptions that provide a wide range of information with regards to the aesthetic and historical importance of the work, inter alia. Such descriptions are of use in a scholarly understanding of a *Document* just in case we are able to track the provenance of such elocutions in a systematic fashion. Such an aim drives the need for the tracking of description information as a separate category. The descriptors necessary to this task are documented in the table below.
+Documents are the subjects of innumerable descriptions that provide a wide range of information with regards to the aesthetic and historical importance of the work, inter alia. Such descriptions are of use in a scholarly understanding of a *Postclassical Work* just in case we are able to track the provenance of such elocutions in a systematic fashion. Such an aim drives the need for the tracking of description information as a separate category. The descriptors necessary to this task are documented in the table below.
 
                
 | Filed ID    | Name                          | Description | Data Type | CRM Path |
 | ----------- | ------------------------------|-------------|-----------|----------|
-|fie_cen_32 |   Document Relation Type |   This field is used to record the type of similarity between the described *Document* and another *Document*. |   Concept   | --> P01i --> PC130[C31_1] --> P130.1 --> E55[C32_1]|
-|fie_cen_31 |   Document Relation |   This field is used to record the type of similarity between the described *Document* and another *Document*.  |  Reference Model  [Document]|  --> P01i --> PC130[C31_1] --> P02 --> E22[C31_2] |
-|fie_cen_58  |  Document Notes|    This field is used to record a general statement about the described *Document*.   | Collection [Statement] |  --> P67i --> E33[C58_1]|
+|fie_cen_32 |   Document Relation Type |   This field is used to record the type of similarity between the described *Postclassical Work* and another *Postclassical Work*. |   Concept   | --> P01i --> PC130[C31_1] --> P130.1 --> E55[C32_1]|
+|fie_cen_31 |   Document Relation |   This field is used to record the type of similarity between the described *Postclassical Work* and another *Postclassical Work*.  |  Reference Model  [Document]|  --> P01i --> PC130[C31_1] --> P02 --> E22[C31_2] |
+|fie_cen_58  |  Document Notes|    This field is used to record a general statement about the described *Postclassical Work*.   | Collection [Statement] |  --> P67i --> E33[C58_1]|
 
 ### - Document Description **Ontology Graph**
 ![Screenshot](img/desc_document.png)
@@ -1364,16 +1364,16 @@ Documents are the subjects of innumerable descriptions that provide a wide range
                 
 ```
 ## Document **Documentation**
-This information category unites referential information about the documented *Document*, providing contextual data about it.
+This information category unites referential information about the documented *Postclassical Work*, providing contextual data about it.
                
 | Filed ID    | Name                          | Description | Data Type | CRM Path |
 | ----------- | ------------------------------|-------------|-----------|----------|
-|fie_196  |  Document Citation  |  This field is used to record a citation to reference documentation for the described *Document*.  |  String  |  --> P129i --> E33[196_1] --> rdf:value --> rdfs:Literal<br><br>--> P129i --> E33[196_1] --> P2 --> E55 "Citation" |
-|fie_197  |  Document Citation Source  |  This field is used to record the source used for generating the citation for the described *Document*.  |  Reference Model [Bibliographic Entity]|  --> P129i --> E33[196_1] --> P106i --> E33[197_1]|
-|fie_cen_13  |  Document Bibliography |   This field is used to record a bibliographic reference for the described *Document*.  |  Reference Model  [Bibliographic Entity]|  --> P67i -->E33[C13_1]|
-|fie_195  |  Document Image  |  This field is used to record a digital image which is representative of the described *Document*.  |  Reference Model [Image]|   --> P138i --> E36/D9[195_1]|
-|fie_204   | Document URL  |  The field is used to record the sameness between the described *Document* and an external authority|    uri  |  --> L54 --> E1[204_1]|
-|fie_cen_57 |   Document URL Title  |  The field is used to record the sameness between the described *Document* and an external authority.  |  String  |  --> L54 --> E1[204_1] --> P1 --> E33_E41[C57_1]|
+|fie_196  |  Document Citation  |  This field is used to record a citation to reference documentation for the described *Postclassical Work*.  |  String  |  --> P129i --> E33[196_1] --> rdf:value --> rdfs:Literal<br><br>--> P129i --> E33[196_1] --> P2 --> E55 "Citation" |
+|fie_197  |  Document Citation Source  |  This field is used to record the source used for generating the citation for the described *Postclassical Work*.  |  Reference Model [Bibliographic Entity]|  --> P129i --> E33[196_1] --> P106i --> E33[197_1]|
+|fie_cen_13  |  Document Bibliography |   This field is used to record a bibliographic reference for the described *Postclassical Work*.  |  Reference Model  [Bibliographic Entity]|  --> P67i -->E33[C13_1]|
+|fie_195  |  Document Image  |  This field is used to record a digital image which is representative of the described *Postclassical Work*.  |  Reference Model [Image]|   --> P138i --> E36/D9[195_1]|
+|fie_204   | Document URL  |  The field is used to record the sameness between the described *Postclassical Work* and an external authority|    uri  |  --> L54 --> E1[204_1]|
+|fie_cen_57 |   Document URL Title  |  The field is used to record the sameness between the described *Postclassical Work* and an external authority.  |  String  |  --> L54 --> E1[204_1] --> P1 --> E33_E41[C57_1]|
 
 ### - Document Documentation **Ontology Graph**
 ![Screenshot](img/doc_document.png)
