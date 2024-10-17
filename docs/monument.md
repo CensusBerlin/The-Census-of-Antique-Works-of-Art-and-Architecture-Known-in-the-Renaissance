@@ -28,7 +28,7 @@ The *Antique Monument* model allows the documentation of the following kinds of 
 |Description  |  Description   | The researcher can document various free text descriptions of the *Antique Monument*.|
 |Documentation  | Citation/Image/External URI| The researcher can document citations relative to the *Antique Monument*, link to images of the *Antique Monument* and document external URIs of documentation for the same *Antique Monument*.|
 
-## Antique Monument   **Names and Classifications**
+## Antique Monument **Names and Classifications**
 
 The attribution of names and types to *Antique Monument*, as with other entities, is a basic human activity. A chief factor in disambiguating *Antique Monuments* lies in understanding the various names and identifiers that have been given to them at different moments in their individual histories. Likewise, additional classifiers of the *Antique Monument*, such as how it has been classified as an object as such, give important distinguishing characteristics.
 
@@ -290,7 +290,7 @@ The attribution of names and types to *Antique Monument*, as with other entities
                 
 ```                           
 
-## Antique Monument   **Existence**
+## Antique Monument **Existence**
 
 Of essential import in identifying and tracking *Antique Monuments* is information pertaining to their existence in time, particularly information regarding the creation and destruction of the monument. For this reason, we have clustered descriptors relevant to such information in a common ‘existence’ category. These are described in the table below.
 
@@ -647,7 +647,7 @@ Of essential import in identifying and tracking *Antique Monuments* is informati
                 
 ```                
 
-## Antique Monument   **Substance**
+## Antique Monument **Substance**
 The analysis and understanding of a *Antique Monument* depends also on our knowledge of its materiality and physical characteristics. The category of substance brings together descriptors which are relevant to this form of analysis. Particularly, it groups information having to do with the composition and measurable aspects of the *Antique Monument* as an object. 
 
 | Filed ID    | Name                         | Description | Data Type | CRM Path |
@@ -770,7 +770,7 @@ The analysis and understanding of a *Antique Monument* depends also on our knowl
 }
                 
 ```                
-## Antique Monument   **Events**
+## Antique Monument **Events**
 This information category brings together typical events in which a *Antique Monument* may have been involved through the course of its history. It is meant to cover information concerning the most salient events documented with regards to *Antique Monuments*. At present this enables the documentation of provenance and preservation events.
 
 | Filed ID    | Name                         | Description | Data Type | CRM Path |
@@ -1159,7 +1159,7 @@ This information category brings together typical events in which a *Antique Mon
                 
 ```                
 
-## Antique Monument   **Designation Status**
+## Antique Monument **Designation Status**
 Characteristic of information gathered relative to *Antique Monuments* are various kinds of official designations types that are given to these objects by various agencies. Assignment of such designations is related to various protocols in the assigning institutions and are often accompanied by regulations on the kind of activity that can be undertaken relative to the built work in question. Such designations also provide means of identifying a *Antique Monument* across records. This information category gathers together descriptors relative to this information.
 
 | Filed ID    | Name                         | Description | Data Type | CRM Path |
@@ -1300,7 +1300,7 @@ Characteristic of information gathered relative to *Antique Monuments* are vario
 }
                 
 ```                
-## Antique Monument   **Location**
+## Antique Monument **Location**
 The documentation of location aids in tracking the present location of individual *Antique Monuments* as well their dispersion geographically. This information category gathers together relevant descriptors for this task.
 
 | Filed ID    | Name                         | Description | Data Type | CRM Path |
@@ -1362,7 +1362,7 @@ The documentation of location aids in tracking the present location of individua
   ]
 }
 ```                
-## Antique Monument   **Description**
+## Antique Monument **Description**
 *Antique Monuments* are the subjects of innumerable descriptions that provide a wide range of information with regards to the aesthetic and historical importance of the work, inter alia. Such descriptions are of use in a scholarly understanding of a *Antique Monument* just in case we are able to track the provenance of such elocutions in a systematic fashion. Such an aim drives the need for the tracking of description information as a separate category. The descriptors necessary to this task are documented in the table below.
 
 | Filed ID    | Name                         | Description | Data Type | CRM Path |
@@ -1432,7 +1432,7 @@ The documentation of location aids in tracking the present location of individua
   ]
 }
 ```                
-## Antique Monument   **Documentation**
+## Antique Monument **Documentation**
 This information category unites referential information about the documented *Antique Monument*, providing contextual data about it.
 
 | Filed ID    | Name                         | Description | Data Type | CRM Path |
