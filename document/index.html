@@ -1,0 +1,2138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="canonical" href="https://takinsolutions.github.io/censusdocumentation/document/">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Postclassical Work - Census Data Model Documentation</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Postclassical Work Names and Classifications", url: "#_top", children: [
+              {title: "- Postclassical Work Names and Classifications Ontology Graph", url: "#-postclassical-work-names-and-classifications-ontology-graph" },
+              {title: "- Postclassical Work Names and Classifications RDF", url: "#-postclassical-work-names-and-classifications-rdf" },
+              {title: "- Postclassical Work Names and Classifications JOSN-LD", url: "#-postclassical-work-names-and-classifications-josn-ld" },
+          ]},
+          {title: "Postclassical Work Existence", url: "#postclassical-work-existence", children: [
+              {title: "- Postclassical Work Existence Ontology Graph", url: "#-postclassical-work-existence-ontology-graph" },
+              {title: "- Postclassical Work Existence RDF", url: "#-postclassical-work-existence-rdf" },
+              {title: "- Postclassical Work Existence JSON-LD", url: "#-postclassical-work-existence-json-ld" },
+          ]},
+          {title: "Postclassical Work Events", url: "#postclassical-work-events", children: [
+              {title: "- Postclassical Work Events Ontology Graph", url: "#-postclassical-work-events-ontology-graph" },
+              {title: "- Postclassical Work Events RDF", url: "#-postclassical-work-events-rdf" },
+              {title: "- Postclassical Work Events JSON-LD", url: "#-postclassical-work-events-json-ld" },
+          ]},
+          {title: "Postclassical Work Substance", url: "#postclassical-work-substance", children: [
+              {title: "- Postclassical Work Substance Ontology Graph", url: "#-postclassical-work-substance-ontology-graph" },
+              {title: "- Postclassical Work Substance RDF", url: "#-postclassical-work-substance-rdf" },
+              {title: "- Postclassical Work Substance JSON-LD", url: "#-postclassical-work-substance-json-ld" },
+          ]},
+          {title: "Postclassical Work Aboutness", url: "#postclassical-work-aboutness", children: [
+              {title: "- Postclassical Work Aboutness Ontology Graph", url: "#-postclassical-work-aboutness-ontology-graph" },
+              {title: "- Postclassical Work Aboutness RDF", url: "#-postclassical-work-aboutness-rdf" },
+              {title: "- Postclassical Work Aboutness JSON-LD", url: "#-postclassical-work-aboutness-json-ld" },
+          ]},
+          {title: "Postclassical Work Location", url: "#postclassical-work-location", children: [
+              {title: "- Postclassical Work Location Ontology Graph", url: "#-postclassical-work-location-ontology-graph" },
+              {title: "- Postclassical Work Location RDF", url: "#-postclassical-work-location-rdf" },
+              {title: "- Postclassical Work Location JSON-LD", url: "#-postclassical-work-location-json-ld" },
+          ]},
+          {title: "Postclassical Work Description", url: "#postclassical-work-description", children: [
+              {title: "- Postclassical Work Description Ontology Graph", url: "#-postclassical-work-description-ontology-graph" },
+              {title: "- Postclassical Work Description RDF", url: "#-postclassical-work-description-rdf" },
+              {title: "- Postclassical Work Description JSON-LD", url: "#-postclassical-work-description-json-ld" },
+          ]},
+          {title: "Postclassical Work Documentation", url: "#postclassical-work-documentation", children: [
+              {title: "- Postclassical Work Documentation Ontology Graph", url: "#-postclassical-work-documentation-ontology-graph" },
+              {title: "- Postclassical Work Documentation RDF", url: "#-postclassical-work-documentation-rdf" },
+              {title: "- Postclassical Work Documentation JSON-LD", url: "#-postclassical-work-documentation-json-ld" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../person/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../person/" class="btn btn-xs btn-link">
+        Person
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../monument/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../monument/" class="btn btn-xs btn-link">
+        Antique Monument
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><strong>Postclassical Work</strong></p>
+<p><strong>Author:</strong> Denitsa Nenova, George Bruseker</p>
+<p><strong>Version:</strong> 1.0</p>
+<p>The <em>Postclassical Work</em> model is intended to enable the representation and sharing of data relevant to human-made, physical items – works of art (such as drawings, prints, statuettes, paintings or medals), or texts (such as inventories or guidebooks) – which carry content that provides evidence of a historical witnessing of or reference to a <em>Antique Monument</em>. An instance of the <em>Postclassical Work</em> model is typically a primary, physical artwork or text dating to the period of study (typically, the Renaissance as defined as the period between 1400 and 1600) that responds to or bears witness to a <em>Antique Monument</em>. <em>Postclassical Works</em> are recorded as objects in and of themselves and are intended to trace assertions about, sightings of or responses to <em>Antique Monuments</em>, allowing researchers to gain an understanding of the whole corpus of Renaissance knowledge of antique works of art and architecture. <em>Postclassical Works</em> also provide  opinions or perspectives on <em>Antique Monuments</em>, not only with regard to the <em>Antique Monument</em>’s identification, date, and condition,  but also with regard to the <em>Antique Monument</em>’s cultural and symbolic significance, its artistic value, and its identity in a specific Renaissance setting and context.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+<th>URI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root Ontology Node</td>
+<td>E22 Human-Made Object</td>
+<td>https://cidoc-crm.org/Entity/E22-Human-Made-Object/version-7.1.1</td>
+</tr>
+<tr>
+<td>Type Differentiator</td>
+<td>documents</td>
+<td>http://vocab.getty.edu/aat/300026030</td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Postclassical Work</em> model allows the documentation of the following kinds of information:</p>
+<table>
+<thead>
+<tr>
+<th>Information Category</th>
+<th>Information Collections</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Names and Classifications</td>
+<td>Names/Alternative Names/Identifiers/Type</td>
+<td>The researcher can document various names and classification regarding the <em>Postclassical Work</em>.</td>
+</tr>
+<tr>
+<td>Existence</td>
+<td>Production/Destruction</td>
+<td>The researcher can document the events related to the production and destruction of a <em>Postclassical Work</em>.</td>
+</tr>
+<tr>
+<td>Events</td>
+<td>Provenance</td>
+<td>The researcher can document the events related to the provenance of a <em>Postclassical Work</em>.</td>
+</tr>
+<tr>
+<td>Substance</td>
+<td>Dimension/Material</td>
+<td>The researcher can document various physical information about the <em>Postclassical Work</em>.</td>
+</tr>
+<tr>
+<td>Aboutness</td>
+<td>Visual/Textual</td>
+<td>The researcher can document the kind of visual or textual information that the <em>Postclassical Work</em> is a bearer of.</td>
+</tr>
+<tr>
+<td>Locations</td>
+<td>Location</td>
+<td>The researcher can document the location of the <em>Postclassical Work</em>.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Description</td>
+<td>The researcher can document various free-text descriptions of the <em>Postclassical Work</em>.</td>
+</tr>
+<tr>
+<td>Documentation</td>
+<td>Citation/Image/External URI</td>
+<td>The researcher can document citations relative to the <em>Postclassical Work</em>, link to images of the <em>Postclassical Work</em> and document external URIs of documentation for the same <em>Postclassical Work</em>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="postclassical-work-names-and-classifications">Postclassical Work <strong>Names and Classifications</strong></h2>
+<p>The attribution of names and types to <em>Postclassical Work</em>, as with other entities, is a basic human activity. A chief factor in disambiguating <em>Postclassical Works</em> lies in understanding the various names and identifiers that have been given to them at different moments in their individual histories. Likewise, additional classifiers of the <em>Postclassical Work</em> give important distinguishing characteristics.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_5</td>
+<td>Document Name</td>
+<td>This field is used to record the main name attributed to the described <em>Postclassical Work</em>.</td>
+<td>String</td>
+<td>--&gt; P1 --&gt; E33_E41[5_1] --&gt; P190 --&gt; rdfs:Literal<br><br> --&gt; P1 --&gt; E33_E41[5_1] --&gt; P2 --&gt; E55[5_2]{'preferred terms'}</td>
+</tr>
+<tr>
+<td>fie_10</td>
+<td>Document Alias</td>
+<td>This field is used to record an alternative name under which the described <em>Postclassical Work</em> is known. </td>
+<td>String</td>
+<td>--&gt; P1 --&gt; E33_E41[10_1]  --&gt; P190 --&gt; rdfs:Literal</td>
+</tr>
+<tr>
+<td>fie_11</td>
+<td>Document Alias Type</td>
+<td>This field is used to record the type of the alternative name that has been attributed to the described <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P1 --&gt; E33_E41[10_1] --&gt; P2 --&gt; E55[11_1]</td>
+</tr>
+<tr>
+<td>fie_16</td>
+<td>Document Alias Source</td>
+<td>This field is used to record the source on the basis of which the organization attributing the alternative name use based their attribution.</td>
+<td>Reference Model [Bibliographic Entity/Image]</td>
+<td>--&gt; P1 --&gt; E33_E41[10_1] --&gt; P141i --&gt; E13[15_1] --&gt; P16 --&gt; E73[16_1]</td>
+</tr>
+<tr>
+<td>fie_1</td>
+<td>Document Identifier</td>
+<td>This field is used to record an identifier attributed to the described <em>Postclassical Work</em>.</td>
+<td>String</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P190 --&gt; rdfs:Literal</td>
+</tr>
+<tr>
+<td>fie_2</td>
+<td>Document Identifier Type</td>
+<td>This field is used to record the type of the identifier attributed to the described <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P2 --&gt; E55[2_1]</td>
+</tr>
+<tr>
+<td>fie_3</td>
+<td>Document ID Provider</td>
+<td>This field is used to record the institution, group or individual responsible for providing the described <em>Postclassical Work</em>'s identifier.</td>
+<td>Reference Model [Person/Group]</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P37i --&gt; E15[3_1] --&gt; P14 --&gt; E39[3_2]</td>
+</tr>
+<tr>
+<td>fie_4</td>
+<td>Document ID Source</td>
+<td>This field is used to record the institution, group or individual responsible for providing the described <em>Postclassical Work</em>'s identifier.</td>
+<td>Reference Model [Bibliographic Entity/Image]</td>
+<td>--&gt; P1 --&gt; E42[1_1] --&gt; P37i --&gt; E15[3_1] --&gt; P16 --&gt; E73[4_1]</td>
+</tr>
+<tr>
+<td>fie_17</td>
+<td>Document Type</td>
+<td>This field is used to record the formal type of the described <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P2 --&gt; E55[17_1]</td>
+</tr>
+<tr>
+<td>fie_cen_86</td>
+<td>Document Form</td>
+<td>This field is used to record the concept of uncertainty defining the form of the described <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P2 --&gt; E55[86_1] --&gt; P2 --&gt; E55[86_2]</td>
+</tr>
+<tr>
+<td>fie_cen_87</td>
+<td>Document Representation Method</td>
+<td>This field is used to record a statement about the representation method of the documented <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P2 --&gt; E55[87_1] --&gt; P2 --&gt; E55[87_2]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-postclassical-work-names-and-classifications-ontology-graph">- Postclassical Work Names and Classifications <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="img/nc_document.png" /></p>
+<h3 id="-postclassical-work-names-and-classifications-rdf">- Postclassical Work Names and Classifications <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://census.de/example/physical_object/E22&gt; a crm:E22_Human-Made_Object ;
+    crm:P1_is_identified_by &lt;https://example.org/name/fie_10_1&gt;,
+        &lt;https://example.org/name/fie_1_1&gt;,
+        &lt;https://example.org/name/fie_5_1&gt; ;
+    crm:P2_has_type &lt;https://example.org/type/C86_1&gt;,
+        &lt;https://example.org/type/C87_1&gt;,
+        &lt;https://example.org/type/fie_17_1&gt; .
+
+&lt;http://vocab.getty.edu/aat/300404670&gt; a crm:E55_Type ;
+    rdfs:label &quot;preferred terms&quot; .
+
+&lt;https://example.org/actor/fie_3_2&gt; a crm:E39_Actor .
+
+&lt;https://example.org/conceptual_object/fie_16_1&gt; a crm:E73_Information_Object .
+
+&lt;https://example.org/conceptual_object/fie_4_1&gt; a crm:E73_Information_Object .
+
+&lt;https://example.org/event/fie_15_1&gt; a crm:E13_Attribute_Assignment ;
+    crm:P16_used_specific_object &lt;https://example.org/conceptual_object/fie_16_1&gt; .
+
+&lt;https://example.org/event/fie_3_1&gt; a crm:E15_Identifier_Assignment ;
+    crm:P14_carried_out_by &lt;https://example.org/actor/fie_3_2&gt; ;
+    crm:P16_used_specific_object &lt;https://example.org/conceptual_object/fie_4_1&gt; .
+
+&lt;https://example.org/name/fie_10_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P141i_was_assigned_by &lt;https://example.org/event/fie_15_1&gt; ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_11_1&gt; .
+
+&lt;https://example.org/name/fie_1_1&gt; a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_2_1&gt; ;
+    crm:P37i_was_assigned_by &lt;https://example.org/event/fie_3_1&gt; .
+
+&lt;https://example.org/name/fie_5_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/aat/300404670&gt; .
+
+&lt;https://example.org/type/C86_1&gt; a crm:E55_Type ;
+    crm:P2_has_type &lt;https://example.org/type/C86_2&gt; .
+
+&lt;https://example.org/type/C86_2&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/C87_1&gt; a crm:E55_Type ;
+    crm:P2_has_type &lt;https://example.org/type/C87_2&gt; .
+
+&lt;https://example.org/type/C87_2&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/fie_11_1&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/fie_17_1&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/fie_2_1&gt; a crm:E55_Type .
+
+
+
+</code></pre>
+<h3 id="-postclassical-work-names-and-classifications-josn-ld">- Postclassical Work Names and Classifications <strong>JOSN-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://example.org/actor/fie_3_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/C86_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/type/C86_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_2_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_16_1&quot;,
+      &quot;type&quot;: &quot;InformationObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/event/fie_15_1&quot;,
+      &quot;type&quot;: &quot;AttributeAssignment&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://example.org/conceptual_object/fie_16_1&quot;
+      ]
+    },
+    {
+      &quot;_label&quot;: &quot;preferred terms&quot;,
+      &quot;id&quot;: &quot;http://vocab.getty.edu/aat/300404670&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/C87_1&quot;,
+        &quot;https://example.org/type/fie_17_1&quot;,
+        &quot;https://example.org/type/C86_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://census.de/example/physical_object/E22&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://example.org/name/fie_1_1&quot;,
+        &quot;https://example.org/name/fie_5_1&quot;,
+        &quot;https://example.org/name/fie_10_1&quot;
+      ],
+      &quot;type&quot;: &quot;HumanMadeObject&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/C87_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/type/C87_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://example.org/actor/fie_3_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/fie_3_1&quot;,
+      &quot;type&quot;: &quot;IdentifierAssignment&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://example.org/conceptual_object/fie_4_1&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_17_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/aat/300404670&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_5_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;assigned_by&quot;: [
+        &quot;https://example.org/event/fie_15_1&quot;
+      ],
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_11_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_10_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_11_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_4_1&quot;,
+      &quot;type&quot;: &quot;InformationObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/C87_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/C86_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_2_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_1_1&quot;,
+      &quot;identifier_assigned_by&quot;: [
+        &quot;https://example.org/event/fie_3_1&quot;
+      ],
+      &quot;type&quot;: &quot;Identifier&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="postclassical-work-existence">Postclassical Work <strong>Existence</strong></h2>
+<p>Of essential import in identifying and tracking documents is information pertaining to their existence in time, particularly information regarding the creation and destruction of the document. For this reason, we have clustered descriptors relevant to such information in a common ‘existence’ category. These are described in the table below.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_299</td>
+<td>Document Creation Type</td>
+<td>This field is used to indicate the type of production activity used in the production of the described <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P108i --&gt; E12[58_1] --&gt; P2 --&gt; E55[299_1]</td>
+</tr>
+<tr>
+<td>fie_cen_96</td>
+<td>Document Creator</td>
+<td>This field is used to record the actor who has created the documented <em>Postclassical Work</em>.</td>
+<td>Reference Model [Person/Group]</td>
+<td>--&gt; P108i --&gt; E12[58_1] --&gt; P01i --&gt; PC14[C96_1] --&gt; P02 --&gt; E39[C96_2]</td>
+</tr>
+<tr>
+<td>fie_cen_97</td>
+<td>Document Creator Role</td>
+<td>This field is used to record the specific role of the actor they played in the creation of the documented <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P108i --&gt; E12[58_1] --&gt; P01 --&gt; PC14[C96_1] --&gt; P14.1 --&gt; E55[C97_1]</td>
+</tr>
+<tr>
+<td>fie_cen_42</td>
+<td>Document Creator Attribution</td>
+<td>This field is used to record the attribution type (renaissance or contemporary) assigning the creator of the described <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P108i --&gt; E12[58_1]  --&gt; P01i --&gt; PC14[C96_1] --&gt; P02 --&gt; E39[C96_2] --&gt; P141i --&gt; E13[C42_1] --&gt; P2 --&gt; E55[C42_2]</td>
+</tr>
+<tr>
+<td>fie_cen_43</td>
+<td>Document Creator Source</td>
+<td>This field is used to relate a <em>Postclassical Work</em> carrying a textual reference about the attribution assigning the creator of the described <em>Postclassical Work</em> and the described <em>Postclassical Work</em> itself.</td>
+<td>Reference Model [Document]</td>
+<td>--&gt; P108i --&gt; E12[58_1]  --&gt; P01--&gt; PC14[C96_1] --&gt; P02 --&gt; E39[C96_2] --&gt; P141i --&gt; E13[C42_1] -- &gt;P16 --&gt; E33[C43_1] --&gt; P128i --&gt; E22[C43_2]</td>
+</tr>
+<tr>
+<td>fie_58</td>
+<td>Document Creation Earliest Date</td>
+<td>This field is used to record the earliest possible date for the production of the described <em>Postclassical Work</em>.</td>
+<td>Date</td>
+<td>--&gt; P108i --&gt; E12[58_1] --&gt; P4 --&gt; E52[58_2] --&gt; P82a --&gt; xsd:dateTime</td>
+</tr>
+<tr>
+<td>fie_59</td>
+<td>Document Creation Latest Date</td>
+<td>This field is used to record the latest possible date for the production of the described <em>Postclassical Work</em>.</td>
+<td>Date</td>
+<td>--&gt; P108i --&gt; E12[58_1] --&gt; P4 --&gt; E52[58_2] --&gt; P82b --&gt; xsd:dateTime</td>
+</tr>
+<tr>
+<td>fie_61</td>
+<td>Document Creation Period</td>
+<td>This field is used to record the historical period in which the production of the described <em>Postclassical Work</em> occurred.</td>
+<td>Reference Model [Period]</td>
+<td>--&gt; P108i --&gt; E12[58_1] --&gt; P10 --&gt; E4[61_1]</td>
+</tr>
+<tr>
+<td>fie_cen_44</td>
+<td>Document Creation Date Attribution</td>
+<td>This field is used to record the attribution type (renaissance or contemporary) assigning the timespan of the production of the described <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P108i --&gt; E12[58_1] --&gt; P4 --&gt; E52[58_2] --&gt; P141i --&gt; E13[C44_1] --&gt; P2 --&gt; E55[C44_2]</td>
+</tr>
+<tr>
+<td>fie_cen_45</td>
+<td>Document Creation Date Source</td>
+<td>This field is used to relate a document carrying a textual reference about the attribution assigning timespan of the production of the described document and the described <em>Postclassical Work</em> itself.</td>
+<td>Reference Model [Document]</td>
+<td>--&gt; P108i --&gt; E12[58_1] --&gt; P4 --&gt; E52[58_2] --&gt; P141i --&gt; E13[C44_1] --&gt; P16 --&gt; E33[C45_1] --&gt; P128i --&gt; E22[C45_2]</td>
+</tr>
+<tr>
+<td>fie_cen_92</td>
+<td>Document Creation Timespan Verbatim</td>
+<td>This field is used to record a verbatim describing the timespan of the production event of the described <em>Postclassical Work</em>.</td>
+<td>String</td>
+<td>--&gt; P108i --&gt; E12[58_1] --&gt; P4 --&gt; E52[58_2] --&gt; P67i --&gt; E33[C92_1] --&gt; P190 --&gt; rdfs:literal</td>
+</tr>
+<tr>
+<td>fie_60</td>
+<td>Document Creation Location</td>
+<td>This field is used to record the place of the production of the described <em>Postclassical Work</em>.</td>
+<td>Reference Model  [Place]</td>
+<td>--&gt; P108i --&gt; E12[58_1] --&gt; P7 --&gt; E53[60_1]</td>
+</tr>
+<tr>
+<td>fie_cen_46</td>
+<td>Document Creation Location Attribution</td>
+<td>This field is used to record the attribution type (renaissance or contemporary) assigning the place of production of the described <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P108i --&gt; E12[58_1] --&gt; P7 --&gt; E53[60_1] --&gt; P141i --&gt; E13[C46_1] --&gt; P2 --&gt; E55[C46_2]</td>
+</tr>
+<tr>
+<td>fie_cen_47</td>
+<td>Document Creation Location Source</td>
+<td>This field is used to relate a <em>Postclassical Work</em> carrying a textual reference about the attribution assigning the place of production of the described <em>Postclassical Work</em> and the described <em>Postclassical Work</em> itself.</td>
+<td>Reference Model  [Document]</td>
+<td>--&gt; P108i --&gt; E12[58_1] --&gt; P7 --&gt; E53[60_1] --&gt; P141i --&gt; E13[C46_1] --&gt; P16 --&gt; E33[C47_1] --&gt; P128i --&gt; E22[C47_2]</td>
+</tr>
+<tr>
+<td>fie_cen_8</td>
+<td>Document Destruction Type</td>
+<td>This field is used to record the generic type of the destruction event of the described <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P13i --&gt; E6_E7[62_1] --&gt; P2 --&gt; E55[C8_1]</td>
+</tr>
+<tr>
+<td>fie_cen_9</td>
+<td>Document Destruction Actor</td>
+<td>This field is used to record an actor carried out the destruction event of the described <em>Postclassical Work</em>.</td>
+<td>Reference Model [Person/Group]</td>
+<td>--&gt; P13i --&gt; E6_E7[62_1] --&gt; P01i --&gt; PC14[C16_1] --&gt; P02 --&gt; E39[C9_1]</td>
+</tr>
+<tr>
+<td>fie_cen_16</td>
+<td>Document Destruction Actor Role</td>
+<td>This field is used to record the specific capacity in which an actor carried out the destruction event of the described <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P13i --&gt; E6_E7[62_1] --&gt; P01 --&gt; PC14[C16_1] --&gt; P14.1 --&gt; E55[C16_2]</td>
+</tr>
+<tr>
+<td>fie_cen_17</td>
+<td>Document Destruction Actor Attribution</td>
+<td>This field is used to record the attribution type (renaissance or contemporary) assigning an actor carried out he destruction event of the described <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P13i --&gt; E6_E7[62_1] --&gt; P01i --&gt; PC14[C16_1] --&gt; P02 --&gt; E39[C9_1] -- P141i --&gt; E13[C17_1] --&gt; P2 --&gt; E55[C17_2]</td>
+</tr>
+<tr>
+<td>fie_cen_18</td>
+<td>Document Destruction Actor Reference</td>
+<td>This field is used to relate a <em>Postclassical Work</em> carrying a textual reference about the attribution (renaissance or contemporary) assigning an actor carried out he destruction event of the described <em>Postclassical Work</em> and the described <em>Postclassical Work</em> itself.</td>
+<td>Reference Model [Document]</td>
+<td>--&gt; P13i --&gt; E6_E7[62_1] --&gt; P01i --&gt; PC14[C16_1] --&gt; P02 --&gt; E39[C9_1] -- P141i --&gt; E13[C17_1] -- &gt;P16 --&gt; E33[C18_1] --&gt; P128i --&gt; E22[C18_2]</td>
+</tr>
+<tr>
+<td>fie_cen_7</td>
+<td>Document Destruction Date</td>
+<td>This field is used to record the timespan of the destruction event of the described <em>Postclassical Work</em>.</td>
+<td>Collection [Timespan]</td>
+<td>--&gt; P13i --&gt; E6_E7[62_1]  --&gt; P4 --&gt; E52[62_2]</td>
+</tr>
+<tr>
+<td>fie_cen_99</td>
+<td>Document Destruction Period</td>
+<td>This field is used to record the period during which the destruction event of the documented <em>Postclassical Work</em> has happened.</td>
+<td>Reference Model [Period]</td>
+<td>--&gt; P13i --&gt; E6_E7[62_1] --&gt; P10 --&gt; E4 [C99_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-postclassical-work-existence-ontology-graph">- Postclassical Work Existence <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="img/ex_document.png" /></p>
+<h3 id="-postclassical-work-existence-rdf">- Postclassical Work Existence <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+&lt;https://census.de/example/physical_object/E22&gt; a crm:E22_Human-Made_Object ;
+    crm:P108i_was_produced_by &lt;https://example.org/event/fie_58_1&gt; ;
+    crm:P13i_was_destroyed_by &lt;https://example.org/event/fie_62_1&gt; .
+
+&lt;https://example.org/actor/C96_2&gt; a crm:E39_Actor ;
+    crm:P141i_was_assigned_by &lt;https://example.org/event/C42_1&gt; .
+
+&lt;https://example.org/actor/C9_1&gt; a crm:E39_Actor ;
+    crm:P141i_was_assigned_by &lt;https://example.org/event/C17_1&gt; .
+
+&lt;https://example.org/conceptual_object/C104_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P128i_is_carried_by &lt;https://example.org/physical_object/C104_2&gt; .
+
+&lt;https://example.org/conceptual_object/C18_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P128i_is_carried_by &lt;https://example.org/physical_object/C18_2&gt; .
+
+&lt;https://example.org/conceptual_object/C43_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P128i_carried_by &lt;https://example.org/physical_object/C43_2&gt; .
+
+&lt;https://example.org/conceptual_object/C45_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P128i_is_carried_by &lt;https://example.org/physical_object/C45_2&gt; .
+
+&lt;https://example.org/conceptual_object/C47_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P128i_is_carried_by &lt;https://example.org/physical_object/C47_2&gt; .
+
+&lt;https://example.org/conceptual_object/fie_92_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P190_has_symbolic_content &quot;timespan verbatim&quot; .
+
+&lt;https://example.org/event/C103_1&gt; a crm:E13_Attribute_Assignment ;
+    crm:P16_used_specific_object &lt;https://example.org/conceptual_object/C104_1&gt; ;
+    crm:P2_has_type &lt;https://example.org/type/C103_2&gt; .
+
+&lt;https://example.org/event/C17_1&gt; a crm:E13_Attribute_Assignment ;
+    crm:P16_used_specific_object &lt;https://example.org/conceptual_object/C18_1&gt; ;
+    crm:P2_has_type &lt;https://example.org/type/C17_2&gt; .
+
+&lt;https://example.org/event/C42_1&gt; a crm:E13_Attribute_Assignment ;
+    crm:P16_used_specific_object &lt;https://example.org/conceptual_object/C43_1&gt; ;
+    crm:P2_has_type &lt;https://example.org/type/C42_2&gt; .
+
+&lt;https://example.org/event/C44_1&gt; a crm:E13_Attribute_Assignment ;
+    crm:P16_used_specific_object &lt;https://example.org/conceptual_object/C45_1&gt; ;
+    crm:P2_has_type &lt;https://example.org/type/C44_2&gt; .
+
+&lt;https://example.org/event/C46_1&gt; a crm:E13_Attribute_Assignment ;
+    crm:P16_used_specific_object &lt;https://example.org/conceptual_object/C47_1&gt; ;
+    crm:P2_has_type &lt;https://example.org/type/C46_2&gt; .
+
+&lt;https://example.org/event/fie_58_1&gt; a crm:E12_Production ;
+    crm:P01i_is_domain_of &lt;https://example.org/property/C96_1&gt; ;
+    crm:P10_falls_within &lt;https://example.org/event/fie_61_1&gt; ;
+    crm:P2_has_type &lt;https://example.org/physical_object/fie_299_1&gt; ;
+    crm:P4_has_time-span &lt;https://example.org/time_span/fie_58_2&gt; ;
+    crm:P7_took_place_at &lt;https://example.org/place/fie_60_1&gt; .
+
+&lt;https://example.org/event/fie_61_1&gt; a crm:E4_Period .
+
+&lt;https://example.org/event/fie_62_1&gt; a crm:E6_Destruction,
+        crm:E7_Activity ;
+    crm:P01i_is_domain_of &lt;https://example.org/property/C16_1&gt; ;
+    crm:P10_falls_within &lt;https://example.org/period/C99_1&gt; ;
+    crm:P2_has_type &lt;https://example.org/type/C8_1&gt; ;
+    crm:P4_has_time-span &lt;https://example.org/time_span/fie_62_2&gt; ;
+    crm:P7_took_place_at &lt;https://example.org/place/C102_1&gt; .
+
+&lt;https://example.org/period/C99_1&gt; a crm:E4_Period .
+
+&lt;https://example.org/physical_object/C104_2&gt; a crm:E22_Human-Made_Object .
+
+&lt;https://example.org/physical_object/C18_2&gt; a crm:E22_Human-Made_Object .
+
+&lt;https://example.org/physical_object/C43_2&gt; a crm:E22_Human-Made_Object .
+
+&lt;https://example.org/physical_object/C45_2&gt; a crm:E22_Human-Made_Object .
+
+&lt;https://example.org/physical_object/C47_2&gt; a crm:E22_Human-Made_Object .
+
+&lt;https://example.org/physical_object/fie_299_1&gt; a crm:E55_Type .
+
+&lt;https://example.org/place/C102_1&gt; a crm:E53_Place ;
+    crm:P141i_was_assigned_by &lt;https://example.org/event/C103_1&gt; .
+
+&lt;https://example.org/place/fie_60_1&gt; a crm:E53_Place ;
+    crm:P141i_was_assigned_by &lt;https://example.org/event/C46_1&gt; .
+
+&lt;https://example.org/property/C16_1&gt; a crm:PC14_carried_out_by ;
+    crm:P02_has_range &lt;https://example.org/actor/C9_1&gt; ;
+    crm:P14.1_in_the_role_of &lt;https://example.org/type/C16_2&gt; .
+
+&lt;https://example.org/property/C96_1&gt; a crm:PC14_carried_out_by ;
+    crm:P02_has_range &lt;https://example.org/actor/C96_2&gt; ;
+    crm:P14.1_in_the_role_of &lt;https://example.org/type/C97_1&gt; .
+
+&lt;https://example.org/time_span/fie_58_2&gt; a crm:E52_Time-Span ;
+    crm:P141i_was_assigned_by &lt;https://example.org/event/C44_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://example.org/conceptual_object/fie_92_1&gt; ;
+    crm:P82a_begin_of_the_begin &quot;&quot;^^xsd:dateTime ;
+    crm:P82b_end_of_the_end &quot;&quot;^^xsd:dateTime .
+
+&lt;https://example.org/time_span/fie_62_2&gt; a crm:E52_Time-Span .
+
+&lt;https://example.org/type/C103_2&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/C16_2&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/C17_2&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/C42_2&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/C44_2&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/C46_2&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/C8_1&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/C97_1&gt; a crm:E55_Type .
+
+
+</code></pre>
+<h3 id="-postclassical-work-existence-json-ld">- Postclassical Work Existence <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://example.org/physical_object/fie_299_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/physical_object/C43_2&quot;,
+      &quot;type&quot;: &quot;HumanMadeObject&quot;
+    },
+    {
+      &quot;crm:P02_has_range&quot;: {
+        &quot;id&quot;: &quot;https://example.org/actor/C9_1&quot;
+      },
+      &quot;crm:P14.1_in_the_role_of&quot;: {
+        &quot;id&quot;: &quot;https://example.org/type/C16_2&quot;
+      },
+      &quot;id&quot;: &quot;https://example.org/property/C16_1&quot;,
+      &quot;type&quot;: &quot;crm:PC14_carried_out_by&quot;
+    },
+    {
+      &quot;destroyed_by&quot;: &quot;https://example.org/event/fie_62_1&quot;,
+      &quot;id&quot;: &quot;https://census.de/example/physical_object/E22&quot;,
+      &quot;produced_by&quot;: &quot;https://example.org/event/fie_58_1&quot;,
+      &quot;type&quot;: &quot;HumanMadeObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/C8_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/physical_object/C45_2&quot;,
+      &quot;type&quot;: &quot;HumanMadeObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/period/C99_1&quot;,
+      &quot;type&quot;: &quot;Period&quot;
+    },
+    {
+      &quot;carried_by&quot;: [
+        &quot;https://example.org/physical_object/C47_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/C47_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/C42_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/C42_1&quot;,
+      &quot;type&quot;: &quot;AttributeAssignment&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://example.org/conceptual_object/C43_1&quot;
+      ]
+    },
+    {
+      &quot;crm:P128i_carried_by&quot;: {
+        &quot;id&quot;: &quot;https://example.org/physical_object/C43_2&quot;
+      },
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/C43_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;carried_by&quot;: [
+        &quot;https://example.org/physical_object/C104_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/C104_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/C44_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/C42_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/C46_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/physical_object/fie_299_1&quot;
+      ],
+      &quot;crm:P01i_is_domain_of&quot;: {
+        &quot;id&quot;: &quot;https://example.org/property/C96_1&quot;
+      },
+      &quot;falls_within&quot;: [
+        &quot;https://example.org/event/fie_61_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/fie_58_1&quot;,
+      &quot;timespan&quot;: &quot;https://example.org/time_span/fie_58_2&quot;,
+      &quot;took_place_at&quot;: [
+        &quot;https://example.org/place/fie_60_1&quot;
+      ],
+      &quot;type&quot;: &quot;Production&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/physical_object/C104_2&quot;,
+      &quot;type&quot;: &quot;HumanMadeObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/event/fie_61_1&quot;,
+      &quot;type&quot;: &quot;Period&quot;
+    },
+    {
+      &quot;assigned_by&quot;: [
+        &quot;https://example.org/event/C17_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/actor/C9_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;assigned_by&quot;: [
+        &quot;https://example.org/event/C103_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/place/C102_1&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;carried_by&quot;: [
+        &quot;https://example.org/physical_object/C18_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/C18_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;crm:P02_has_range&quot;: {
+        &quot;id&quot;: &quot;https://example.org/actor/C96_2&quot;
+      },
+      &quot;crm:P14.1_in_the_role_of&quot;: {
+        &quot;id&quot;: &quot;https://example.org/type/C97_1&quot;
+      },
+      &quot;id&quot;: &quot;https://example.org/property/C96_1&quot;,
+      &quot;type&quot;: &quot;crm:PC14_carried_out_by&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/C17_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/physical_object/C18_2&quot;,
+      &quot;type&quot;: &quot;HumanMadeObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/C16_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;assigned_by&quot;: [
+        &quot;https://example.org/event/C42_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/actor/C96_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/physical_object/C47_2&quot;,
+      &quot;type&quot;: &quot;HumanMadeObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/C97_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;carried_by&quot;: [
+        &quot;https://example.org/physical_object/C45_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/C45_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/C46_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/C46_1&quot;,
+      &quot;type&quot;: &quot;AttributeAssignment&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://example.org/conceptual_object/C47_1&quot;
+      ]
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/C44_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/C44_1&quot;,
+      &quot;type&quot;: &quot;AttributeAssignment&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://example.org/conceptual_object/C45_1&quot;
+      ]
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/C17_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/C17_1&quot;,
+      &quot;type&quot;: &quot;AttributeAssignment&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://example.org/conceptual_object/C18_1&quot;
+      ]
+    },
+    {
+      &quot;assigned_by&quot;: [
+        &quot;https://example.org/event/C46_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/place/fie_60_1&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/C103_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;assigned_by&quot;: [
+        &quot;https://example.org/event/C44_1&quot;
+      ],
+      &quot;begin_of_the_begin&quot;: &quot;&quot;,
+      &quot;end_of_the_end&quot;: &quot;&quot;,
+      &quot;id&quot;: &quot;https://example.org/time_span/fie_58_2&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://example.org/conceptual_object/fie_92_1&quot;
+      ],
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/time_span/fie_62_2&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/C103_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/C103_1&quot;,
+      &quot;type&quot;: &quot;AttributeAssignment&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://example.org/conceptual_object/C104_1&quot;
+      ]
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/C8_1&quot;
+      ],
+      &quot;crm:P01i_is_domain_of&quot;: {
+        &quot;id&quot;: &quot;https://example.org/property/C16_1&quot;
+      },
+      &quot;falls_within&quot;: [
+        &quot;https://example.org/period/C99_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/fie_62_1&quot;,
+      &quot;timespan&quot;: &quot;https://example.org/time_span/fie_62_2&quot;,
+      &quot;took_place_at&quot;: [
+        &quot;https://example.org/place/C102_1&quot;
+      ],
+      &quot;type&quot;: [
+        &quot;Destruction&quot;,
+        &quot;Activity&quot;
+      ]
+    },
+    {
+      &quot;content&quot;: &quot;timespan verbatim&quot;,
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_92_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="postclassical-work-events">Postclassical Work <strong>Events</strong></h2>
+<p>This information category brings together typical events in which a <em>Postclassical Work</em> may have been involved through the course of its history. It is meant to cover information concerning the most salient events documented with regards to documents. At present this enables the documentation of provenance of the <em>Postclassical Work</em>.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_269</td>
+<td>Document Provenance Event Type</td>
+<td>This field is used to indicate the type of a provenance activity associated with the documented <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P16i --&gt; E7[268_1] --&gt; P2 --&gt; E55[269_1]</td>
+</tr>
+<tr>
+<td>fie_cen_98</td>
+<td>Document Provenance Event Actor</td>
+<td>This field is used to record the actor participated in a provenance activity associated with the documented <em>Postclassical Work</em>.</td>
+<td>Reference Model [Person/Group]</td>
+<td>--&gt; P16i --&gt; E7[268_1] --&gt; P01i --&gt; PC14[C70_1] --&gt; P02 --&gt; E39[C98_1]</td>
+</tr>
+<tr>
+<td>fie_cen_70</td>
+<td>Document Provenance Event Actor Role</td>
+<td>This field is used to indicate the specific role of the actor carried out the provenance activity associated with the documented <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P16i --&gt; E7[268_1] --&gt; P01 --&gt; PC14[C70_1] --&gt; P14.1 --&gt; E55[C70_2]</td>
+</tr>
+<tr>
+<td>fie_cen_71</td>
+<td>Document Provenance Event Actor Attribution</td>
+<td>This field is used to record the type of attribution (renaissance or contemporary) assigning the actor carried out the provenance activity associated with the documented <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P16i --&gt; E7[268_1] --&gt; P01 --&gt; PC14[C70_1] --&gt; P02 --&gt; E39[C98_1] --&gt; P141i --&gt;E13[C71_1] --&gt; P2 --&gt; E55[C71_2]</td>
+</tr>
+<tr>
+<td>fie_cen_72</td>
+<td>Monument Provenance Event Actor Source</td>
+<td>This field is used to record the <em>Postclassical Work</em> carrying a textual reference about the type of attribution (Renaissance or contemporary) assigning the actor carried out the provenance activity associated with the documented <em>Antique Monument</em> and the documented <em>Antique Monument</em> itself.</td>
+<td>Reference Model [Document]</td>
+<td>--&gt; P16i --&gt; E7[268_1] --&gt; P01 --&gt; PC14[C70_1] --&gt; P02 --&gt; E39[C98_1] --&gt; P141i --&gt;E13[C71_1] --&gt; P16 --&gt;E33[C72_1] --&gt; P128i --&gt;E22[C72_2]</td>
+</tr>
+<tr>
+<td>fie_cen_68</td>
+<td>Document Provenance Event Timespan</td>
+<td>This field is used to record the timespan of a provenance activity associated with the documented <em>Postclassical Work</em>.</td>
+<td>Collection  [Timespan]</td>
+<td>--&gt; P16i --&gt; E7[268_1] --&gt; P4 --&gt; E52[270_1]</td>
+</tr>
+<tr>
+<td>fie_cen_73</td>
+<td>Document Provenance Event Location</td>
+<td>This field is used to record the location of the provenance activity associated with the documented <em>Postclassical Work</em>.</td>
+<td>Reference Model [Location]</td>
+<td>--&gt; P16i --&gt; E7[268_1] --&gt; P7 --&gt; E53[C73_1]</td>
+</tr>
+<tr>
+<td>fie_cen_75</td>
+<td>Document Provenance Event Location Source</td>
+<td>This field is used to relate the <em>Postclassical Work</em> carrying a textual reference about the type of attribution (Renaissance or contemporary) assigning the location of the provenance activity associated with the documented <em>Postclassical Work</em> and the documented <em>Postclassical Work</em> itself.</td>
+<td>Reference Model [Document]</td>
+<td>--&gt; P16i --&gt; E7[268_1] --&gt; P7 --&gt; E53[C73_1] --&gt; P141i --&gt;E13[C74_1] --&gt; P16 --&gt;E33[C75_1] --&gt; P128i --&gt;E22[C75_2]</td>
+</tr>
+<tr>
+<td>fie_cen_74</td>
+<td>Document Provenance Event Location Attribution</td>
+<td>This field is used to record the type of attribution (Renaissance or contemporary) assigning the location of the provenance activity associated with the documented <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P16i --&gt; E7[268_1] --&gt; P7 --&gt; E53[C73_1] --&gt; P141i --&gt;E13[C74_1] --&gt; P2 --&gt; E55[C74_2]</td>
+</tr>
+<tr>
+<td>fie_cen_76</td>
+<td>Document Provenance Event Statement</td>
+<td>This field is used to record a general statement about the provenance activity associated with the documented <em>Postclassical Work</em>.</td>
+<td>Collection [Statement]</td>
+<td>--&gt; P16i --&gt; E7[268_1] --&gt; P67i --&gt; E33[C76_1]</td>
+</tr>
+<tr>
+<td>fie_cen_100</td>
+<td>Document Provenance Event Period</td>
+<td>This field is used to record the period during which a provenance activity associated with the documented <em>Postclassical Work</em> has happened.</td>
+<td>Reference Model [Period]</td>
+<td>--&gt; P16i --&gt; E7[268_1] --&gt; P10 --&gt; E4 [C100_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-postclassical-work-events-ontology-graph">- Postclassical Work Events <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="img/ev_document.png" /></p>
+<h3 id="-postclassical-work-events-rdf">- Postclassical Work Events <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://census.de/example/physical_object/E22&gt; a crm:E22_Human-Made_Object ;
+    crm:P1_is_identified_by &lt;https://example.org/name/fie_10_1&gt;,
+        &lt;https://example.org/name/fie_1_1&gt;,
+        &lt;https://example.org/name/fie_5_1&gt; ;
+    crm:P2_has_type &lt;https://example.org/type/C21_1&gt;,
+        &lt;https://example.org/type/C56_1&gt;,
+        &lt;https://example.org/type/fie_17_1&gt;,
+        &lt;https://example.org/type/fie_201_1&gt; .
+
+&lt;http://vocab.getty.edu/aat/300404670&gt; a crm:E55_Type ;
+    rdfs:label &quot;preferred terms&quot; .
+
+&lt;https://example.org/actor/fie_3_2&gt; a crm:E39_Actor .
+
+&lt;https://example.org/conceptual_object/fie_16_1&gt; a crm:E73_Information_Object .
+
+&lt;https://example.org/event/C80_1&gt; a crm:E13_Attribute_Assignment .
+
+&lt;https://example.org/event/C81_1&gt; a crm:E13_Attribute_Assignment .
+
+&lt;https://example.org/event/C83_1&gt; a crm:E13_Attribute_Assignment .
+
+&lt;https://example.org/event/C84_1&gt; a crm:E13_Attribute_Assignment .
+
+&lt;https://example.org/event/fie_15_1&gt; a crm:E13_Attribute_Assignment ;
+    crm:P16_used_specific_object &lt;https://example.org/conceptual_object/fie_16_1&gt; .
+
+&lt;https://example.org/event/fie_3_1&gt; a crm:E15_Identifier_Assignment ;
+    crm:P14_carried_out_by &lt;https://example.org/actor/fie_3_2&gt; .
+
+&lt;https://example.org/name/fie_10_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P141i_was_assigned_by &lt;https://example.org/event/fie_15_1&gt; ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_11_1&gt; .
+
+&lt;https://example.org/name/fie_1_1&gt; a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_2_1&gt; ;
+    crm:P37i_was_assigned_by &lt;https://example.org/event/fie_3_1&gt; .
+
+&lt;https://example.org/name/fie_5_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/aat/300404670&gt; .
+
+&lt;https://example.org/type/C21_1&gt; a crm:E55_Type ;
+    crm:P2_has_type &lt;https://example.org/type/C21_2&gt; .
+
+&lt;https://example.org/type/C21_2&gt; a crm:E55_Type ;
+    crm:P141i_was_assigned_by &lt;https://example.org/event/C81_1&gt; .
+
+&lt;https://example.org/type/C56_1&gt; a crm:E55_Type ;
+    crm:P2_has_type &lt;https://example.org/type/C56_2&gt; .
+
+&lt;https://example.org/type/C56_2&gt; a crm:E55_Type ;
+    crm:P141i_was_assigned_by &lt;https://example.org/event/C80_1&gt; .
+
+&lt;https://example.org/type/fie_11_1&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/fie_17_1&gt; a crm:E55_Type ;
+    crm:P141i_was_assigned_by &lt;https://example.org/event/C83_1&gt; .
+
+&lt;https://example.org/type/fie_201_1&gt; a crm:E55_Type ;
+    crm:P2_has_type &lt;https://example.org/type/fie_201_2&gt; .
+
+&lt;https://example.org/type/fie_201_2&gt; a crm:E55_Type ;
+    rdfs:label &quot;Style&quot; ;
+    crm:P141i_was_assigned_by &lt;https://example.org/event/C84_1&gt; .
+
+&lt;https://example.org/type/fie_2_1&gt; a crm:E55_Type .
+</code></pre>
+<h3 id="-postclassical-work-events-json-ld">- Postclassical Work Events <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_17_1&quot;,
+        &quot;https://example.org/type/fie_201_1&quot;,
+        &quot;https://example.org/type/C56_1&quot;,
+        &quot;https://example.org/type/C21_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://census.de/example/physical_object/E22&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://example.org/name/fie_1_1&quot;,
+        &quot;https://example.org/name/fie_5_1&quot;,
+        &quot;https://example.org/name/fie_10_1&quot;
+      ],
+      &quot;type&quot;: &quot;HumanMadeObject&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/aat/300404670&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_5_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_11_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;assigned_by&quot;: [
+        &quot;https://example.org/event/fie_15_1&quot;
+      ],
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_11_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_10_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/actor/fie_3_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://example.org/actor/fie_3_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/fie_3_1&quot;,
+      &quot;type&quot;: &quot;IdentifierAssignment&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/event/C81_1&quot;,
+      &quot;type&quot;: &quot;AttributeAssignment&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/event/C83_1&quot;,
+      &quot;type&quot;: &quot;AttributeAssignment&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_2_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;id&quot;: &quot;https://example.org/name/fie_1_1&quot;,
+      &quot;identifier_assigned_by&quot;: [
+        &quot;https://example.org/event/fie_3_1&quot;
+      ],
+      &quot;type&quot;: &quot;Identifier&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/event/C84_1&quot;,
+      &quot;type&quot;: &quot;AttributeAssignment&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/event/C80_1&quot;,
+      &quot;type&quot;: &quot;AttributeAssignment&quot;
+    },
+    {
+      &quot;assigned_by&quot;: [
+        &quot;https://example.org/event/C81_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/type/C21_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_16_1&quot;,
+      &quot;type&quot;: &quot;InformationObject&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;Style&quot;,
+      &quot;assigned_by&quot;: [
+        &quot;https://example.org/event/C84_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/type/fie_201_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_2_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_201_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/type/fie_201_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;preferred terms&quot;,
+      &quot;id&quot;: &quot;http://vocab.getty.edu/aat/300404670&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;assigned_by&quot;: [
+        &quot;https://example.org/event/C80_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/type/C56_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/C21_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/type/C21_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/event/fie_15_1&quot;,
+      &quot;type&quot;: &quot;AttributeAssignment&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://example.org/conceptual_object/fie_16_1&quot;
+      ]
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/C56_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/type/C56_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;assigned_by&quot;: [
+        &quot;https://example.org/event/C83_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/type/fie_17_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    }
+  ]
+}
+</code></pre>
+<h2 id="postclassical-work-substance">Postclassical Work <strong>Substance</strong></h2>
+<p>The analysis and understanding of a <em>Postclassical Work</em> depends also on our knowledge of its materiality and physical characteristics. The category of substance brings together descriptors which are relevant to this form of analysis. Particularly, it groups information having to do with the composition and measurable aspects of the <em>Postclassical Work</em> as an object, the physical carrier of the content, as well as the documentation of any inscriptions.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_90</td>
+<td>Document Material</td>
+<td>This field is used to record the material of which the described document consists.</td>
+<td>Concept</td>
+<td>--&gt; P45 --&gt; E57[90_1]</td>
+</tr>
+<tr>
+<td>fie_86</td>
+<td>Document Dimension Type</td>
+<td>This field is used to record the type of dimension measured on the described <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P39i --&gt; E16[86_1] --&gt; P40 --&gt; E54[86_2] --&gt; P2 --&gt; E55[86_3]</td>
+</tr>
+<tr>
+<td>fie_cen_91</td>
+<td>Document Dimension Verbatim</td>
+<td>This field is used to record a verbatim describing the dimensions of the documented described <em>Postclassical Work</em>.</td>
+<td>String</td>
+<td>--&gt; P39i --&gt; E16[86_1] --&gt; P40 --&gt; E54[86_2] --&gt; P67i --&gt; E33_41[C91_1] --&gt; P190 --&gt; rdfs:literal</td>
+</tr>
+<tr>
+<td>fie_87</td>
+<td>Document Dimension Value</td>
+<td>This field is used to record the value of the measured dimension of the described <em>Postclassical Work</em>.</td>
+<td>Integer</td>
+<td>--&gt; P39i --&gt; E16[86_1] --&gt; P40 --&gt; E54[86_2] --&gt; P90 --&gt; xsd:decimal</td>
+</tr>
+<tr>
+<td>fie_88</td>
+<td>Document Dimension Unit</td>
+<td>This field is used to record the unit of the measured dimension of the described <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P39i --&gt; E16[86_1] --&gt; P40 --&gt; E54[86_2] --&gt; P91 --&gt; E58[88_1]</td>
+</tr>
+<tr>
+<td>fie_89</td>
+<td>Document Dimension Taker</td>
+<td>This field is used to record the actor who undertook the measurement producing the dimension of the described <em>Postclassical Work</em>.</td>
+<td>Reference Model [Person/Group]</td>
+<td>--&gt; P39i --&gt; E16[86_1] --&gt; P14 --&gt; E39[89_1]</td>
+</tr>
+<tr>
+<td>fie_cen_55</td>
+<td>Document Dimensions Comment</td>
+<td>This field is used to record the textual content of a statement made about the dimensions of the described <em>Postclassical Work</em>.</td>
+<td>String</td>
+<td>--&gt; P39i --&gt; E16[86_1] --&gt; P40 --&gt; E54[86_2] --&gt; P67i --&gt; E33_41[C55_1] --&gt; P190 --&gt; rdfs:literal</td>
+</tr>
+<tr>
+<td>fie_cen_26</td>
+<td>Document Inscription Type</td>
+<td>This field is used to record the general type of inscription carried out by the <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P128 --&gt; E33[C22_1] --&gt; P130 --&gt; E33[C25_1] --&gt; P2 --&gt; E55[C26_1]</td>
+</tr>
+<tr>
+<td>fie_cen_25</td>
+<td>Document Inscription</td>
+<td>This field is used to record inscription carried out by the described <em>Postclassical Work</em>.</td>
+<td>Reference Model [Bibliographic Entity]</td>
+<td>--&gt; P128 --&gt; E33[C22_1] --&gt; P130 --&gt; E33[C25_1]</td>
+</tr>
+<tr>
+<td>fie_cen_28</td>
+<td>Document Inscription Language</td>
+<td>This field is used to record the language of transcription carried out by the described <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P128 --&gt; E33[C22_1] --&gt; P130 --&gt; E33[C25_1] --&gt; P72 --&gt; E56[C28_1]</td>
+</tr>
+<tr>
+<td>fie_cen_29</td>
+<td>Document Inscription Name</td>
+<td>This field is used to record the formal name of the inscription carried out by the described <em>Postclassical Work</em>.</td>
+<td>String</td>
+<td>--&gt; P128 --&gt; E33[C22_1] --&gt; P130 --&gt; E33[C25_1] --&gt; P1 --&gt; E33_E41[C29_1]</td>
+</tr>
+<tr>
+<td>fie_cen_30</td>
+<td>Document Inscription Reference</td>
+<td>This field is used to record the bibliographic reference of the inscription carried out by the described <em>Postclassical Work</em>.</td>
+<td>Reference Model [Bibliographic Entity]</td>
+<td>--&gt; P128 --&gt; E33[C22_1] --&gt; P130 --&gt; E33[C25_1] --&gt; P67i --&gt; E33[C30_1]</td>
+</tr>
+<tr>
+<td>fie_cen_88</td>
+<td>Document Inscription URL</td>
+<td>This field is used to record the external link of the linguistic object being in a similar or direct relationship with the linguistic object carried out by the described <em>Postclassical Work</em>.</td>
+<td>URI</td>
+<td>--&gt; P128 --&gt; E33[C22_1] --&gt; P130 --&gt; E33[C25_1] --&gt; L54 --&gt; E1[88_1]</td>
+</tr>
+<tr>
+<td>fie_cen_90</td>
+<td>Document Inscription Position</td>
+<td>This field is used to record a statement about the physical position of the linguistic object being in a similar or direct relationship with the linguistic object carried out by the described <em>Postclassical Work</em>.</td>
+<td>String</td>
+<td>--&gt; P128 --&gt; E33[C22_1] --&gt; P130 --&gt; E33[C25_1] --&gt; P67i --&gt; E33[C60_1] --&gt; P190 --&gt; rdfs:literal</td>
+</tr>
+<tr>
+<td>fie_cen_27</td>
+<td>Document Inscription Transcription</td>
+<td>This field is used to record the transcription of the inscription carried out by the described <em>Postclassical Work</em>.</td>
+<td>String</td>
+<td>--&gt; P128 --&gt; E33[C22_1] --&gt; P130 --&gt; E33[C25_1] --&gt; P190 --&gt; rdfs:literal</td>
+</tr>
+<tr>
+<td>fie_cen_60</td>
+<td>Document Inscription Comments</td>
+<td>This field is used to record a general statement about the inscription carried out by the described <em>Postclassical Work</em>.</td>
+<td>Collection  [Statement]</td>
+<td>--&gt; P128 --&gt; E33[C22_1] --&gt; P130 --&gt; E33[C25_1] --&gt; P67i --&gt; E33[C60_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-postclassical-work-substance-ontology-graph">- Postclassical Work Substance <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="img/sub_document.png" /></p>
+<h3 id="-postclassical-work-substance-rdf">- Postclassical Work Substance <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://census.de/example/physical_object/E22&gt; a crm:E22_Human-Made_Object ;
+    crm:P128_carries &lt;https://example.org/conceptual_object/C22_1&gt; ;
+    crm:P39i_was_measured_by &lt;https://example.org/event/fie_86_1&gt; ;
+    crm:P45_consists_of &lt;https://example.org/type/material/fie_90_1&gt; .
+
+&lt;https://example.org/actor/fie_89_1&gt; a crm:E39_Actor .
+
+&lt;https://example.org/appellation/C29_1&gt; a crm:E33_E41_Linguistic_Appellation .
+
+&lt;https://example.org/appellation/C55_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content &quot;dimension statement&quot; .
+
+&lt;https://example.org/appellation/C91_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content &quot;dimension verbatim&quot; .
+
+&lt;https://example.org/conceptual_object/C22_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P130_shows_features_of &lt;https://example.org/conceptual_object/C25_1&gt; .
+
+&lt;https://example.org/conceptual_object/C25_1&gt; a crm:E33_Linguistic_Object ;
+    crm:L54_is_same-as &lt;https://example.org/entity/C88_1&gt; ;
+    crm:P190_has_symbolic_content &quot;transcription content&quot; ;
+    crm:P1_is_identified_by &lt;https://example.org/appellation/C29_1&gt; ;
+    crm:P2_has_type &lt;https://example.org/type/C26_1&gt; ;
+    crm:P67i_is_referred_by &lt;https://example.org/conceptual_object/C30_1&gt;,
+        &lt;https://example.org/conceptual_object/C60_1&gt;,
+        &lt;https://example.org/conceptual_object/C90_1&gt; ;
+    crm:P72_has_language &lt;https://example.org/type/C28_1&gt; .
+
+&lt;https://example.org/conceptual_object/C30_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://example.org/conceptual_object/C60_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://example.org/conceptual_object/C90_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P190_has_symbolic_content &quot;position&quot; .
+
+&lt;https://example.org/dimension/fie_86_2&gt; a crm:E54_Dimension ;
+    crm:P2_has_type &lt;https://example.org/type/fie_86_3&gt; ;
+    crm:P67i_is_referred_by &lt;https://example.org/appellation/C55_1&gt;,
+        &lt;https://example.org/appellation/C91_1&gt; ;
+    crm:P90_has_value &quot;content&quot; ;
+    crm:P91_has_unit &lt;https://example.org/type/fie_88_1&gt; .
+
+&lt;https://example.org/entity/C88_1&gt; a crm:E1_CRM_Entity .
+
+&lt;https://example.org/event/fie_86_1&gt; a crm:E16_Measurement ;
+    crm:P14_carried_out_by &lt;https://example.org/actor/fie_89_1&gt; ;
+    crm:P40_observed_dimension &lt;https://example.org/dimension/fie_86_2&gt; .
+
+&lt;https://example.org/type/C26_1&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/C28_1&gt; a crm:E56_Language .
+
+&lt;https://example.org/type/fie_86_3&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/fie_88_1&gt; a crm:E58_Measurement_Unit .
+
+&lt;https://example.org/type/material/fie_90_1&gt; a crm:E57_Material .
+
+
+
+
+</code></pre>
+<h3 id="-postclassical-work-substance-json-ld">- Postclassical Work Substance <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/C26_1&quot;
+      ],
+      &quot;content&quot;: &quot;transcription content&quot;,
+      &quot;crm:L54_is_same-as&quot;: {
+        &quot;id&quot;: &quot;https://example.org/entity/C88_1&quot;
+      },
+      &quot;crm:P67i_is_referred_by&quot;: [
+        {
+          &quot;id&quot;: &quot;https://example.org/conceptual_object/C30_1&quot;
+        },
+        {
+          &quot;id&quot;: &quot;https://example.org/conceptual_object/C60_1&quot;
+        },
+        {
+          &quot;id&quot;: &quot;https://example.org/conceptual_object/C90_1&quot;
+        }
+      ],
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/C25_1&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://example.org/appellation/C29_1&quot;
+      ],
+      &quot;language&quot;: [
+        &quot;https://example.org/type/C28_1&quot;
+      ],
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/C22_1&quot;,
+      &quot;shows_features_of&quot;: [
+        &quot;https://example.org/conceptual_object/C25_1&quot;
+      ],
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/C26_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/actor/fie_89_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_86_3&quot;
+      ],
+      &quot;crm:P67i_is_referred_by&quot;: [
+        {
+          &quot;id&quot;: &quot;https://example.org/appellation/C91_1&quot;
+        },
+        {
+          &quot;id&quot;: &quot;https://example.org/appellation/C55_1&quot;
+        }
+      ],
+      &quot;id&quot;: &quot;https://example.org/dimension/fie_86_2&quot;,
+      &quot;type&quot;: &quot;Dimension&quot;,
+      &quot;unit&quot;: &quot;https://example.org/type/fie_88_1&quot;,
+      &quot;value&quot;: &quot;content&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_86_3&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;carries&quot;: [
+        &quot;https://example.org/conceptual_object/C22_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://census.de/example/physical_object/E22&quot;,
+      &quot;made_of&quot;: [
+        &quot;https://example.org/type/material/fie_90_1&quot;
+      ],
+      &quot;measured_by&quot;: [
+        &quot;https://example.org/event/fie_86_1&quot;
+      ],
+      &quot;type&quot;: &quot;HumanMadeObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/appellation/C29_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/C30_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://example.org/actor/fie_89_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/event/fie_86_1&quot;,
+      &quot;observed_dimension&quot;: [
+        &quot;https://example.org/dimension/fie_86_2&quot;
+      ],
+      &quot;type&quot;: &quot;Measurement&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/material/fie_90_1&quot;,
+      &quot;type&quot;: &quot;Material&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/C60_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/fie_88_1&quot;,
+      &quot;type&quot;: &quot;MeasurementUnit&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/C28_1&quot;,
+      &quot;type&quot;: &quot;Language&quot;
+    },
+    {
+      &quot;content&quot;: &quot;position&quot;,
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/C90_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/entity/C88_1&quot;,
+      &quot;type&quot;: &quot;CRMEntity&quot;
+    },
+    {
+      &quot;content&quot;: &quot;dimension verbatim&quot;,
+      &quot;id&quot;: &quot;https://example.org/appellation/C91_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;content&quot;: &quot;dimension statement&quot;,
+      &quot;id&quot;: &quot;https://example.org/appellation/C55_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="postclassical-work-aboutness">Postclassical Work <strong>Aboutness</strong></h2>
+<p>This information category provides the means to gather information to the representational level of a <em>Postclassical Work</em>. </p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_cen_23</td>
+<td>Document Medium Visual</td>
+<td>This field is used to record the visual content carried out by the described <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P65 --&gt; E36[C23_1] --&gt; P2 --&gt; E55[C23_2]</td>
+</tr>
+<tr>
+<td>fie_cen_22</td>
+<td>Document Medium Written</td>
+<td>This field is used to record the type of textual content carried out by the described <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P128 --&gt; E33[C22_1] --&gt; P2 --&gt; E55[C22_2]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-postclassical-work-aboutness-ontology-graph">- Postclassical Work Aboutness <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="img/ab_document.png" /></p>
+<h3 id="-postclassical-work-aboutness-rdf">- Postclassical Work Aboutness <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://census.de/example/physical_object/E22&gt; a crm:E22_Human-Made_Object ;
+    crm:P128_carries &lt;https://example.org/conceptual_object/C22_1&gt; ;
+    crm:P65_shows_visual_item &lt;https://example.org/conceptual_object/C23_1&gt; .
+
+&lt;https://example.org/conceptual_object/C22_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P2_has_type &lt;https://example.org/type/C22_2&gt; .
+
+&lt;https://example.org/conceptual_object/C23_1&gt; a crm:E36_Visual_Item ;
+    crm:P2_has_type &lt;https://example.org/type/C23_2&gt; .
+
+&lt;https://example.org/type/C22_2&gt; a crm:E55_Type .
+
+&lt;https://example.org/type/C23_2&gt; a crm:E55_Type .
+
+
+
+</code></pre>
+<h3 id="-postclassical-work-aboutness-json-ld">- Postclassical Work Aboutness <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;carries&quot;: [
+        &quot;https://example.org/conceptual_object/C22_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://census.de/example/physical_object/E22&quot;,
+      &quot;shows&quot;: [
+        &quot;https://example.org/conceptual_object/C23_1&quot;
+      ],
+      &quot;type&quot;: &quot;HumanMadeObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/C23_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/C22_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/C22_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/C22_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/C23_2&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/C23_1&quot;,
+      &quot;type&quot;: &quot;VisualItem&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="postclassical-work-location">Postclassical Work <strong>Location</strong></h2>
+<p>The documentation of location aids in tracking the present location of individual <em>Postclassical Works</em> as well their dispersion geographically. This information category gathers together relevant descriptors for this task.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_177</td>
+<td>Document Location</td>
+<td>This field is used to record the address at which the described <em>Postclassical Work</em> is located.</td>
+<td>String</td>
+<td>--&gt; P53 --&gt; E53[177_1] --&gt; P1 --&gt; E41[177_2]<br><br>P53 --&gt; E53[177_1] --&gt; P1 --&gt; E41[177_2] --&gt; P2 --&gt; E55 "Address"[177_3]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-postclassical-work-location-ontology-graph">- Postclassical Work Location <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="img/loc_document.png" /></p>
+<h3 id="-postclassical-work-location-rdf">- Postclassical Work Location <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://census.de/example/physical_object/E22&gt; a crm:E22_Human-Made_Object ;
+    crm:P53_has_former_or_current_location &lt;https://example.org/place/fie_177_1&gt; .
+
+&lt;https://example.org/name/fie_177_2&gt; a crm:E41_Appellation ;
+    crm:P2_has_type &lt;https://example.org/type/fie_177_3&gt; .
+
+&lt;https://example.org/place/fie_177_1&gt; a crm:E53_Place ;
+    crm:P1_is_identified_by &lt;https://example.org/name/fie_177_2&gt; .
+
+&lt;https://example.org/type/fie_177_3&gt; a crm:E55_Type ;
+    rdfs:label &quot;Address&quot; .
+</code></pre>
+<h3 id="-postclassical-work-location-json-ld">- Postclassical Work Location <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;_label&quot;: &quot;Address&quot;,
+      &quot;id&quot;: &quot;https://example.org/type/fie_177_3&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;former_or_current_location&quot;: [
+        &quot;https://example.org/place/fie_177_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://census.de/example/physical_object/E22&quot;,
+      &quot;type&quot;: &quot;HumanMadeObject&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_177_3&quot;
+      ],
+      &quot;id&quot;: &quot;https://example.org/name/fie_177_2&quot;,
+      &quot;type&quot;: &quot;Appellation&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/place/fie_177_1&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://example.org/name/fie_177_2&quot;
+      ],
+      &quot;type&quot;: &quot;Place&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="postclassical-work-description">Postclassical Work <strong>Description</strong></h2>
+<p>Documents are the subjects of innumerable descriptions that provide a wide range of information with regards to the aesthetic and historical importance of the work, inter alia. Such descriptions are of use in a scholarly understanding of a <em>Postclassical Work</em> just in case we are able to track the provenance of such elocutions in a systematic fashion. Such an aim drives the need for the tracking of description information as a separate category. The descriptors necessary to this task are documented in the table below.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_cen_32</td>
+<td>Document Relation Type</td>
+<td>This field is used to record the type of similarity between the described <em>Postclassical Work</em> and another <em>Postclassical Work</em>.</td>
+<td>Concept</td>
+<td>--&gt; P01i --&gt; PC130[C31_1] --&gt; P130.1 --&gt; E55[C32_1]</td>
+</tr>
+<tr>
+<td>fie_cen_31</td>
+<td>Document Relation</td>
+<td>This field is used to record the type of similarity between the described <em>Postclassical Work</em> and another <em>Postclassical Work</em>.</td>
+<td>Reference Model  [Document]</td>
+<td>--&gt; P01i --&gt; PC130[C31_1] --&gt; P02 --&gt; E22[C31_2]</td>
+</tr>
+<tr>
+<td>fie_cen_58</td>
+<td>Document Notes</td>
+<td>This field is used to record a general statement about the described <em>Postclassical Work</em>.</td>
+<td>Collection [Statement]</td>
+<td>--&gt; P67i --&gt; E33[C58_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-postclassical-work-description-ontology-graph">- Postclassical Work Description <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="img/desc_document.png" /></p>
+<h3 id="-postclassical-work-description-rdf">- Postclassical Work Description <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+
+&lt;https://census.de/example/physical_object/E22&gt; a crm:E22_Human-Made_Object ;
+    crm:P01i_is_domain_of &lt;https://example.org/reified_property/C31_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://example.org/conceptual_object/C58_1&gt; .
+
+&lt;https://example.org/conceptual_object/C58_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://example.org/physical_object/C31_2&gt; a crm:E22_Human-made_Object .
+
+&lt;https://example.org/reified_property/C31_1&gt; a crm:PC130_shows_features_of ;
+    crm:PC02_has_range &lt;https://example.org/physical_object/C31_2&gt; ;
+    crm:PC130.1_has_type &lt;https://example.org/type/C32_1&gt; .
+
+&lt;https://example.org/type/C32_1&gt; a crm:E55_Type .
+
+
+
+</code></pre>
+<h3 id="-postclassical-work-description-json-ld">- Postclassical Work Description <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://example.org/physical_object/C31_2&quot;,
+      &quot;type&quot;: &quot;crm:E22_Human-made_Object&quot;
+    },
+    {
+      &quot;crm:PC02_has_range&quot;: {
+        &quot;id&quot;: &quot;https://example.org/physical_object/C31_2&quot;
+      },
+      &quot;crm:PC130.1_has_type&quot;: {
+        &quot;id&quot;: &quot;https://example.org/type/C32_1&quot;
+      },
+      &quot;id&quot;: &quot;https://example.org/reified_property/C31_1&quot;,
+      &quot;type&quot;: &quot;crm:PC130_shows_features_of&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/type/C32_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;crm:P01i_is_domain_of&quot;: {
+        &quot;id&quot;: &quot;https://example.org/reified_property/C31_1&quot;
+      },
+      &quot;id&quot;: &quot;https://census.de/example/physical_object/E22&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://example.org/conceptual_object/C58_1&quot;
+      ],
+      &quot;type&quot;: &quot;HumanMadeObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/C58_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="postclassical-work-documentation">Postclassical Work <strong>Documentation</strong></h2>
+<p>This information category unites referential information about the documented <em>Postclassical Work</em>, providing contextual data about it.</p>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fie_196</td>
+<td>Document Citation</td>
+<td>This field is used to record a citation to reference documentation for the described <em>Postclassical Work</em>.</td>
+<td>String</td>
+<td>--&gt; P129i --&gt; E33[196_1] --&gt; rdf:value --&gt; rdfs:Literal<br><br>--&gt; P129i --&gt; E33[196_1] --&gt; P2 --&gt; E55 "Citation"</td>
+</tr>
+<tr>
+<td>fie_197</td>
+<td>Document Citation Source</td>
+<td>This field is used to record the source used for generating the citation for the described <em>Postclassical Work</em>.</td>
+<td>Reference Model [Bibliographic Entity]</td>
+<td>--&gt; P129i --&gt; E33[196_1] --&gt; P106i --&gt; E33[197_1]</td>
+</tr>
+<tr>
+<td>fie_cen_13</td>
+<td>Document Bibliography</td>
+<td>This field is used to record a bibliographic reference for the described <em>Postclassical Work</em>.</td>
+<td>Reference Model  [Bibliographic Entity]</td>
+<td>--&gt; P67i --&gt;E33[C13_1]</td>
+</tr>
+<tr>
+<td>fie_195</td>
+<td>Document Image</td>
+<td>This field is used to record a digital image which is representative of the described <em>Postclassical Work</em>.</td>
+<td>Reference Model [Image]</td>
+<td>--&gt; P138i --&gt; E36/D9[195_1]</td>
+</tr>
+<tr>
+<td>fie_204</td>
+<td>Document URL</td>
+<td>The field is used to record the sameness between the described <em>Postclassical Work</em> and an external authority</td>
+<td>uri</td>
+<td>--&gt; L54 --&gt; E1[204_1]</td>
+</tr>
+<tr>
+<td>fie_cen_57</td>
+<td>Document URL Title</td>
+<td>The field is used to record the sameness between the described <em>Postclassical Work</em> and an external authority.</td>
+<td>String</td>
+<td>--&gt; L54 --&gt; E1[204_1] --&gt; P1 --&gt; E33_E41[C57_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-postclassical-work-documentation-ontology-graph">- Postclassical Work Documentation <strong>Ontology Graph</strong></h3>
+<p><img alt="Screenshot" src="img/doc_document.png" /></p>
+<h3 id="-postclassical-work-documentation-rdf">- Postclassical Work Documentation <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://census.de/example/physical_object/E22&gt; a crm:E22_Human-Made_Object ;
+    crm:L54_is_same-as &lt;https://example.org/entity/fie_204_1&gt; ;
+    crm:P129i_is_subject_of &lt;https://example.org/conceptual_object/fie_196_1&gt; ;
+    crm:P138i_has_representation &lt;https://example.org/conceptual_object/fie_195_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://example.org/conceptual_object/C13_1&gt; .
+
+&lt;https://example.org/appellation/C57_1&gt; a crm:E33_E41_Linguistic_Appellation .
+
+&lt;https://example.org/conceptual_object/C13_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://example.org/conceptual_object/fie_195_1&gt; a crm:D9_Data_Object,
+        crm:E36_Visual_Item .
+
+&lt;https://example.org/conceptual_object/fie_196_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P106i_forms_part_of &lt;https://example.org/conceptual_object/fie_197_1&gt; ;
+    crm:P190_has_symbolic_content &quot;content&quot; ;
+    crm:P2_has_type &lt;https://example.org/type/fie_196_1&gt; .
+
+&lt;https://example.org/conceptual_object/fie_197_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://example.org/entity/fie_204_1&gt; a crm:E1_CRM_Entity ;
+    crm:P1_is_identified_by &lt;https://example.org/appellation/C57_1&gt; .
+
+&lt;https://example.org/type/fie_196_1&gt; a crm:E55_Type ;
+    rdfs:label &quot;Citation&quot; .
+</code></pre>
+<h3 id="-postclassical-work-documentation-json-ld">- Postclassical Work Documentation <strong>JSON-LD</strong></h3>
+<pre><code>    {
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/C13_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;crm:L54_is_same-as&quot;: {
+        &quot;id&quot;: &quot;https://example.org/entity/fie_204_1&quot;
+      },
+      &quot;id&quot;: &quot;https://census.de/example/physical_object/E22&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://example.org/conceptual_object/C13_1&quot;
+      ],
+      &quot;representation&quot;: [
+        &quot;https://example.org/conceptual_object/fie_195_1&quot;
+      ],
+      &quot;subject_of&quot;: [
+        &quot;https://example.org/conceptual_object/fie_196_1&quot;
+      ],
+      &quot;type&quot;: &quot;HumanMadeObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/entity/fie_204_1&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://example.org/appellation/C57_1&quot;
+      ],
+      &quot;type&quot;: &quot;CRMEntity&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_197_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;Citation&quot;,
+      &quot;id&quot;: &quot;https://example.org/type/fie_196_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_195_1&quot;,
+      &quot;type&quot;: [
+        &quot;VisualItem&quot;,
+        &quot;crm:D9_Data_Object&quot;
+      ]
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://example.org/type/fie_196_1&quot;
+      ],
+      &quot;content&quot;: &quot;content&quot;,
+      &quot;crm:P106i_forms_part_of&quot;: {
+        &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_197_1&quot;
+      },
+      &quot;id&quot;: &quot;https://example.org/conceptual_object/fie_196_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://example.org/appellation/C57_1&quot;,
+      &quot;type&quot;: &quot;Name&quot;
+    }
+  ]
+}
+</code></pre>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../person/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../person/" class="btn btn-xs btn-link">
+        Person
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../monument/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../monument/" class="btn btn-xs btn-link">
+        Antique Monument
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
